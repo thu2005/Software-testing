@@ -4,19 +4,19 @@
 
 | Trường thông tin | Giá trị |
 |---|---|
-| Họ tên sinh viên | [TODO] |
-| MSSV | [TODO] |
-| Lớp / Khóa | [TODO] |
+| Họ tên sinh viên | Nguyễn Đoàn Xuân Thu |
+| MSSV | 23120170 |
+| Lớp / Khóa | 23_31 / 2023 |
 | Mã bài tập | HW01 |
 | Ngày làm bài | 25/09/2026 |
-| Công cụ AI đã dùng | OpenAI Codex (`gpt-5.6-sol`; một lượt không xác định exact model) và ChatGPT Web (exact model: `Unknown`) |
-| Được phép sử dụng AI | [ ] Có &nbsp; [ ] Không |
+| Công cụ AI đã dùng | OpenAI Codex (`gpt-5.6-sol`, `GPT-5.6 Sol Medium`, `GPT-5.6 Sol`), ChatGPT Web / GPT Web (`GPT Web`, `GPT-6 Luna`) |
+| Được phép sử dụng AI | [x] Có &nbsp; [ ] Không |
 
 ## 2. Khai báo sử dụng AI
 
-**Các tác vụ có sử dụng AI:** Soạn Requirement 1 từ 10 link việc làm được cung cấp, chèn 10 ảnh chụp màn hình, giải thích 20 software defects, và soạn/fact-check cấu trúc Requirement 2.
+**Các tác vụ có sử dụng AI:** Soạn Requirement 1 từ 10 link việc làm được cung cấp, chèn 10 ảnh chụp màn hình, giải thích 20 software defects, soạn/fact-check Requirement 2, tạo bản nháp 15 test cases cho quạt và cấu trúc Requirement 3.
 
-**Các phần thực hiện không dùng AI:** Thu thập 10 link việc làm, tự chụp 10 ảnh màn hình gốc, và review 20 lời giải thích defect đối chiếu với nguồn trước khi cung cấp kết quả review để sửa báo cáo.
+**Các phần thực hiện không dùng AI:** Thu thập 10 link việc làm, tự chụp 10 ảnh màn hình gốc, và review 20 lời giải thích defect đối chiếu với nguồn trước khi cung cấp kết quả review để sửa báo cáo. Thông tin định danh thiết bị, ảnh thiết bị cùng thẻ sinh viên, execution results, giọng thuyết minh, video, defects thực tế và các edge cases tự tìm của Requirement 3.
 
 ## 3. Các bản ghi kiểm toán
 
@@ -125,7 +125,7 @@ Không cần chỉnh sửa thêm.
 | Trường thông tin | Nội dung |
 |---|---|
 | Công cụ | ChatGPT Web |
-| Model | `Unknown` |
+| Model | `GPT Web` |
 | Thời gian | 2026-09-27 19:59:00 +0700 |
 | Loại artifact | Giải thích ngắn gọn 20 software defects, sau đó được trích nguyên văn trong Requirement 2 |
 | Vị trí artifact | `HW01/prompt_log.md` và `HW01/report/report.md` |
@@ -224,7 +224,7 @@ Output giải thích đủ 20 defects và dễ hiểu, nhưng review nguồn ph�
 | Trường thông tin | Nội dung |
 |---|---|
 | Công cụ | OpenAI Codex |
-| Model | `Unknown` |
+| Model | `GPT-5.6 Sol Medium` |
 | Thời gian | 2026-09-27 20:29:03 +0700 |
 | Loại artifact | Requirement 2 — báo cáo 20 software defects và review bias/hallucination của lời giải thích AI |
 | Vị trí artifact | `HW01/report/report.md` |
@@ -273,7 +273,7 @@ Lưu ý: Bản ghi #4 được đánh giá `INCOMPLETE` theo đúng Requirement 
 
 #### Verdict
 
-`COMPLETE`
+`VALID`
 
 #### Lý do
 
@@ -285,31 +285,190 @@ Artifact có đủ 20 defects, bảy mục AI/LLM và đủ các trường sourc
 
 ---
 
+### Bản ghi #5
+
+| Trường thông tin | Nội dung |
+|---|---|
+| Công cụ | GPT Web |
+| Model | `GPT-6 Luna, GPT Web`|
+| Thời gian | 2026-09-27 21:50:03 +0700 |
+| Loại artifact | Requirement 3 — batch 15 test cases cho quạt |
+| Vị trí artifact | `HW01/prompt_log.md` và `HW01/report/report.md` |
+
+#### User prompt (verbatim — giữ nguyên)
+
+```text
+Design 15 test cases (Objective / Input / Steps / Expected / Actual / Verdict). my device: fan. in vietnamese
+```
+
+#### AI output (verbatim — giữ nguyên)
+
+```text
+Dưới đây là 15 test case cho quạt cơ có nút chọn tốc độ và chốt đảo gió. Vì chưa có model cụ thể, hãy bỏ những test không áp dụng. Điền **Actual** và **Verdict** sau khi tự kiểm tra thực tế.
+
+| ID | Objective | Input | Steps | Expected | Actual | Verdict |
+|---|---|---|---|---|---|---|
+| FAN-TC01 | Bật quạt ở mức thấp | Quạt đang tắt, đã cắm điện | Xoay nút tốc độ từ OFF sang mức thấp | Quạt khởi động và quay ở mức thấp | Chưa kiểm tra | Chưa chạy |
+| FAN-TC02 | Bật quạt ở mức trung bình | Quạt đang tắt | Xoay nút tốc độ từ OFF sang mức trung bình | Quạt khởi động ở mức trung bình | Chưa kiểm tra | Chưa chạy |
+| FAN-TC03 | Bật quạt ở mức cao | Quạt đang tắt | Xoay nút tốc độ từ OFF sang mức cao | Quạt khởi động ở mức cao | Chưa kiểm tra | Chưa chạy |
+| FAN-TC04 | Tắt quạt khi đang chạy | Quạt đang chạy | Xoay nút tốc độ về OFF | Quạt ngừng quay | Chưa kiểm tra | Chưa chạy |
+| FAN-TC05 | Chuyển tốc độ khi quạt đang chạy | Quạt chạy ở mức thấp | Xoay nút lần lượt qua các mức trung bình, cao rồi về thấp | Quạt phản hồi theo từng mức được chọn | Chưa kiểm tra | Chưa chạy |
+| FAN-TC06 | Bật chế độ đảo gió | Quạt đang chạy, chốt đảo gió đang nhả | Nhấn chốt đảo gió | Đầu quạt bắt đầu quay qua lại | Chưa kiểm tra | Chưa chạy |
+| FAN-TC07 | Tắt chế độ đảo gió | Quạt đang quay qua lại | Kéo chốt đảo gió lên | Đầu quạt ngừng quay qua lại | Chưa kiểm tra | Chưa chạy |
+| FAN-TC08 | Kiểm tra đảo gió ở các mức tốc độ | Quạt có nhiều mức tốc độ và chốt đảo gió | Chọn một mức tốc độ, nhấn chốt đảo gió; lặp lại ở mức khác | Chế độ đảo gió hoạt động ở các mức quạt hỗ trợ | Chưa kiểm tra | Chưa chạy |
+| FAN-TC09 | Quan sát chuyển hướng khi đảo gió | Quạt đang ở chế độ đảo gió | Quan sát đầu quạt trong vài chu kỳ | Đầu quạt đổi hướng và quay qua lại liên tục | Chưa kiểm tra | Chưa chạy |
+| FAN-TC10 | Quan sát đầu quạt sau khi tắt đảo gió | Quạt đang quay qua lại | Kéo chốt đảo gió lên và quan sát | Đầu quạt ngừng đảo theo cơ chế bình thường | Chưa kiểm tra | Chưa chạy |
+| FAN-TC11 | Điều chỉnh góc nghiêng | Quạt đã tắt và rút điện | Chỉnh đầu quạt lên hoặc xuống trong phạm vi khớp cho phép | Đầu quạt chỉnh được và giữ ở góc đã chọn | Chưa kiểm tra | Chưa chạy |
+| FAN-TC12 | Kiểm tra độ vững của chân đế | Quạt đặt trên mặt phẳng ổn định | Chạy quạt ở mức cao và quan sát chân đế | Chân đế không tự dịch chuyển hoặc rung lắc bất thường | Chưa kiểm tra | Chưa chạy |
+| FAN-TC13 | Kiểm tra tiếng động khi vận hành bình thường | Quạt đặt ổn định trong phòng yên tĩnh | Chạy quạt ở mức thấp rồi mức cao; lắng nghe | Không có tiếng cọ xát hoặc tiếng động bất thường rõ rệt | Chưa kiểm tra | Chưa chạy |
+| FAN-TC14 | Bật lại quạt sau khi tắt bằng nút | Quạt đang chạy | Xoay nút về OFF, chờ vài giây rồi chọn lại một mức | Quạt dừng rồi khởi động lại theo mức vừa chọn | Chưa kiểm tra | Chưa chạy |
+| FAN-TC15 | Bật rồi tắt đảo gió liên tiếp | Quạt đang chạy ổn định | Nhấn chốt đảo gió, chờ đầu quạt quay qua lại rồi kéo chốt lên | Quạt bật và tắt chế độ đảo gió theo thao tác | Chưa kiểm tra | Chưa chạy |
+
+Đây là **test case**, không phải 15 defect; chỉ ghi lỗi nếu kết quả thực tế không đạt Expected và bạn có thể ghi lại bằng chứng.
+```
+
+#### Verdict
+
+`INCOMPLETE`
+
+#### Lý do
+
+Batch có đúng 15 test cases và đủ sáu trường Objective, Input, Steps, Expected, Actual và Verdict. Tuy nhiên. Output hiện là test design chung cho “fan”; mọi Actual/Verdict đều chưa chạy và các bằng chứng bắt buộc chưa có.
+
+#### Phần chỉnh sửa
+
+Đã chèn nguyên văn batch vào Requirement 3 và thêm bảng trạng thái cho các bằng chứng còn thiếu. Chưa thay đổi Actual/Verdict, chưa ghi defect và chưa tạo bằng chứng thực nghiệm vì các nội dung đó phải đến từ việc kiểm thử thiết bị thật.
+
+---
+
+### Bản ghi #6
+
+| Trường thông tin | Nội dung |
+|---|---|
+| Công cụ | OpenAI Codex |
+| Model | `GPT-5.6 Sol` |
+| Thời gian | 2026-09-28 03:26:44 +0700 |
+| Loại artifact | Mermaid mindmap về vai trò QA/QC theo ISTQB |
+| Vị trí artifact | `HW01/mindmap.md` |
+
+#### User prompt (verbatim — giữ nguyên)
+
+```text
+draw an ISTQB QA/QC role mindmap for me. output in [mindmap.md](HW01/mindmap.md) , use mermaid
+```
+
+#### AI output (verbatim — artifact đã ghi vào file)
+
+````text
+# ISTQB QA/QC Role Mindmap
+
+```mermaid
+mindmap
+  root((QA/QC Roles))
+    Quality Assurance
+      Process-oriented
+      Prevent defects
+      Improve development and test processes
+      Define quality policies and standards
+      Support audits and continuous improvement
+    Quality Control and Testing
+      Product-oriented
+      Detect defects and evaluate quality
+      Static testing
+        Reviews
+        Static analysis
+      Dynamic testing
+        Functional testing
+        Non-functional testing
+        Confirmation testing
+        Regression testing
+    Test Management Role
+      Test planning
+      Risk management
+      Test monitoring and control
+      Team and resource coordination
+      Test completion and reporting
+    Testing Role
+      Test analysis
+      Test design
+      Test implementation
+      Test execution
+      Defect reporting
+      Testware maintenance
+    Common Specializations
+      Manual Tester
+        Exploratory testing
+        Scenario-based testing
+      Test Automation Engineer
+        Automation framework
+        Automated regression tests
+        CI/CD integration
+      Performance Test Engineer
+        Load testing
+        Stress testing
+        Scalability testing
+      Security Tester
+        Vulnerability testing
+        Security risk evaluation
+      Usability and Accessibility Tester
+        User experience
+        Accessibility checks
+    Collaboration
+      Developers
+        Component testing
+        Defect fixing
+      Business Analysts and Product Owners
+        Requirements and acceptance criteria
+      DevOps and SRE
+        Test environments
+        Deployment and monitoring
+      Users and Stakeholders
+        Acceptance testing
+        Product feedback
+```
+
+> Note: ISTQB describes a **test management role** and a **testing role** rather than requiring one fixed job title for each activity. An organization may assign several roles to one person or divide one role among several people.
+````
+
+#### Verdict
+
+`INCOMPLETE`
+
+#### Lý do
+
+Mindmap đúng định dạng Mermaid và nêu đúng hai principal roles là *test management role* và *testing role*. Tuy nhiên, bản đầu dễ gây hiểu nhầm ở ba điểm: trình bày QA như một vai trò riêng dù ISTQB xem QA là trách nhiệm của mọi người trong dự án; đặt “Quality Control and Testing” ngang nhau dù testing là một hình thức chính của QC; và xếp confirmation/regression testing cùng nhóm với functional/non-functional testing thay vì tách theo testing after changes.
+
+#### Phần chỉnh sửa
+
+Đã bổ sung mục **Find 3 Errors** trong `HW01/mindmap.md`, ghi rõ ba điểm gây hiểu nhầm, evidence từ ISTQB CTFL Syllabus v4.0.1 và cách phân loại nên sửa. Sơ đồ gốc được giữ nguyên để thể hiện artifact AI đã được review.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Chỉ số | Số lượng | Tỷ lệ |
 |---|---:|---:|
-| Tổng số artifact do AI tạo được kiểm toán | 4 | 100% |
-| VALID | 2 | 50% |
+| Tổng số artifact do AI tạo được kiểm toán | 6 | 100% |
+| VALID | 2 | 33.33% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 2 | 50% |
+| INCOMPLETE | 4 | 66.67% |
 
 ## 5. Kết luận
 
-AI hỗ trợ tốt việc cấu trúc Requirement 1, tích hợp ảnh và tạo giải thích ngắn cho 20 defects. Tuy nhiên, output defect ban đầu có overstatement, unsupported detail và nhiều omission; việc kiểm tra nguồn đã phát hiện và sửa các điểm này trong phần mô tả của Requirement 2
+AI hỗ trợ tốt việc cấu trúc Requirement 1, tích hợp ảnh, giải thích 20 defects, tạo bản nháp 15 test cases cho quạt và tạo mindmap QA/QC. Review nguồn đã phát hiện overstatement, unsupported detail và omission trong output defect, sau đó các điểm này được sửa ở Requirement 2. Với Requirement 3, AI tạo đủ số lượng test cases và đúng các cột yêu cầu nhưng không thể cung cấp dữ liệu của thiết bị cụ thể, kết quả chạy, video, defects thực tế hoặc edge cases do người học tự phát hiện. Mindmap Mermaid dùng được nhưng có ba điểm phân loại dễ gây hiểu nhầm; các điểm này đã được ghi lại trong mục **Find 3 Errors** kèm evidence ISTQB. Vì vậy AI phù hợp để tạo bản nháp và checklist, còn dữ kiện nguồn, cách phân loại và bằng chứng vật lý phải được kiểm tra trước khi nộp.
 
 ## 6. Khai báo bắt buộc
 
-> Báo cáo Requirement 1 được OpenAI Codex (`gpt-5.6-sol`) tạo và chỉnh sửa từ 10 link cùng 10 ảnh chụp do tôi cung cấp. Các giải thích ban đầu cho 20 defects trong Requirement 2 được ChatGPT Web tạo; tôi đã đối chiếu nguồn và cung cấp kết quả review, sau đó OpenAI Codex cấu trúc và sửa phần báo cáo. Các câu AI gốc được giữ nguyên để kiểm toán; các correction được trình bày riêng. Báo cáo Kiểm toán AI chi tiết được đính kèm tại Phụ lục A.
+> Báo cáo Requirement 1 được OpenAI Codex (`gpt-5.6-sol`) tạo và chỉnh sửa từ 10 link cùng 10 ảnh chụp do tôi cung cấp. Các giải thích ban đầu cho 20 defects trong Requirement 2 được ChatGPT Web tạo; tôi đã đối chiếu nguồn và cung cấp kết quả review, sau đó OpenAI Codex cấu trúc và sửa phần báo cáo. Mười lăm test cases ban đầu của Requirement 3 được GPT Web tạo và OpenAI Codex đưa vào report; Actual/Verdict, ảnh thiết bị, video, defects thực tế và edge cases do tôi tự thực hiện đã được bổ sung. Mindmap QA/QC bằng Mermaid được OpenAI Codex tạo; tôi đã đối chiếu ISTQB và ghi lại ba điểm phân loại dễ gây hiểu nhầm trong mục **Find 3 Errors**.
 
 ## Chữ ký
 
 | Trường thông tin | Giá trị |
 |---|---|
-| Họ tên sinh viên | [TODO] |
-| MSSV | [TODO] |
-| Lớp / Khóa | [TODO] |
-| Môn học | [TODO — xác nhận mã môn học] |
-| Giảng viên | [TODO] |
-| Ngày | [TODO] |
-| Chữ ký | [TODO] |
+| Họ tên sinh viên | Nguyễn Đoàn Xuân Thu |
+| MSSV | 23120170 |
+| Lớp / Khóa | 23_31 / 2023 |
+| Môn học | CSC130003 |
+| Giảng viên | Dr. Lam Quang Vu, Dr. Tran Duy Hoang, MSc. Tran Thi Bich Hanh, MSc. Truong Phuoc Loc, MSc. Ho Tuan Thanh |
+| Ngày | 28/09/2026 |
+| Chữ ký | Thu |

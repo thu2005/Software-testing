@@ -1,5 +1,13 @@
 # Báo cáo HW01
 
+## Thông tin sinh viên
+
+- **Họ và tên:** Nguyễn Đoàn Xuân Thu
+- **MSSV:** 23120170
+- **Lớp / Khóa:** 23_31 / 2023
+- **Môn học:** CSC130003
+- **GitHub repository:** [thu2005/Software-testing](https://github.com/thu2005/Software-testing)
+
 ## Requirement 1 – Thị trường việc làm QA/QC 2026+
 
 ### 1.1 Tổng hợp các tin tuyển dụng đã thu thập
@@ -415,10 +423,55 @@ Danh sách gồm 12 test cases do AI đề xuất và 3 edge cases tự bổ sun
 
 Có 5 test cases thất bại. Trong đó, `FAN-TC06`, `FAN-TC07` và `FAN-TC15` cùng liên quan đến một nguyên nhân gốc: chốt đảo gió bị hư.
 
-| Test Case | Defect observed | GitHub Issue evidence |
+| Test Case | Defect observed | GitHub Issue | Screenshot evidence |
+|---|---|---|---|
+| FAN-TC06 | Chốt đảo gió bị hư; đầu quạt không quay qua lại khi bật đảo gió | [Issue #1 – FAN-TC06](https://github.com/thu2005/Software-testing/issues/1) | ![GitHub Issue FAN-TC06](../screenshots/requirement-03/TC06.png) |
+| FAN-TC07 | Không thể kiểm tra tắt đảo gió vì cơ chế đảo gió không hoạt động; đầu quạt luôn đứng yên | [Issue #2 – FAN-TC07](https://github.com/thu2005/Software-testing/issues/2) | ![GitHub Issue FAN-TC07](../screenshots/requirement-03/TC07.png) |
+| FAN-TC15 | Không thể bật/tắt đảo gió liên tiếp vì chốt đảo gió bị hư | [Issue #3 – FAN-TC15](https://github.com/thu2005/Software-testing/issues/3) | ![GitHub Issue FAN-TC15](../screenshots/requirement-03/TC15.png) |
+| FAN-EC03 | Khe lồng cho phép ngón tay út lọt vào và có thể tiếp xúc với cánh quạt | [Issue #4 – FAN-EC03](https://github.com/thu2005/Software-testing/issues/4) | ![GitHub Issue FAN-EC03](../screenshots/requirement-03/EC03.png) |
+| FAN-TC13 | Quạt thỉnh thoảng phát ra tiếng “két” khi đang chạy | [Issue #5 – FAN-TC13](https://github.com/thu2005/Software-testing/issues/5) | ![GitHub Issue FAN-TC13](../screenshots/requirement-03/TC13.png) |
+
+---
+
+# Phụ lục A – Nhật ký sử dụng AI
+
+Nhật ký prompt theo thứ tự thời gian, gồm yêu cầu của người dùng và phản hồi của AI, được lưu tại [prompt_log.md](../prompt_log.md).
+
+# Phụ lục B – ISTQB QA/QC Role Mindmap
+
+Sơ đồ Mermaid và phần đối chiếu ba điểm dễ gây hiểu nhầm với ISTQB được lưu tại [mindmap.md](../mindmap.md).
+
+![ISTQB QA/QC Role Mindmap](../screenshots/mindmap.png)
+
+# Phụ lục C – Hồ sơ minh bạch AI
+
+- [AI-02 – Báo cáo kiểm toán nội dung do AI tạo](../ai-appendix/AI-02-Audit-Report.md)
+- [AI-03 – Biểu mẫu công khai việc sử dụng AI](../ai-appendix/AI-03-Disclosure-Form.md) 
+- [AI-05 – Danh sách kiểm tra quyền riêng tư](../ai-appendix/AI-05-Privacy-Checklist.md) 
+- [AI-06 – Cam kết của sinh viên](../ai-appendix/AI-06-Student-Acknowledgement.md) 
+# Nhận xét về việc sử dụng AI
+
+AI hỗ trợ tốt trong việc tạo cấu trúc và bản nháp. AI giúp trình bày mười tin tuyển dụng theo cùng một mẫu, giải thích ngắn gọn hai mươi defect và đề xuất mười lăm test case cơ bản cho quạt. Nhờ đó, thông tin ban đầu được tổ chức nhanh và có hệ thống hơn.
+
+Tuy nhiên, kết quả AI vẫn cần được review. Phần giải thích defect từng nói quá phạm vi dữ liệu bị lộ của ChatGPT, thêm chi tiết không được nguồn Gemini nêu riêng và khẳng định chưa đủ căn cứ về giai đoạn mã độc được chèn vào 3CX. Một số câu đúng nhưng thiếu phạm vi hoặc nguyên nhân kỹ thuật, như các phiên bản XZ Utils bị ảnh hưởng, điều kiện cấu hình PAN-OS và lỗi out-of-bounds read trong sự cố CrowdStrike. Mindmap cũng có ba cách phân loại dễ gây hiểu nhầm: coi QA như một vai trò riêng, đặt testing ngang với QC và gộp confirmation/regression testing với functional/non-functional testing.
+
+Kiểm thử thủ công cho thấy một giới hạn khác. AI không đề xuất việc ngắt rồi cấp điện lại, tháo lắp lồng để vệ sinh và quan sát khe lồng bảo vệ. Kiểm tra sản phẩm thật đã phát hiện chốt đảo gió bị hư, tiếng “két” không liên tục và khe lồng có thể cho ngón tay út tiếp xúc với cánh quạt. Vì vậy, AI phù hợp để tạo bản nháp; nguồn chính thức, phân loại chuyên môn và kết quả trên thiết bị vẫn phải được con người kiểm tra và lưu bằng chứng.
+
+# Tự kiểm tra trước khi nộp
+
+| Hạng mục | Trạng thái | Minh chứng/Ghi chú |
 |---|---|---|
-| FAN-TC06 | Chốt đảo gió bị hư; đầu quạt không quay qua lại khi bật đảo gió | ![GitHub Issue FAN-TC06](../screenshots/requirement-03/TC06.png) |
-| FAN-TC07 | Không thể kiểm tra tắt đảo gió vì cơ chế đảo gió không hoạt động; đầu quạt luôn đứng yên | ![GitHub Issue FAN-TC07](../screenshots/requirement-03/TC07.png) |
-| FAN-TC15 | Không thể bật/tắt đảo gió liên tiếp vì chốt đảo gió bị hư | ![GitHub Issue FAN-TC15](../screenshots/requirement-03/TC15.png) |
-| FAN-EC03 | Khe lồng cho phép ngón tay út lọt vào và có thể tiếp xúc với cánh quạt | ![GitHub Issue FAN-EC03](../screenshots/requirement-03/EC03.png) |
-| FAN-TC13 | Quạt thỉnh thoảng phát ra tiếng “két” khi đang chạy | ![GitHub Issue FAN-TC13](../screenshots/requirement-03/TC13.png) |
+| Requirement 1: 10 tin tuyển dụng và phân tích tác động AI | Hoàn tất | Có link, ảnh chụp, mô tả, kỹ năng, lương và phân tích cho 10 vị trí |
+| Requirement 2: 20 software defects | Hoàn tất | Mỗi mục có giải thích AI, nguồn, mô tả, severity, hậu quả, giải pháp và kết quả review AI |
+| Requirement 3: 15 test cases | Hoàn tất | Có Actual/Verdict cho 12 test case AI và 3 edge case tự bổ sung |
+| Năm video thực thi | Hoàn tất | Đã gắn 5 liên kết YouTube |
+| Bằng chứng defect/GitHub Issue | Hoàn tất | Có URL và ảnh chụp cho cả 5 GitHub Issues |
+| Prompt log | Hoàn tất | Xem Phụ lục A |
+| AI-02 Audit Report | Hoàn tất | Xem Phụ lục C |
+| AI-03 Disclosure Form | Hoàn tất | Category 4, thông tin sử dụng AI và chữ ký đã được điền |
+| AI-05 Privacy Checklist | Hoàn tất | Tất cả mục đã được sinh viên xác nhận và ký |
+| AI-06 Student Acknowledgement | Hoàn tất | Cam kết, thông tin tài khoản AI và chữ ký đã được điền |
+
+# Khai báo bắt buộc về việc sử dụng AI
+
+> Báo cáo Requirement 1 được OpenAI Codex (`gpt-5.6-sol`) tạo và chỉnh sửa từ 10 link cùng 10 ảnh chụp do tôi cung cấp. Các giải thích ban đầu cho 20 defects trong Requirement 2 được ChatGPT Web tạo; tôi đã đối chiếu nguồn và cung cấp kết quả review, sau đó OpenAI Codex cấu trúc và sửa phần báo cáo. Mười lăm test cases ban đầu của Requirement 3 được GPT Web tạo và OpenAI Codex đưa vào report; Actual/Verdict, ảnh thiết bị, video, defects thực tế và edge cases do tôi tự thực hiện đã được bổ sung. Mindmap QA/QC bằng Mermaid được OpenAI Codex tạo; tôi đã đối chiếu ISTQB và ghi lại ba điểm phân loại dễ gây hiểu nhầm trong mục **Find 3 Errors**.
