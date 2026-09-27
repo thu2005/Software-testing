@@ -1,0 +1,5 @@
+*.doc
+*.py
+AI Templates/
+pycache/**
+
