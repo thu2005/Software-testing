@@ -26,7 +26,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/qa-engineer-tester-qa-qc-english-up-to-1500-saritasa-4856?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng QA Engineer của Saritasa hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/1.png)
+  ![Tin tuyển dụng QA Engineer của Saritasa hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/1.png)
 - **Mô tả công việc:** Vị trí tập trung vào việc hiểu đặc tả, áp dụng các nguyên tắc kiểm thử phần mềm, phân tách yêu cầu phức tạp thành các use case có thể kiểm thử và ghi nhận defect bằng ảnh chụp hoặc video. Công việc bao gồm kiểm thử web, mobile, API và integration trong một nhóm có hoạt động review và kiểm thử chéo.
 - **Kỹ năng yêu cầu/ưu tiên:** Ít nhất ba năm kinh nghiệm manual QA/testing, ưu tiên có kinh nghiệm automation testing; nắm lý thuyết và kỹ thuật kiểm thử; phân tích yêu cầu; chú ý chi tiết; tư duy logic và phân tích; sử dụng JMeter, Postman, Git và ưu tiên biết Linux; kiểm thử web, mobile và API; tiếng Anh và giao tiếp tốt. Tin tuyển dụng cũng ưu tiên ứng viên thoải mái sử dụng công cụ AI để tăng tốc thiết kế test và công việc hằng ngày.
 - **Mức lương:** USD 1,000–1,500.
@@ -37,7 +37,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/sr-qa-engineer-from-6yoe-automation-english-yum-digital-technology-5203?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Senior QA Engineer của YUM Digital and Technology hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/2.png)
+  ![Tin tuyển dụng Senior QA Engineer của YUM Digital and Technology hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/2.png)
 - **Mô tả công việc:** Senior Quality Engineer xác định và triển khai chiến lược kiểm thử cho nền tảng thương mại Byte by Yum!. Trách nhiệm gồm functional, integration, end-to-end và performance testing; xây dựng automation framework cho web và mobile; manual và exploratory testing; phối hợp CI/CD; lập kế hoạch và báo cáo kiểm thử; cải tiến quy trình và quản lý defect.
 - **Kỹ năng yêu cầu:** Bằng cử nhân liên quan; ít nhất sáu năm làm software QA, bao gồm kinh nghiệm ở cấp senior; kinh nghiệm với nền tảng thương mại điện tử quy mô lớn hoặc nền tảng người dùng lưu lượng cao; khả năng dẫn dắt chiến lược kiểm thử; sử dụng automation framework như Maestro, Playwright, Cypress, Selenium hoặc Appium; phối hợp đa chức năng; giải quyết vấn đề; tiếng Anh tốt và khả năng thích nghi.
 - **Mức lương:** USD 2,000–2,900.
@@ -48,7 +48,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/senior-tester-qc-lead-sstech-3634?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Senior Tester của SSTech hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/3.png)
+  ![Tin tuyển dụng Senior Tester của SSTech hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/3.png)
 - **Mô tả công việc:** Đây là vị trí kiểm soát chất lượng chính và được kỳ vọng sẽ đảm nhận vai trò dẫn dắt test team. Công việc gồm làm rõ yêu cầu, phát hiện logic mơ hồ hoặc còn thiếu và các edge case, xây dựng test plan và scenario từ acceptance criteria, viết defect report có thể tái hiện, xác minh bản sửa lỗi và quản lý rủi ro tiến độ/chất lượng giữa các dự án.
 - **Kỹ năng yêu cầu:** Kinh nghiệm software QA/QC, trong đó có ít nhất một năm làm Test Lead hoặc Senior QA chịu trách nhiệm về đầu ra dự án; tiếng Anh tốt; phân tích yêu cầu; thiết kế test tập trung vào edge case; khả năng ưu tiên kiểm thử khi thời hạn release gấp.
 - **Mức lương:** USD 1,200–1,700.
@@ -59,7 +59,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/tester-team-leader-qa-manager-cyberquote-pte-ltd-0617?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Tester Team Leader của CyberQuote hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/4.png)
+  ![Tin tuyển dụng Tester Team Leader của CyberQuote hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/4.png)
 - **Mô tả công việc:** Test Manager dẫn dắt QA cho nền tảng giao dịch đa tài sản POEMS trên web và mobile. Vị trí chịu trách nhiệm về chiến lược và tiêu chuẩn QA, phát triển đội ngũ, lập kế hoạch kiểm thử nhiều dự án, chất lượng workflow giao dịch, định hướng automation, khuyến nghị release, metric, giao tiếp với stakeholder, cùng các vấn đề bảo mật, tuân thủ và quyền riêng tư dữ liệu.
 - **Kỹ năng yêu cầu:** Tám đến mười năm kinh nghiệm software QA/testing; dẫn dắt đội QA; lập kế hoạch và thực thi kiểm thử; quản lý defect, regression và release; kinh nghiệm với nền tảng giao dịch hoặc thị trường vốn; hiểu workflow giao dịch; năng lực kỹ thuật về automation, API, database, performance và security testing. Trang tuyển dụng cũng liệt kê QA/QC, quản lý nhóm, SQL, Agile và tiếng Anh.
 - **Mức lương:** USD 2,400–2,800.
@@ -70,7 +70,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/performance-qa-engineer-nakivo-2956?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Performance QA Engineer của Nakivo hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/5.png)
+  ![Tin tuyển dụng Performance QA Engineer của Nakivo hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/5.png)
 - **Mô tả công việc:** Engineer phối hợp với developer và nhân viên QA, tạo và thực thi automated test, báo cáo defect, phân tích kết quả, xử lý sự cố và cải thiện phương pháp automation. Tin tuyển dụng nêu cụ thể việc thiết kế, tạo và quản lý automation test case bằng công nghệ AI.
 - **Kỹ năng yêu cầu:** Bằng cử nhân liên quan; hiểu software development life cycle và phương pháp kiểm thử; ít nhất bốn năm kinh nghiệm liên quan; Java, Python hoặc C#; Selenium, Appium hoặc công cụ tương tự; Git; kỹ năng phân tích, giao tiếp và hợp tác. Vị trí yêu cầu rõ kinh nghiệm AI-automation testing với các công cụ như Copilot, Cursor hoặc Perplexity, đồng thời xem kinh nghiệm thực hành AI là một tiêu chí mong muốn.
 - **Mức lương:** USD 1,400–1,800.
@@ -81,7 +81,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/manual-automation-tester-selenium-qa-qc-mitek-vietnam-0430?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Manual and Automation Tester của MiTek hiển thị thời gian đăng và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/6.png)
+  ![Tin tuyển dụng Manual and Automation Tester của MiTek hiển thị thời gian đăng và tài khoản đã đăng nhập](../screenshots/requirement-01/6.png)
 - **Mô tả công việc:** Tester thiết kế, duy trì và thực thi functional, regression và automated test cho nền tảng Kova của MiTek. Vị trí cũng phát triển automation cho web, ứng dụng Windows và API; ghi nhận và theo dõi defect; xử lý lỗi script; refactor các test hiện có; phối hợp với các nhóm tại Việt Nam và Hoa Kỳ để làm rõ yêu cầu và thiết kế.
 - **Kỹ năng yêu cầu:** Ít nhất ba năm kinh nghiệm software testing/QA, gồm cả manual và automation; automation cho web, ứng dụng Windows và API; phương pháp Agile; quy trình và kỹ thuật kiểm thử; giải quyết vấn đề, giao tiếp, hợp tác và tiếng Anh. SQL, Postman, CI/CD và Python là các kỹ năng được ưu tiên.
 - **Mức lương:** Không hiển thị mức cụ thể; ảnh chụp hiển thị “You'll love it.”
@@ -92,7 +92,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/qa-engineer-tester-qa-qc-ol-vietnam-3927?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng QA Engineer của OL Vietnam hiển thị thời gian đăng và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/7.png)
+  ![Tin tuyển dụng QA Engineer của OL Vietnam hiển thị thời gian đăng và tài khoản đã đăng nhập](../screenshots/requirement-01/7.png)
 - **Mô tả công việc:** QA Engineer thiết kế và thực thi chiến lược manual testing nhằm tìm và ghi nhận defect trước khi release, ngăn regression, đánh giá tính năng mới từ góc nhìn người dùng, đồng thời đề xuất cải tiến cho cả sản phẩm và phương pháp kiểm thử.
 - **Kỹ năng yêu cầu:** Có nhiều kinh nghiệm manual testing ứng dụng phức tạp; tiếng Anh viết và nói; hiểu software development; có tính kỷ luật và tư duy hợp lý khi lịch trình gấp. Kinh nghiệm accessibility testing và kiến thức automation với Cypress hoặc Selenium cùng các ngôn ngữ như TypeScript, Java, JavaScript hoặc C# được ưu tiên nhưng không bắt buộc.
 - **Mức lương:** Không hiển thị mức cụ thể; “You'll love it.”
@@ -103,7 +103,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/middle-qa-qc-engineer-automation-siraya-technologies-pte-ltd-2622?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Middle QA QC Engineer của SIRAYA hiển thị thời gian đăng và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/8.png)
+  ![Tin tuyển dụng Middle QA QC Engineer của SIRAYA hiển thị thời gian đăng và tài khoản đã đăng nhập](../screenshots/requirement-01/8.png)
 - **Mô tả công việc:** Engineer chịu trách nhiệm về chất lượng ứng dụng bằng cách thiết kế test strategy và test case; thực hiện functional, integration, API, regression, end-to-end và performance/load testing cơ bản; xây dựng API và web automation. Vị trí tích hợp test với CI/CD, đọc application code để chẩn đoán defect, xác minh bản sửa, theo dõi quality metric và đóng góp vào tiêu chuẩn cùng tài liệu QA.
 - **Kỹ năng yêu cầu:** Ít nhất một năm kinh nghiệm QA/QC và ít nhất hai năm làm developer; có khả năng đọc code và viết test script; JavaScript/TypeScript hoặc Golang; API testing với Postman/REST; Playwright và/hoặc Cypress; kiến thức system architecture và HTTP/API; kinh nghiệm CI/CD; kỹ năng phân tích, debugging, giao tiếp và tiếng Anh lưu loát.
 - **Mức lương:** Không hiển thị mức cụ thể; “You'll love it.”
@@ -114,7 +114,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/middle-qa-automation-engineer-playwright-selenium-fpt-digital-4422?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Middle QA Automation Engineer của FPT Digital hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/9.png)
+  ![Tin tuyển dụng Middle QA Automation Engineer của FPT Digital hiển thị thời gian đăng, mức lương và tài khoản đã đăng nhập](../screenshots/requirement-01/9.png)
 - **Mô tả công việc:** Vị trí xây dựng UI và API automation, tích hợp test với CI/CD, thực hiện regression và data validation, đồng thời quản lý defect. Công việc còn kiểm thử các tính năng AI/LLM như chatbot, trích xuất dữ liệu tự động và workflow retrieval-augmented generation; đánh giá độ chính xác, đầy đủ, source attribution và hallucination; so sánh output giữa các biến thể prompt.
 - **Kỹ năng yêu cầu:** Bằng cử nhân liên quan; hai đến bốn năm kinh nghiệm manual và automation testing; Playwright, Selenium hoặc Cypress với JavaScript/TypeScript, Python hoặc Java; API testing; SQL và kỹ năng phân tích QA. Yêu cầu AI là đã có kinh nghiệm kiểm thử tính năng AI/LLM **hoặc** thường xuyên sử dụng công cụ như ChatGPT hay Claude trong công việc QA hằng ngày, đồng thời sẵn sàng chuyên môn hóa về AI quality assurance.
 - **Mức lương:** USD 800–1,500.
@@ -125,7 +125,7 @@
 - **Link:** [Tin tuyển dụng trên ITviec](https://itviec.com/it-jobs/hanoi-fullstack-qa-engineer-lead-manual-auto-ai-money-forward-vietnam-co-ltd-4636?lab_feature=preview_jd_page)
 - **Bằng chứng ảnh chụp (ngày 25/09/2026):**
 
-  ![Tin tuyển dụng Fullstack QA Engineer Lead của Money Forward hiển thị thời gian đăng và tài khoản đã đăng nhập](../requirement-1-job-market/screenshots/10.png)
+  ![Tin tuyển dụng Fullstack QA Engineer Lead của Money Forward hiển thị thời gian đăng và tài khoản đã đăng nhập](../screenshots/requirement-01/10.png)
 - **Mô tả công việc:** Vị trí leadership này kết hợp manual testing, end-to-end/API automation, performance, nhận thức về security, quản trị rủi ro release, kiến trúc automation, code review, hỗ trợ đội ngũ outsource và shift-left testing. Nhiệm vụ liên quan đến AI gồm dẫn dắt việc áp dụng generative AI cho test design, tạo script và triage; xác minh các tính năng sản phẩm có AI hỗ trợ; xây dựng hướng dẫn sử dụng AI an toàn và tuân thủ quyền riêng tư.
 - **Kỹ năng yêu cầu:** Bằng cử nhân liên quan; ít nhất tám năm kinh nghiệm QA/SDET, trong đó có từ ba năm technical leadership; tiếng Anh lưu loát; automation TypeScript/JavaScript hoặc Python nâng cao với Playwright, Cypress hay Selenium; REST/GraphQL API testing; SQL; CI/CD và Docker; năng lực lãnh đạo chiến lược chất lượng; chủ động sử dụng công cụ generative AI hằng ngày để cải thiện hoạt động QA.
 - **Mức lương:** Không hiển thị mức cụ thể; “You'll love it.”
@@ -344,3 +344,81 @@ Trường **“Instance bias/hallucination của AI”** ghi kết quả review 
 - **Hậu quả:** Attacker có thể chiếm gateway, truy cập tài nguyên được bảo vệ và dùng thiết bị internet-facing làm điểm vào mạng tổ chức.
 - **Giải pháp:** Cài fixed build/current supported release của Ivanti. Nếu chưa thể vá, áp dụng mitigation chính thức, sau đó chạy integrity checking và điều tra compromise theo advisory.
 - **Instance bias/hallucination của AI:** Không phát hiện bias hoặc hallucination; lời giải thích khớp nguồn về chuỗi authentication bypass và command injection dẫn đến remote command execution.
+
+---
+
+# Requirement 3 – Test cases for ONE physical product
+
+## Thông tin thiết bị
+- **Brand:** Senko
+- **Model:** LTS106A
+- **Year:** 2018
+- **Serial Number:** 90****72 (masked)
+
+## Hình ảnh thiết bị
+
+![Quạt Senko LTS106A và thẻ sinh viên](../screenshots/requirement-03/fanId.jpg)
+
+## Test Cases
+
+Danh sách gồm 12 test cases do AI đề xuất và 3 edge cases tự bổ sung (`FAN-EC01`–`FAN-EC03`) thay cho `FAN-TC08`–`FAN-TC10`.
+
+| ID | Objective | Input | Steps | Expected | Actual | Verdict |
+|---|---|---|---|---|---|---|
+| FAN-TC01 | Bật quạt ở mức thấp | Quạt đang tắt, đã cắm điện | Xoay nút tốc độ từ OFF sang mức thấp | Quạt khởi động và quay ở mức thấp | Quạt khởi động và quay ở mức thấp như mong đợi | PASS |
+| FAN-TC02 | Bật quạt ở mức trung bình | Quạt đang tắt | Xoay nút tốc độ từ OFF sang mức trung bình | Quạt khởi động ở mức trung bình | Quạt khởi động ở mức trung bình như mong đợi | PASS |
+| FAN-TC03 | Bật quạt ở mức cao | Quạt đang tắt | Xoay nút tốc độ từ OFF sang mức cao | Quạt khởi động ở mức cao | Quạt khởi động ở mức cao như mong đợi | PASS |
+| FAN-TC04 | Tắt quạt khi đang chạy | Quạt đang chạy | Xoay nút tốc độ về OFF | Quạt ngừng quay | Quạt ngừng quay sau khi chuyển nút về OFF | PASS |
+| FAN-TC05 | Chuyển tốc độ khi quạt đang chạy | Quạt chạy ở mức thấp | Xoay nút lần lượt qua các mức trung bình, cao rồi về thấp | Quạt phản hồi theo từng mức được chọn | Quạt phản hồi đúng theo từng mức tốc độ được chọn | PASS |
+| FAN-TC06 | Bật chế độ đảo gió | Quạt đang chạy, chốt đảo gió đang nhả | Nhấn chốt đảo gió | Đầu quạt bắt đầu quay qua lại | Chốt đảo gió bị hư; sau khi nhấn, đầu quạt vẫn đứng yên và không quay qua lại | FAIL |
+| FAN-TC07 | Tắt chế độ đảo gió | Quạt đang quay qua lại | Kéo chốt đảo gió lên | Đầu quạt ngừng quay qua lại | Chốt đảo gió bị hư nên quạt không vào được trạng thái quay qua lại để kiểm tra thao tác tắt; đầu quạt luôn đứng yên | FAIL |
+| FAN-EC01 | Kiểm tra quạt sau khi ngắt và cấp điện lại | Quạt, ổ điện/công tắc ổ cắm | Tắt quạt bằng nút, ngắt điện; chờ vài giây rồi cấp điện lại và chọn một mức gió | Quạt khởi động theo thao tác chọn mức gió, không có dấu hiệu bất thường | Quạt khởi động lại bình thường sau khi cấp điện và chọn mức gió | PASS |
+| FAN-EC02 | Kiểm tra tháo và lắp lồng quạt để vệ sinh | Quạt đã tắt và rút điện; hướng dẫn sử dụng nếu có | Tháo lồng theo hướng dẫn, lắp lại và kiểm tra chốt khóa | Lồng tháo lắp được theo hướng dẫn và được cố định chắc sau khi lắp | Lồng tháo lắp được và được cố định chắc sau khi lắp lại | PASS |
+| FAN-EC03 | Kiểm tra khe lồng bảo vệ | Quạt đã tắt và rút điện | Quan sát lồng và khe hở từ bên ngoài; không đưa ngón tay hay vật vào lồng | Lồng không có hư hỏng hoặc khe hở nhìn thấy bất thường | Khe lồng đủ rộng để ngón tay út lọt vào và có thể tiếp xúc với cánh quạt, gây nguy hiểm cho trẻ em | FAIL |
+| FAN-TC11 | Điều chỉnh góc nghiêng | Quạt đã tắt và rút điện | Chỉnh đầu quạt lên hoặc xuống trong phạm vi khớp cho phép | Đầu quạt chỉnh được và giữ ở góc đã chọn | Đầu quạt điều chỉnh được và giữ ổn định ở góc đã chọn | PASS |
+| FAN-TC12 | Kiểm tra độ vững của chân đế | Quạt đặt trên mặt phẳng ổn định | Chạy quạt ở mức cao và quan sát chân đế | Chân đế không tự dịch chuyển hoặc rung lắc bất thường | Chân đế ổn định, không tự dịch chuyển hoặc rung lắc bất thường | PASS |
+| FAN-TC13 | Kiểm tra tiếng động khi vận hành bình thường | Quạt đặt ổn định trong phòng yên tĩnh | Chạy quạt ở mức thấp rồi mức cao; lắng nghe | Không có tiếng cọ xát hoặc tiếng động bất thường rõ rệt | Trong quá trình sử dụng, quạt thỉnh thoảng phát ra tiếng “két”; hiện tượng không xảy ra liên tục | FAIL |
+| FAN-TC14 | Bật lại quạt sau khi tắt bằng nút | Quạt đang chạy | Xoay nút về OFF, chờ vài giây rồi chọn lại một mức | Quạt dừng rồi khởi động lại theo mức vừa chọn | Quạt dừng và khởi động lại bình thường theo mức vừa chọn | PASS |
+| FAN-TC15 | Bật rồi tắt đảo gió liên tiếp | Quạt đang chạy ổn định | Nhấn chốt đảo gió, chờ đầu quạt quay qua lại rồi kéo chốt lên | Quạt bật và tắt chế độ đảo gió theo thao tác | Chốt đảo gió bị hư; đầu quạt luôn đứng yên nên không thể bật và tắt chế độ đảo gió theo thao tác | FAIL |
+
+## AI Missed Edge Cases
+
+**1. FAN-EC01 – Ngắt rồi cấp điện lại**
+
+- **Why AI missed it:** AI tập trung vào các thao tác điều khiển trực tiếp như bật/tắt, chọn tốc độ và đảo gió. Có thể AI không nghĩ đến việc kiểm tra trạng thái của quạt sau khi nguồn điện bị ngắt rồi được cấp lại.
+
+**2. FAN-EC02 – Tháo và lắp lồng để vệ sinh**
+
+- **Why AI missed it:** AI tập trung vào việc quạt hoạt động ra sao, mà bỏ qua việc vệ sinh và tháo lắp bộ phận bảo vệ trong quá trình sử dụng, bảo trì.
+
+**3. FAN-EC03 – Quan sát khe lồng bảo vệ**
+
+- **Why AI missed it:** AI tập trung vào chức năng vận hành, chẳng hạn tốc độ và đảo gió, mà không đề xuất một kiểm tra riêng về lồng bảo vệ và nguy cơ tiếp cận cánh quạt.
+
+**Ảnh minh chứng AI miss các edge cases này:**
+
+![AI conversation evidence 1](../screenshots/requirement-03/omit1.png)
+
+![AI conversation evidence 2](../screenshots/requirement-03/omit2.png)
+
+## Execution Videos
+
+| No. | Test Case | Video |
+|---:|---|---|
+| 1 | FAN-TC01 | [Watch](https://youtube.com/shorts/pkSbNfXItE8?feature=share) |
+| 2 | FAN-TC02 | [Watch](https://youtube.com/shorts/qyzM1I1GIZU?feature=share) |
+| 3 | FAN-TC03 | [Watch](https://youtube.com/shorts/D638esOL4rU?feature=share) |
+| 4 | FAN-TC04 | [Watch](https://youtube.com/shorts/QdtjNvgizFg?feature=share) |
+| 5 | FAN-EC03 | [Watch](https://youtube.com/shorts/HMw7zaa4G-M?feature=share) |
+
+## Defects Found
+
+Có 5 test cases thất bại. Trong đó, `FAN-TC06`, `FAN-TC07` và `FAN-TC15` cùng liên quan đến một nguyên nhân gốc: chốt đảo gió bị hư.
+
+| Test Case | Defect observed | GitHub Issue evidence |
+|---|---|---|
+| FAN-TC06 | Chốt đảo gió bị hư; đầu quạt không quay qua lại khi bật đảo gió | ![GitHub Issue FAN-TC06](../screenshots/requirement-03/TC06.png) |
+| FAN-TC07 | Không thể kiểm tra tắt đảo gió vì cơ chế đảo gió không hoạt động; đầu quạt luôn đứng yên | ![GitHub Issue FAN-TC07](../screenshots/requirement-03/TC07.png) |
+| FAN-TC15 | Không thể bật/tắt đảo gió liên tiếp vì chốt đảo gió bị hư | ![GitHub Issue FAN-TC15](../screenshots/requirement-03/TC15.png) |
+| FAN-EC03 | Khe lồng cho phép ngón tay út lọt vào và có thể tiếp xúc với cánh quạt | ![GitHub Issue FAN-EC03](../screenshots/requirement-03/EC03.png) |
+| FAN-TC13 | Quạt thỉnh thoảng phát ra tiếng “két” khi đang chạy | ![GitHub Issue FAN-TC13](../screenshots/requirement-03/TC13.png) |
