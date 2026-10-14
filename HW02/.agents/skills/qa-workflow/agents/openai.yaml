@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA Workflow"
+  short_description: "Coordinate black-box QA workflow"
+  default_prompt: "Use $qa-workflow to apply both Domain Testing and BVA for a complete HW02 feature, generate analysis and test cases, review them, and stop before execution unless requested."
