@@ -65,4 +65,3 @@ Vòng đầu phát hiện ba vấn đề Major và một vấn đề Minor. Các
 - Rà soát/chỉnh sửa của sinh viên: sinh viên xác nhận đã review và duyệt bộ test case trong phiên làm việc ngày 2026-10-16.
 - Chưa được đặc tả: cú pháp Email đầy đủ, nội dung thông báo lỗi, quy tắc trim/Unicode, độ dài tối đa và cận trên của các trường.
 - Tại thời điểm review, tất cả test case ở trạng thái `Not Run / None`; kết quả chạy sau đó được lưu riêng trong `tests/test-runs/FR-01-dang-ky-run.md`.
-- Chuẩn bị trước execution: bảo đảm các Email được ghi là “chưa tồn tại” thực sự chưa có trong dữ liệu đầu kỳ; khi chạy lại toàn bộ suite, khôi phục dữ liệu nền hoặc dùng một bộ Email mới có cùng miền dữ liệu.
