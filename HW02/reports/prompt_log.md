@@ -339,6 +339,46 @@ Kiểm tra đã đạt: 35 file thiết kế, gồm 2 analysis + 33 test case; t
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
 
+## Tương tác AI - Session hiện tại / 10
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-16 18:19:24 +07:00
+- Skill: test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- prompt-log-entry-template.md: Software-testing/HW02/templates/prompt-log-entry-template.md
+- package.json: Software-testing/HW02/.runtime/fr01/backend/package.json
+- package-lock.json: Software-testing/HW02/.runtime/fr01/backend/package-lock.json
+- database.js: Software-testing/HW02/.runtime/fr01/backend/database.js
+- SKILL.md: Software-testing/HW02/.agents/skills/prompt-log/SKILL.md
+
+## My request:
+dùng skill test-case-review. [system-requirements.md](Software-testing/HW02/requirements/system-requirements.md) . review FR-01. Sau khi hoàn tất, review và sửa kết quả. append log vào prompt log
+
+Assistant (commentary):
+Mình sẽ dùng `test-case-review` để kiểm tra toàn bộ 14 ca FR-01 theo requirement, traceability, tính cô lập, dữ liệu cụ thể và khả năng thực thi. Sau vòng review đầu, mình sẽ sửa trực tiếp analysis/test case, chạy lại một vòng kiểm tra độc lập, tạo review report cuối và append nguyên văn tương tác này vào prompt log.
+
+Assistant (commentary):
+Review đầu tiên phát hiện hai vấn đề đáng sửa: ca DT “bỏ trống tất cả” che khuất field gây lỗi, và dữ liệu BVA dùng `#` làm ký tự đệm dù đặc tả không nói rõ ký tự ngoài tập có được chấp nhận hay không. Mình sẽ sửa thành **8 DT + 7 BVA = 15 ca**: tách riêng từng trường bắt buộc, bỏ ca mật khẩu yếu bị trùng mục tiêu với BVA, và thay toàn bộ chuỗi biên bằng ký tự có oracle rõ từ requirement.
+
+Assistant (commentary):
+Vòng sửa đã hoàn tất với **8 DT + 7 BVA = 15 ca**. Bốn field bắt buộc giờ được kiểm tra riêng; trường hợp Mật khẩu rỗng vẫn có dependency không thể tránh với Xác nhận mật khẩu và đã được ghi rõ. Các chuỗi BVA mới chỉ dùng chữ, số và `!`, đồng thời vẫn cover 7/8/9 và ngưỡng 0/1 của từng nhóm ký tự. Mình đang lập review report với trạng thái từng finding và chạy vòng review cuối.
+
+Assistant (commentary):
+Vòng review sau sửa đã đạt: 15/15 ca có traceability đầy đủ, toàn bộ trạng thái vẫn là `Not Run / None`, dữ liệu biên đúng độ dài, không còn ký tự có oracle mơ hồ hay placeholder. Review report ghi 5 findings, trong đó 4 đã sửa và 1 dependency không thể cô lập hoàn toàn đã được chấp nhận có giải thích; kết luận là sẵn sàng thực thi, nhưng vẫn cần bạn tự review theo yêu cầu của đề.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
 ## Tương tác AI - Session hiện tại / 09
 
 - Model: Codex; model/version chưa xác định
