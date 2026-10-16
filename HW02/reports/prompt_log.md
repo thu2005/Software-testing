@@ -256,3 +256,85 @@ Mình sẽ dùng skill `$prompt-log` trong `Software-testing/HW02/` để nối 
 ### Ghi chú
 
 Phạm vi: các message User/Assistant khả dụng của tương tác này, giữ cả ngữ cảnh IDE và các cập nhật commentary. Không ghi tool call/output vì chưa được yêu cầu; không ghi metadata môi trường/trang tự động, system/developer instructions hoặc suy luận riêng tư. Không có timestamp gốc của từng message; thời điểm lưu log không phải thời điểm tương tác gốc. Model/version không được xác định trong bản ghi. Dùng skill: prompt-log. Bản ghi dừng ở cập nhật commentary đã gửi cho yêu cầu lưu log; chưa bao gồm câu trả lời cuối sau khi lưu.
+
+
+## Tương tác AI - Session hiện tại / 07
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-16 16:30:28 +07:00
+- Skill: qa-workflow, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- .gitignore: Software-testing/.gitignore
+- prompt-log-entry-template.md: Software-testing/HW02/templates/prompt-log-entry-template.md
+- bug-report-template.md: Software-testing/HW02/templates/bug-report-template.md
+- ai-gap-analysis-template.md: Software-testing/HW02/templates/ai-gap-analysis-template.md
+- ai-critique-template.md: Software-testing/HW02/templates/ai-critique-template.md
+
+## My request:
+skill done, now do homework. overview, plan what we need to do. then, append log in prompt log
+
+Assistant (commentary):
+Mình sẽ dùng `$qa-workflow` để rà soát hiện trạng HW02 và lập kế hoạch theo bốn chức năng đã chọn. Sau đó mình sẽ dùng `$prompt-log` nối cuộc trao đổi này vào log; phạm vi lượt này là tổng quan và lập kế hoạch.
+
+Assistant (commentary):
+Hiện HW02 đã có skills, templates, đề Markdown và danh sách chức năng. Chưa có đặc tả nghiệp vụ/API trong thư mục HW02, phân tích, test case hay kết quả thực thi; môi trường SUT cũng chưa được xác minh.
+
+Kế hoạch là chuẩn bị đặc tả và môi trường, rồi làm lần lượt **FR01 → FR07 → FR14 → FR06 Mobile**. Mỗi chức năng đi qua yêu cầu → DT → BVA → review → execution → bug report/AI gap. Cuối cùng tổng hợp báo cáo, AI Audit, AI Critique, Git log, video, PDF và ZIP.
+
+Mình đã ghi chi tiết vào `reports/work-plan.md`, gồm dự toán 10 giờ và các đầu vào cần bổ sung. Bước đầu tiên cần đặc tả chức năng và thông tin chạy Web/Admin/API/Mobile; sau đó mới chốt quy tắc và số lượng test case. Mình đang kiểm tra kế hoạch rồi nối cuộc trao đổi này vào prompt log.
+````
+
+### Ghi chú
+
+Phạm vi: yêu cầu lập tổng quan/kế hoạch HW02 và các cập nhật Assistant đã gửi trong lượt này. Sản phẩm: `reports/work-plan.md`. Không log tool call/output hoặc nội dung skill. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối xác nhận lưu kế hoạch/log; không tạo trước nội dung chưa được gửi.
+
+## Tương tác AI - Session hiện tại / 08
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-16 17:29:07 +07:00
+- Skill: domain-testing, boundary-value-analysis, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- prompt-log-entry-template.md: Software-testing/HW02/templates/prompt-log-entry-template.md
+- package.json: Software-testing/HW02/.runtime/fr01/backend/package.json
+- package-lock.json: Software-testing/HW02/.runtime/fr01/backend/package-lock.json
+- database.js: Software-testing/HW02/.runtime/fr01/backend/database.js
+- SKILL.md: Software-testing/HW02/.agents/skills/prompt-log/SKILL.md
+
+## My request:
+áp dụng skill domain-testing, boundary-value-analysis cho FR-01 dựa trên [system-requirements.md](Software-testing/HW02/requirements/system-requirements.md). làm xong thì appent log vào prompt log
+
+Assistant (commentary):
+Mình sẽ dùng hai skill cục bộ `domain-testing` rồi `boundary-value-analysis` để thiết kế FR-01 hoàn toàn từ `system-requirements.md`, sau đó kiểm tra truy vết/giá trị biên và dùng `prompt-log` để append đúng phần trao đổi hiện tại. Phạm vi lượt này là phân tích và test-case design, chưa thực thi test.
+
+Assistant (commentary):
+Đặc tả FR-01 xác định rõ 5 nhóm đầu vào và đầu ra chuyển đến trang đăng nhập; cận định lượng duy nhất được nêu trực tiếp là độ dài mật khẩu tối thiểu 8 và số lượng tối thiểu 1 cho từng nhóm ký tự. Các giới hạn tối đa, quy tắc trim/Unicode và thông báo lỗi cụ thể đều chưa được đặc tả, nên mình sẽ ghi thành gap thay vì tự đặt oracle. File phân tích dẫn xuất FR-01 chưa tồn tại trong workspace hiện tại; mình sẽ tạo trực tiếp bộ phân tích DT/BVA từ nguồn yêu cầu đã chỉ định.
+
+Assistant (commentary):
+Mình đã chốt phạm vi thiết kế: DT sẽ bao phủ từng lớp không hợp lệ cơ sở với các input còn lại hợp lệ, cùng các ràng buộc form áp dụng cho FR-01 từ FR-22. BVA sẽ dùng các điểm 0/1/2 cho trường bắt buộc và số lượng từng nhóm ký tự, cùng 7/8/9 cho độ dài mật khẩu; không tạo cận trên vì tài liệu không quy định. Các ca đăng ký thành công sẽ dùng email riêng để tránh ảnh hưởng trạng thái giữa các ca.
+
+Assistant (commentary):
+Hai bộ artifact đã được tạo: 15 ca Domain Testing và 18 ca BVA, mỗi ca ở một file riêng và đều có trạng thái `Not Run`. Mình đang kiểm tra tự động số ký tự của toàn bộ chuỗi biên, tính đầy đủ ID/truy vết, placeholder còn sót và liên kết tương đối trước khi ghi log.
+
+Assistant (commentary):
+Kiểm tra đã đạt: 35 file thiết kế, gồm 2 analysis + 33 test case; toàn bộ liên kết tương đối hợp lệ, không còn placeholder, chuỗi BVA có đúng độ dài và tất cả ca đều truy vết về FR-01/FR-22. Hai giai đoạn đã được commit riêng (`cf93f88` cho DT, `ed9956a` cho BVA). Bây giờ mình append nguyên văn yêu cầu và các cập nhật đã gửi trong lượt này vào `reports/prompt_log.md`; câu trả lời cuối sẽ không được ghi trước.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
