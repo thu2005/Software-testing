@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-01 / Web |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Đăng ký / Chức năng / Boundary Value Analysis |
 | Tham chiếu yêu cầu và phân tích | [system-requirements.md](../../../../requirements/system-requirements.md#fr-01-đăng-ký-tài-khoản); [bva-analysis.md](../../../../analysis/FR-01-dang-ky/bva-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / Pending |
+| Trạng thái / Lỗi liên quan | Fail / BUG-FR01-001 |
 
 ## Phân tích biên
 

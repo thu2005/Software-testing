@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-01 / Web |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Đăng ký / Chức năng / Domain Testing |
 | Tham chiếu yêu cầu và phân tích | [system-requirements.md](../../../../requirements/system-requirements.md#fr-01-đăng-ký-tài-khoản); [domain-testing-analysis.md](../../../../analysis/FR-01-dang-ky/domain-testing-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / Pending |
+| Trạng thái / Lỗi liên quan | Fail / BUG-FR01-001, BUG-FR01-002, BUG-FR01-003, BUG-FR01-004 |
 
 ## Phân tích miền
 
