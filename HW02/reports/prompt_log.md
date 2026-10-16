@@ -339,6 +339,66 @@ Kiểm tra đã đạt: 35 file thiết kế, gồm 2 analysis + 33 test case; t
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
 
+## Tương tác AI - Session hiện tại / 12
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm chạy test gốc
+- Thời điểm lưu log: 2026-10-16 20:10:46 +07:00
+- Skill: test-execution, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- prompt-log-entry-template.md: Software-testing/HW02/templates/prompt-log-entry-template.md
+- package.json: Software-testing/HW02/.runtime/fr01/backend/package.json
+- package-lock.json: Software-testing/HW02/.runtime/fr01/backend/package-lock.json
+- database.js: Software-testing/HW02/.runtime/fr01/backend/database.js
+- SKILL.md: Software-testing/HW02/.agents/skills/prompt-log/SKILL.md
+
+## My request:
+Đã thực thi test case, đối chiếu kết quả và điền test run theo template. Sau khi hoàn tất, append log.
+
+
+
+| Test Case        | Status | Actual Result                                                                                                 |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------------------- |
+| TC-FR-01-BVA-001 | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-BVA-002 | Fail   | Mật khẩu hợp lệ `Abcdef1!` bị từ chối, không chuyển tới Đăng nhập.                                            |
+| TC-FR-01-BVA-003 | Fail   | Mật khẩu hợp lệ `ABCDEF1!a` bị từ chối, không chuyển tới Đăng nhập.                                           |
+| TC-FR-01-BVA-004 | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-BVA-005 | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-BVA-006 | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-BVA-007 | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-DT-001  | Fail   | Nhãn không có `*`; Email dùng `type=text`; thiếu trường Xác nhận mật khẩu; dữ liệu hợp lệ vẫn bị từ chối.     |
+| TC-FR-01-DT-002  | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-DT-003  | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-DT-004  | Fail   | Email sai định dạng không được HTML5 validation vì dùng `type=text`; hệ thống báo lỗi mật khẩu thay vì Email. |
+| TC-FR-01-DT-005  | Fail   | Không kiểm tra được tính duy nhất của Email vì request bị chặn trước bởi validation mật khẩu không đúng.      |
+| TC-FR-01-DT-006  | Pass   | Đúng với expected.                                                                                            |
+| TC-FR-01-DT-007  | Fail   | Không có trường Xác nhận mật khẩu để thực hiện test.                                                          |
+| TC-FR-01-DT-008  | Fail   | Không có trường Xác nhận mật khẩu để nhập giá trị không khớp.                                                 |
+
+Assistant (commentary):
+Mình sẽ dùng skill `test-execution` để đối chiếu 15 kết quả với expected result, chuẩn hóa `Pass/Fail/Blocked`, rồi điền test run theo template. Mình sẽ giữ nguyên observation bạn cung cấp; các ca không thể đi tới mục tiêu vì lỗi tiền nhiệm sẽ được ghi `Blocked` thay vì gán sai `Fail`. Sau đó mình cập nhật trạng thái test case và append prompt log.
+
+Assistant (commentary):
+Đối chiếu theo định nghĩa của skill: `TC-FR-01-DT-005`, `007`, `008` phải chuyển từ `Fail` sang `Blocked`, vì mục tiêu kiểm thử chưa được thực hiện đến điểm có thể so sánh oracle. Kết quả chuẩn hóa là **8 Pass, 4 Fail, 3 Blocked, 0 Not Run**. Mình sẽ ghi nguyên văn nguyên nhân blocker, đánh dấu bug của các ca Fail là `Pending`, và không tự gộp thành số bug khi chưa làm bug analysis/report.
+
+Assistant (commentary):
+Test run đã được tạo và các test case đã đồng bộ trạng thái. Mình cũng phát hiện analysis vẫn ghi “Chưa chạy” từ giai đoạn thiết kế; mình sẽ cập nhật riêng cột execution coverage để hồ sơ không tự mâu thuẫn, đồng thời giữ review report như một mốc lịch sử và ghi rõ trạng thái `Not Run` là tại thời điểm review.
+
+Assistant (commentary):
+Đã hoàn tất hồ sơ execution: test run có đủ Expected/Actual/Result/Evidence/Related Bug/Notes, trạng thái trong 15 test case đã đồng bộ, và execution coverage trong hai analysis đã cập nhật. Chưa tạo bug report hay đếm defect vì cần bước phân tích/gộp các triệu chứng; môi trường, giờ chạy cụ thể và screenshot cũng được ghi trung thực là chưa cung cấp. Commit execution là `ee6feae`; tiếp theo mình append tương tác này vào prompt log.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm chạy test, trình duyệt, hệ điều hành, URL và screenshot chưa được cung cấp. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
 ## Tương tác AI - Session hiện tại / 11
 
 - Model: Codex; model/version chưa xác định
