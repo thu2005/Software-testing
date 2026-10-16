@@ -28,7 +28,7 @@
 | Field | Value |
 |---|---|
 | Số dòng sản phẩm | 2 |
-| Trạng thái cụ thể | 2 dòng SP-A và SP-B, mỗi sản phẩm số lượng 1 |
+| Trạng thái cụ thể | 2 dòng SP-A và SP-B, mỗi sản phẩm số lượng 1; SP-A = ID FR07-A, tên Áo kiểm thử FR07; SP-B = ID FR07-B, tên Túi kiểm thử FR07 khi được dùng |
 
 ## Các bước kiểm thử
 

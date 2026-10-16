@@ -9,6 +9,8 @@
 | Điều kiện tiên quyết | Có thể chuẩn bị giỏ với 0, 1 hoặc 2 dòng sản phẩm phân biệt |
 | Điều kiện thành công / lỗi | 0 dòng hiển thị empty state; giỏ có dữ liệu hiển thị danh sách và nhãn `Tổng cộng` |
 
+Quy ước dữ liệu kiểm thử: `SP-A` là fixture có ID `FR07-A`, tên `Áo kiểm thử FR07`; `SP-B` là fixture có ID `FR07-B`, tên `Túi kiểm thử FR07`.
+
 ## 2. Các biến có biên
 
 | Variable / Expression | Input / Output | Type | Constraint | Lower Boundary | Upper Boundary | Inclusive / Exclusive | Unit / Step | Nominal Value | Requirement Reference |

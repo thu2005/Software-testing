@@ -27,8 +27,8 @@
 
 | Field | Value |
 |---|---|
-| Dòng 1 | SP-A; số lượng 2 |
-| Dòng 2 | SP-B; số lượng 1 |
+| Dòng 1 | SP-A — ID FR07-A, tên Áo kiểm thử FR07; số lượng 2 |
+| Dòng 2 | SP-B — ID FR07-B, tên Túi kiểm thử FR07; số lượng 1 |
 
 ## Các bước kiểm thử
 

@@ -27,7 +27,7 @@
 
 | Field | Value |
 |---|---|
-| Sản phẩm | SP-A |
+| Sản phẩm | SP-A — ID FR07-A, tên Áo kiểm thử FR07 |
 | Quyết định dialog | Xác nhận |
 
 ## Các bước kiểm thử
@@ -35,7 +35,7 @@
 1. Mở giỏ có SP-A.
 2. Bấm nút Xóa của SP-A.
 3. Xác nhận dialog xuất hiện khi SP-A vẫn còn trong giỏ.
-4. Chọn hành động `Xác nhận` trong dialog.
+4. Chọn hành động xác nhận trong dialog.
 5. Quan sát danh sách sản phẩm.
 
 ## Kết quả mong đợi

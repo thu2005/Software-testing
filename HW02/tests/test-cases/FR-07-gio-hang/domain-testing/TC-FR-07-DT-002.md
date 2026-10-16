@@ -27,7 +27,7 @@
 
 | Field | Value |
 |---|---|
-| Sản phẩm | SP-A |
+| Sản phẩm | SP-A — ID FR07-A, tên Áo kiểm thử FR07 |
 | Số lượng ban đầu | 1 |
 | Số dòng SP-A ban đầu | 1 |
 
