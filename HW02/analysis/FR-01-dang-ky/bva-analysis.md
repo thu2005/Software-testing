@@ -92,14 +92,14 @@ Hai ca hợp lệ cover các điểm ON của bốn nhóm thành phần mà ch�
 
 | Boundary / Value ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| BV-PWLEN-001 đến BV-PWLEN-003 | TC-FR-01-BVA-001 đến 003 | Đã bao phủ | Chưa chạy | Không có |
-| BV-UPPER-ON, BV-DIGIT-ON, BV-SPECIAL-ON, BV-LOWER-ON | TC-FR-01-BVA-002, TC-FR-01-BVA-003 | Đã bao phủ | Chưa chạy | Gộp các điểm ON tương thích |
-| BV-UPPER-001, BV-LOWER-001, BV-DIGIT-001, BV-SPECIAL-001 | TC-FR-01-BVA-004 đến 007 | Đã bao phủ | Chưa chạy | Cô lập từng OFF⁻ |
-| OFF⁺=2 của bốn nhóm | Chưa có | Chủ động loại trừ | Chưa chạy | Cùng miền/hành vi hợp lệ với ON; giảm ca lặp |
-| Cận trên | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không được đặc tả |
+| BV-PWLEN-001 đến BV-PWLEN-003 | TC-FR-01-BVA-001 đến 003 | Đã bao phủ | 1 Pass, 2 Fail | Hai giá trị hợp lệ 8 và 9 ký tự bị từ chối |
+| BV-UPPER-ON, BV-DIGIT-ON, BV-SPECIAL-ON, BV-LOWER-ON | TC-FR-01-BVA-002, TC-FR-01-BVA-003 | Đã bao phủ | 2 Fail | Các điểm ON hợp lệ bị từ chối |
+| BV-UPPER-001, BV-LOWER-001, BV-DIGIT-001, BV-SPECIAL-001 | TC-FR-01-BVA-004 đến 007 | Đã bao phủ | 4 Pass | Cô lập từng OFF⁻ |
+| OFF⁺=2 của bốn nhóm | Chưa có | Chủ động loại trừ | Không áp dụng | Cùng miền/hành vi hợp lệ với ON; giảm ca lặp |
+| Cận trên | Chưa có | Bị chặn do thiếu requirement | Không áp dụng | Không được đặc tả |
 
 ## 11. Giả định và thông tin chưa được đặc tả
 
 - Không có cận trên hoặc quy tắc đếm Unicode. Dữ liệu biên dùng ASCII.
 - Bộ 7 ca BVA ưu tiên coverage theo ngưỡng, không phải exhaustive testing; `OFF⁺` bị loại có chủ đích và được ghi rõ.
-- Các ca chưa được thực thi; trạng thái `Not Run`.
+- Kết quả thực thi gần nhất được ghi tại `tests/test-runs/FR-01-dang-ky-run.md`.

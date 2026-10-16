@@ -9,7 +9,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Vòng đầu phát hiện ba vấn đề Major và một vấn đề Minor. Các ca đã được sửa để tách từng field bắt buộc, loại dữ liệu có oracle chưa rõ và thay bước chung bằng thao tác phù hợp từng mục tiêu. Vòng rà soát sau sửa xác nhận 15 test case có ID/truy vết nhất quán, dữ liệu cụ thể, độ dài đúng, expected result không vượt quá đặc tả và trạng thái `Not Run / None`. Đây là kết quả review tài liệu, không phải kết quả thực thi SUT.
+Vòng đầu phát hiện ba vấn đề Major và một vấn đề Minor. Các ca đã được sửa để tách từng field bắt buộc, loại dữ liệu có oracle chưa rõ và thay bước chung bằng thao tác phù hợp từng mục tiêu. Vòng rà soát sau sửa xác nhận 15 test case có ID/truy vết nhất quán, dữ liệu cụ thể, độ dài đúng, expected result không vượt quá đặc tả và trạng thái `Not Run / None` tại thời điểm review. Đây là kết quả review tài liệu trước execution, không phải kết quả thực thi SUT.
 
 ## 3. Phát hiện cần sửa
 
@@ -64,5 +64,5 @@ Vòng đầu phát hiện ba vấn đề Major và một vấn đề Minor. Các
 
 - Rà soát/chỉnh sửa của sinh viên: sinh viên xác nhận đã review và duyệt bộ test case trong phiên làm việc ngày 2026-10-16.
 - Chưa được đặc tả: cú pháp Email đầy đủ, nội dung thông báo lỗi, quy tắc trim/Unicode, độ dài tối đa và cận trên của các trường.
-- Tất cả test case vẫn ở trạng thái `Not Run / None`; review không gán Pass/Fail.
+- Tại thời điểm review, tất cả test case ở trạng thái `Not Run / None`; kết quả chạy sau đó được lưu riêng trong `tests/test-runs/FR-01-dang-ky-run.md`.
 - Chuẩn bị trước execution: bảo đảm các Email được ghi là “chưa tồn tại” thực sự chưa có trong dữ liệu đầu kỳ; khi chạy lại toàn bộ suite, khôi phục dữ liệu nền hoặc dùng một bộ Email mới có cùng miền dữ liệu.

@@ -95,17 +95,17 @@ Bộ rút gọn dùng một baseline hợp lệ và tách từng field bắt bu�
 
 | Class / Dependency ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| Các lớp hợp lệ; EC-FORM-V01 đến V03; EC-RESULT-O01 | TC-FR-01-DT-001 | Đã bao phủ | Chưa chạy | Baseline hợp lệ |
-| EC-NAME-I01 | TC-FR-01-DT-002 | Đã bao phủ | Chưa chạy | Được cô lập |
-| EC-EMAIL-I01, EC-EMAIL-I02 | TC-FR-01-DT-003, TC-FR-01-DT-004 | Đã bao phủ | Chưa chạy | Được cô lập |
-| EC-EMAILSTATE-I01, DC-01, EC-RESULT-O03 | TC-FR-01-DT-005 | Đã bao phủ | Chưa chạy | Cần Email tồn tại |
-| EC-PASSWORD-I01 | TC-FR-01-DT-006 | Đã bao phủ có dependency | Chưa chạy | Không thể đồng thời để password rỗng và confirm vừa bắt buộc vừa khớp |
-| EC-PASSWORD-I02 | TC-FR-01-BVA-001, 004 đến 007 | Đã bao phủ qua BVA | Chưa chạy | Cô lập từng rule thành phần |
-| EC-CONFIRM-I01, EC-CONFIRM-I02, DC-02, EC-RESULT-O04 | TC-FR-01-DT-006 đến 008 | Đã bao phủ | Chưa chạy | Không có |
-| EC-FORM-V04; EC-RESULT-O05 | TC-FR-01-DT-004 | Đã bao phủ | Chưa chạy | Quan sát khi kích hoạt lỗi Email |
+| Các lớp hợp lệ; EC-FORM-V01 đến V03; EC-RESULT-O01 | TC-FR-01-DT-001 | Đã bao phủ | Fail | Form và đăng ký hợp lệ khác expected |
+| EC-NAME-I01 | TC-FR-01-DT-002 | Đã bao phủ | Pass | Được cô lập |
+| EC-EMAIL-I01, EC-EMAIL-I02 | TC-FR-01-DT-003, TC-FR-01-DT-004 | Đã bao phủ | 1 Pass, 1 Fail | Email sai định dạng khác expected |
+| EC-EMAILSTATE-I01, DC-01, EC-RESULT-O03 | TC-FR-01-DT-005 | Đã bao phủ | Blocked | Validation mật khẩu chặn trước kiểm tra uniqueness |
+| EC-PASSWORD-I01 | TC-FR-01-DT-006 | Đã bao phủ có dependency | Pass | Không thể đồng thời để password rỗng và confirm vừa bắt buộc vừa khớp |
+| EC-PASSWORD-I02 | TC-FR-01-BVA-001, 004 đến 007 | Đã bao phủ qua BVA | 5 Pass | Các lớp không hợp lệ được từ chối như expected |
+| EC-CONFIRM-I01, EC-CONFIRM-I02, DC-02, EC-RESULT-O04 | TC-FR-01-DT-006 đến 008 | Đã bao phủ | 1 Pass, 2 Blocked | Thiếu trường Xác nhận mật khẩu trên SUT |
+| EC-FORM-V04; EC-RESULT-O05 | TC-FR-01-DT-004 | Đã bao phủ | Fail | Email dùng type=text và báo lỗi không đúng mục tiêu |
 
 ## 9. Giả định và thông tin chưa được đặc tả
 
 - Không có số test case tối thiểu trong đề; bộ 8 ca DT là lựa chọn tối ưu hóa có giải thích, không phải exhaustive testing.
 - Không có độ dài tối đa, quy tắc trim/Unicode, cú pháp email đầy đủ hoặc nội dung lỗi cụ thể.
-- Các ca chỉ được thiết kế, chưa thực thi; trạng thái `Not Run`.
+- Kết quả thực thi gần nhất được ghi tại `tests/test-runs/FR-01-dang-ky-run.md`.
