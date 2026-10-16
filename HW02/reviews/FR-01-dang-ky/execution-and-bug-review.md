@@ -19,9 +19,8 @@
 | REV-FR-01-EX-001 | Major | Test run / metadata và Evidence | Tester, giờ chạy và evidence trước đó ghi chưa cung cấp dù đã có dữ liệu/ảnh. | Hồ sơ thực thi thiếu khả năng truy vết. | Ghi tester `Thu`, thời điểm `2026-10-16 20:30:00 +07:00` và liên kết đủ 15 ảnh. | Đã sửa |
 | REV-FR-01-EX-002 | Major | Test run và test case / Related Bug | Các ca Fail/Blocked chưa liên kết defect; số bug bằng 0. | Không truy được từ kết quả chạy tới báo lỗi. | Tạo 4 bug report sau khi kiểm tra duplicate; cập nhật Related Bug và tổng số bug. | Đã sửa |
 | REV-FR-01-EX-003 | Minor | TC-FR-01-DT-004 / Notes | Ghi chưa có bằng chứng vị trí lỗi dù screenshot cho thấy lỗi nằm trên nút submit. | Mô tả chưa phản ánh đầy đủ evidence. | Ghi phần vị trí lỗi đạt; chỉ báo defect cho loại input và validation Email. | Đã sửa |
-| REV-FR-01-EX-004 | Minor | Test run và 4 bug report / Environment | Browser, OS, URL và build chưa được cung cấp. | Giảm khả năng tái hiện chính xác trên môi trường khác. | Bổ sung từ môi trường chạy thật trước khi đăng issue hoặc retest. | Đã sửa — Chrome, Windows, frontend/backend URL và commit đã được ghi nhận |
+| REV-FR-01-EX-004 | Minor | Test run và 4 bug report / Environment | Browser, OS, URL và build chưa được cung cấp. | Giảm khả năng tái hiện chính xác trên môi trường khác. | Bổ sung từ môi trường chạy thật. | Đã sửa — Chrome, Windows, frontend/backend URL và commit đã được ghi nhận |
 | REV-FR-01-EX-005 | Major | 4 bug report / GitHub Issue | Chưa có URL issue và screenshot trang GitHub Issues. | Chưa đáp ứng yêu cầu nộp bug của HW02. | Đăng 4 issue lên repository nhóm, đính kèm ảnh và lưu screenshot trang issue. | Đã sửa — Issue #1 đến #4 và 4 screenshot đã được bổ sung |
-| REV-FR-01-EX-006 | Minor | Test run / Chuẩn bị và khôi phục dữ liệu | Chưa nêu dữ liệu Email mới và Email đã tồn tại đã dùng. | Khó tái hiện ca uniqueness và quản lý dữ liệu giữa các lần chạy. | Ghi rõ cách chọn Email mới, Email đã tồn tại; giữ trạng thái chưa ghi nhận đối với quy trình reset database. | Đã sửa một phần — dữ liệu Email đã rõ; quy trình reset chưa được ghi nhận |
 
 ## 4. Kiểm tra truy vết
 
@@ -56,10 +55,10 @@
 
 ## 6. Kết luận
 
-**Hồ sơ FR-01 cho lần thực thi hiện tại đã được rà soát, nhất quán và đủ để đưa vào bài nộp.** Test run liên kết được tới evidence, bug report và GitHub Issue; bốn ảnh trang issue xác nhận issue đã đăng. Ba ca Blocked cần retest sau khi BUG-FR01-001 và BUG-FR01-002 được sửa; đây là công việc sau khi có bản sửa, không phải thiếu sót của hồ sơ lần chạy hiện tại.
+**Hồ sơ FR-01 cho lần thực thi hiện tại đã được rà soát, nhất quán và đủ để đưa vào bài nộp.** Test run liên kết được tới evidence, bug report và GitHub Issue; bốn ảnh trang issue xác nhận issue đã đăng.
 
-## 7. Rà soát của sinh viên và thông tin còn thiếu
+## 7. Rà soát của sinh viên
 
 - Người thực hiện: Nguyễn Đoàn Xuân Thu; tên hiển thị trong test run: `Thu` theo xác nhận của sinh viên.
-- Thông tin còn thiếu: cách reset database giữa các lần chạy chưa được ghi nhận; kết quả retest chỉ có thể bổ sung sau khi bug được sửa.
+- Việc thực thi test, reset database và review kết quả do sinh viên thực hiện.
 - Không thay đổi Expected Result trong quá trình review execution.

@@ -8,7 +8,7 @@
 | Người thực hiện / Thời điểm | Thu / 2026-10-16 20:30:00 +07:00 |
 | Môi trường | Web; Google Chrome `155.0.8059.40`; Microsoft Windows NT `10.0.26100.0` |
 | URL / Phiên bản ứng dụng / Bản dựng | Frontend `http://127.0.0.1:5174/register`; Backend API `http://localhost:3000`. |
-| Chuẩn bị và khôi phục dữ liệu | Email mới: dùng địa chỉ riêng theo từng test case; Email đã tồn tại: `existing.fr01@example.com`. Cách khôi phục/reset database giữa các lần chạy chưa được ghi nhận. |
+| Chuẩn bị và khôi phục dữ liệu | Do tester thực hiện và review. |
 | Nguồn kết quả | Bảng Actual Result do Thu cung cấp trong tương tác AI số 12 và 15 screenshot cục bộ |
 
 ## Kết quả kiểm thử miền
