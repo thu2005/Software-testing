@@ -15,6 +15,6 @@ Assistant:
 
 ### Ghi chú
 
-<Phạm vi context, phần bị thiếu, thời điểm lưu log nếu khác thời điểm tương tác, hoặc phần đã che bí mật. Không diễn giải nội dung transcript. Nếu log bình thường, không có gì đặc biệt thì phần Ghi chú ghi Không>.
+<Chỉ ghi nếu nội dung log quá dài không thể append hết. Còn lại để trống mục này, không cần ghi>.
 
 Chỉ thêm phần Tool khi người dùng yêu cầu log tool call. Khi gọi skill, ghi tên skill, không chép lại toàn bộ nội dung skill. Giữ ngôn ngữ gốc và tăng độ dài code fence nếu transcript có fence bên trong. Nối entry vào log hiện có; không thay nội dung cũ.
