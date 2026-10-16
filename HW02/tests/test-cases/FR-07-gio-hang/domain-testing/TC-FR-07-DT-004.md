@@ -1,0 +1,43 @@
+# TC-FR-07-DT-004: Giảm số lượng bằng nút -
+
+## Thông tin chung
+
+| Field | Value |
+|---|---|
+| Mã yêu cầu / Nền tảng | FR-07 / Web |
+| Phân hệ / Loại kiểm thử / Kỹ thuật | Giỏ hàng / Chức năng / Domain Testing |
+| Tham chiếu yêu cầu và phân tích | [system-requirements.md](../../../../requirements/system-requirements.md#fr-07-giỏ-hàng-shopping-cart); [domain-testing-analysis.md](../../../../analysis/FR-07-gio-hang/domain-testing-analysis.md) |
+| Trạng thái / Lỗi liên quan | Not Run / None |
+
+## Phân tích miền
+
+| Variable / Condition | Type | Domain / Constraints |
+|---|---|---|
+| Lớp mục tiêu | Equivalence class | EC-ADJUST-V02 |
+
+| Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
+|---|---|---|---|---|
+| COND-FR-07-DT-004 | EC-ADJUST-V02 | Giỏ có SP-A số lượng 2; bấm - | EC-RESULT-O03 | Số lượng SP-A giảm so với giá trị 2 ban đầu. |
+
+## Điều kiện tiên quyết
+
+- Giỏ có SP-A với số lượng 2.
+
+## Dữ liệu kiểm thử
+
+| Field | Value |
+|---|---|
+| Sản phẩm | SP-A |
+| Số lượng ban đầu | 2 |
+| Thao tác | - |
+
+## Các bước kiểm thử
+
+1. Mở giỏ theo điều kiện tiên quyết.
+2. Ghi nhận số lượng SP-A ban đầu.
+3. Bấm nút `-` của SP-A một lần.
+4. Quan sát số lượng SP-A.
+
+## Kết quả mong đợi
+
+Số lượng SP-A giảm so với giá trị 2 ban đầu.
