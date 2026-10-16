@@ -1,4 +1,4 @@
-# TC-FR-01-DT-006: Từ chối khi Xác nhận mật khẩu không khớp
+# TC-FR-01-DT-006: Từ chối khi Mật khẩu để trống
 
 ## Thông tin chung
 
@@ -13,11 +13,11 @@
 
 | Variable / Condition | Type | Domain / Constraints |
 |---|---|---|
-| Lớp mục tiêu | Equivalence class | EC-CONFIRM-I02 |
+| Lớp mục tiêu | Equivalence class | EC-PASSWORD-I01, EC-CONFIRM-I01 |
 
 | Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
 |---|---|---|---|---|
-| COND-FR-01-DT-006 | EC-CONFIRM-I02 | Họ Tên=Nguyễn Văn An; Email=fr01.dt006@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xz | EC-RESULT-O04 | Đăng ký bị từ chối vì hai mật khẩu không khớp; không tạo tài khoản. |
+| COND-FR-01-DT-006 | EC-PASSWORD-I01, EC-CONFIRM-I01 | Họ Tên=Nguyễn Văn An; Email=fr01.dt006@example.com; Mật khẩu=[để trống]; Xác nhận=[để trống] | EC-RESULT-O02 | Đăng ký bị từ chối; không chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -29,16 +29,16 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.dt006@example.com |
-| Mật khẩu | Abcdef1!xy |
-| Xác nhận mật khẩu | Abcdef1!xz |
+| Mật khẩu | [để trống] |
+| Xác nhận mật khẩu | [để trống] |
 
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập dữ liệu trong bảng; với ca UI, đồng thời quan sát nhãn và loại input.
+2. Nhập đúng dữ liệu trong bảng.
 3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, vị trí lỗi, điều hướng và trạng thái tài khoản.
+4. Xác nhận yêu cầu bị từ chối và trang không chuyển tới Đăng nhập.
 
 ## Kết quả mong đợi
 
-Đăng ký bị từ chối vì hai mật khẩu không khớp; không tạo tài khoản.
+Đăng ký bị từ chối; không chuyển tới trang Đăng nhập.

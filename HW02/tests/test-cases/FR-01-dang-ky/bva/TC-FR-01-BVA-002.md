@@ -1,4 +1,4 @@
-# TC-FR-01-BVA-002: Kiểm tra Độ dài và số lượng từng nhóm ký tự tại ON
+# TC-FR-01-BVA-002: Kiểm tra Độ dài Mật khẩu; số chữ hoa, chữ số và ký tự đặc biệt tại ON
 
 ## Thông tin chung
 
@@ -13,11 +13,11 @@
 
 | Variable / Expression | Constraint | Boundary Type | Boundary | Step | OFF- | ON | OFF+ |
 |---|---|---|---|---|---|---|---|
-| Độ dài và số lượng từng nhóm ký tự | Độ dài ≥8 | Cận dưới | 8 ký tự | δ=1 | 7 | 8 | 9 |
+| Độ dài Mật khẩu; số chữ hoa, chữ số và ký tự đặc biệt | Độ dài ≥8 | Cận dưới | 8 ký tự | δ=1 | 7 | 8 | 9 |
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-01-BVA-002 | BV-PWLEN-002, BV-GROUP-ON | Aa1!#### (8 ký tự; đúng 1 chữ hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt cho phép) | ON | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Chấp nhận và chuyển tới trang Đăng nhập. |
+| COND-FR-01-BVA-002 | BV-PWLEN-002, BV-UPPER-ON, BV-DIGIT-ON, BV-SPECIAL-ON | Abcdef1! (8 ký tự; đúng 1 chữ hoa, 1 số, 1 ký tự đặc biệt cho phép) | ON | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Chấp nhận và chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -29,8 +29,8 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.bva002@example.com |
-| Mật khẩu | Aa1!#### (8 ký tự; đúng 1 chữ hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt cho phép) |
-| Xác nhận mật khẩu | Aa1!#### |
+| Mật khẩu | Abcdef1! (8 ký tự; đúng 1 chữ hoa, 1 số, 1 ký tự đặc biệt cho phép) |
+| Xác nhận mật khẩu | Abcdef1! |
 
 ## Các bước kiểm thử
 

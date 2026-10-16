@@ -1,4 +1,4 @@
-# TC-FR-01-DT-005: Từ chối Mật khẩu không đủ mạnh
+# TC-FR-01-DT-005: Từ chối Email đã tồn tại
 
 ## Thông tin chung
 
@@ -13,32 +13,32 @@
 
 | Variable / Condition | Type | Domain / Constraints |
 |---|---|---|
-| Lớp mục tiêu | Equivalence class | EC-PASSWORD-I02 |
+| Lớp mục tiêu | Equivalence class | EC-EMAILSTATE-I01 |
 
 | Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
 |---|---|---|---|---|
-| COND-FR-01-DT-005 | EC-PASSWORD-I02 | Họ Tên=Nguyễn Văn An; Email=fr01.dt005@example.com; Mật khẩu=abcdefgh; Xác nhận=abcdefgh | EC-RESULT-O02 | Đăng ký bị từ chối vì Mật khẩu không thỏa đầy đủ các nhóm ký tự bắt buộc; không tạo tài khoản. |
+| COND-FR-01-DT-005 | EC-EMAILSTATE-I01 | Họ Tên=Nguyễn Văn An; Email=existing.fr01@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xy | EC-RESULT-O03 | Đăng ký bị từ chối vì Email không duy nhất; không tạo tài khoản thứ hai. |
 
 ## Điều kiện tiên quyết
 
-- Trang đăng ký tải thành công; Email của ca chưa tồn tại nếu có.
+- Email `existing.fr01@example.com` đã tồn tại.
 
 ## Dữ liệu kiểm thử
 
 | Field | Value |
 |---|---|
 | Họ Tên | Nguyễn Văn An |
-| Email | fr01.dt005@example.com |
-| Mật khẩu | abcdefgh |
-| Xác nhận mật khẩu | abcdefgh |
+| Email | existing.fr01@example.com |
+| Mật khẩu | Abcdef1!xy |
+| Xác nhận mật khẩu | Abcdef1!xy |
 
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập dữ liệu trong bảng; với ca UI, đồng thời quan sát nhãn và loại input.
+2. Nhập đúng dữ liệu trong bảng.
 3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, vị trí lỗi, điều hướng và trạng thái tài khoản.
+4. Xác nhận yêu cầu bị từ chối và trang không chuyển tới Đăng nhập.
 
 ## Kết quả mong đợi
 
-Đăng ký bị từ chối vì Mật khẩu không thỏa đầy đủ các nhóm ký tự bắt buộc; không tạo tài khoản.
+Đăng ký bị từ chối vì Email không duy nhất; không tạo tài khoản thứ hai.

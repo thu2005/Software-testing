@@ -1,4 +1,4 @@
-# TC-FR-01-DT-002: Từ chối khi bỏ trống các trường bắt buộc
+# TC-FR-01-DT-002: Từ chối khi Họ Tên để trống
 
 ## Thông tin chung
 
@@ -13,11 +13,11 @@
 
 | Variable / Condition | Type | Domain / Constraints |
 |---|---|---|
-| Lớp mục tiêu | Equivalence class | EC-NAME-I01, EC-EMAIL-I01, EC-PASSWORD-I01, EC-CONFIRM-I01 |
+| Lớp mục tiêu | Equivalence class | EC-NAME-I01 |
 
 | Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
 |---|---|---|---|---|
-| COND-FR-01-DT-002 | EC-NAME-I01, EC-EMAIL-I01, EC-PASSWORD-I01, EC-CONFIRM-I01 | Họ Tên=[để trống]; Email=[để trống]; Mật khẩu=[để trống]; Xác nhận=[để trống] | EC-RESULT-O02 | Đăng ký bị từ chối; không tạo tài khoản và không chuyển tới trang Đăng nhập. |
+| COND-FR-01-DT-002 | EC-NAME-I01 | Họ Tên=[để trống]; Email=fr01.dt002@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xy | EC-RESULT-O02 | Đăng ký bị từ chối; không chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -28,17 +28,17 @@
 | Field | Value |
 |---|---|
 | Họ Tên | [để trống] |
-| Email | [để trống] |
-| Mật khẩu | [để trống] |
-| Xác nhận mật khẩu | [để trống] |
+| Email | fr01.dt002@example.com |
+| Mật khẩu | Abcdef1!xy |
+| Xác nhận mật khẩu | Abcdef1!xy |
 
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập dữ liệu trong bảng; với ca UI, đồng thời quan sát nhãn và loại input.
+2. Nhập đúng dữ liệu trong bảng.
 3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, vị trí lỗi, điều hướng và trạng thái tài khoản.
+4. Xác nhận yêu cầu bị từ chối và trang không chuyển tới Đăng nhập.
 
 ## Kết quả mong đợi
 
-Đăng ký bị từ chối; không tạo tài khoản và không chuyển tới trang Đăng nhập.
+Đăng ký bị từ chối; không chuyển tới trang Đăng nhập.

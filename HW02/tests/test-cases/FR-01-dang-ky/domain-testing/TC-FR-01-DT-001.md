@@ -13,11 +13,11 @@
 
 | Variable / Condition | Type | Domain / Constraints |
 |---|---|---|
-| Lớp mục tiêu | Equivalence class | EC-NAME-V01, EC-EMAIL-V01, EC-EMAILSTATE-V01, EC-PASSWORD-V01, EC-CONFIRM-V01 |
+| Lớp mục tiêu | Equivalence class | EC-NAME-V01, EC-EMAIL-V01, EC-EMAILSTATE-V01, EC-PASSWORD-V01, EC-CONFIRM-V01, EC-FORM-V01, EC-FORM-V02, EC-FORM-V03 |
 
 | Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
 |---|---|---|---|---|
-| COND-FR-01-DT-001 | EC-NAME-V01, EC-EMAIL-V01, EC-EMAILSTATE-V01, EC-PASSWORD-V01, EC-CONFIRM-V01 | Họ Tên=Nguyễn Văn An; Email=fr01.dt001@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xy | EC-RESULT-O01 | Đăng ký được chấp nhận và chuyển tới trang Đăng nhập. |
+| COND-FR-01-DT-001 | EC-NAME-V01, EC-EMAIL-V01, EC-EMAILSTATE-V01, EC-PASSWORD-V01, EC-CONFIRM-V01, EC-FORM-V01, EC-FORM-V02, EC-FORM-V03 | Họ Tên=Nguyễn Văn An; Email=fr01.dt001@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xy | EC-RESULT-O01, EC-RESULT-O05 | Form có dấu * và đúng input type; đăng ký được chấp nhận và chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -35,10 +35,10 @@
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập dữ liệu trong bảng; với ca UI, đồng thời quan sát nhãn và loại input.
-3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, vị trí lỗi, điều hướng và trạng thái tài khoản.
+2. Xác nhận bốn nhãn bắt buộc có dấu `*`, Email dùng `type=email`, Mật khẩu và Xác nhận mật khẩu dùng `type=password`.
+3. Nhập đúng dữ liệu trong bảng.
+4. Nhấn nút đăng ký và quan sát điều hướng.
 
 ## Kết quả mong đợi
 
-Đăng ký được chấp nhận và chuyển tới trang Đăng nhập.
+Form có dấu * và đúng input type; đăng ký được chấp nhận và chuyển tới trang Đăng nhập.

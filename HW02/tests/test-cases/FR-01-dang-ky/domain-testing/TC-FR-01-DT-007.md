@@ -1,4 +1,4 @@
-# TC-FR-01-DT-007: Kiểm tra yêu cầu cấu trúc và vị trí lỗi của form
+# TC-FR-01-DT-007: Từ chối khi Xác nhận mật khẩu để trống
 
 ## Thông tin chung
 
@@ -13,11 +13,11 @@
 
 | Variable / Condition | Type | Domain / Constraints |
 |---|---|---|
-| Lớp mục tiêu | Equivalence class | EC-FORM-V01, EC-FORM-V02, EC-FORM-V03, EC-FORM-V04 |
+| Lớp mục tiêu | Equivalence class | EC-CONFIRM-I01 |
 
 | Test Condition ID | Input Classes | Test Data / State | Output Classes | Expected Result |
 |---|---|---|---|---|
-| COND-FR-01-DT-007 | EC-FORM-V01, EC-FORM-V02, EC-FORM-V03, EC-FORM-V04 | Họ Tên=Nguyễn Văn An; Email=user-domain.com; Mật khẩu=Abcdef1!xy; Xác nhận=Abcdef1!xy | EC-RESULT-O05 | Bốn nhãn bắt buộc có dấu *; Email dùng type=email; hai trường mật khẩu dùng type=password; lỗi nằm phía trên nút submit. |
+| COND-FR-01-DT-007 | EC-CONFIRM-I01 | Họ Tên=Nguyễn Văn An; Email=fr01.dt007@example.com; Mật khẩu=Abcdef1!xy; Xác nhận=[để trống] | EC-RESULT-O02 | Đăng ký bị từ chối; không chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -28,17 +28,17 @@
 | Field | Value |
 |---|---|
 | Họ Tên | Nguyễn Văn An |
-| Email | user-domain.com |
+| Email | fr01.dt007@example.com |
 | Mật khẩu | Abcdef1!xy |
-| Xác nhận mật khẩu | Abcdef1!xy |
+| Xác nhận mật khẩu | [để trống] |
 
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập dữ liệu trong bảng; với ca UI, đồng thời quan sát nhãn và loại input.
+2. Nhập đúng dữ liệu trong bảng.
 3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, vị trí lỗi, điều hướng và trạng thái tài khoản.
+4. Xác nhận yêu cầu bị từ chối và trang không chuyển tới Đăng nhập.
 
 ## Kết quả mong đợi
 
-Bốn nhãn bắt buộc có dấu *; Email dùng type=email; hai trường mật khẩu dùng type=password; lỗi nằm phía trên nút submit.
+Đăng ký bị từ chối; không chuyển tới trang Đăng nhập.

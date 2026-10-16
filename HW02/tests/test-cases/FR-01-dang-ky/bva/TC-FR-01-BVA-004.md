@@ -17,7 +17,7 @@
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-01-BVA-004 | BV-UPPER-001 | aa1!#### (0 chữ hoa) | OFF⁻ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Từ chối vì Mật khẩu thiếu chữ hoa. |
+| COND-FR-01-BVA-004 | BV-UPPER-001 | abcdef1! (0 chữ hoa; 8 ký tự) | OFF⁻ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Từ chối vì Mật khẩu thiếu chữ hoa; không chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -29,8 +29,8 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.bva004@example.com |
-| Mật khẩu | aa1!#### (0 chữ hoa) |
-| Xác nhận mật khẩu | aa1!#### |
+| Mật khẩu | abcdef1! (0 chữ hoa; 8 ký tự) |
+| Xác nhận mật khẩu | abcdef1! |
 
 ## Các bước kiểm thử
 
@@ -41,4 +41,4 @@
 
 ## Kết quả mong đợi
 
-Từ chối vì Mật khẩu thiếu chữ hoa.
+Từ chối vì Mật khẩu thiếu chữ hoa; không chuyển tới trang Đăng nhập.

@@ -1,4 +1,4 @@
-# TC-FR-01-BVA-003: Kiểm tra Độ dài Mật khẩu tại OFF⁺
+# TC-FR-01-BVA-003: Kiểm tra Độ dài Mật khẩu và số chữ thường tại OFF⁺ / ON
 
 ## Thông tin chung
 
@@ -13,11 +13,11 @@
 
 | Variable / Expression | Constraint | Boundary Type | Boundary | Step | OFF- | ON | OFF+ |
 |---|---|---|---|---|---|---|---|
-| Độ dài Mật khẩu | Độ dài ≥8 | Cận dưới | 8 ký tự | δ=1 | 7 | 8 | 9 |
+| Độ dài Mật khẩu và số chữ thường | Độ dài ≥8 | Cận dưới | 8 ký tự | δ=1 | 7 | 8 | 9 |
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-01-BVA-003 | BV-PWLEN-003 | Aa1!##### (9 ký tự) | OFF⁺ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Chấp nhận và chuyển tới trang Đăng nhập. |
+| COND-FR-01-BVA-003 | BV-PWLEN-003, BV-LOWER-ON | ABCDEF1!a (9 ký tự; đúng 1 chữ thường) | OFF⁺ / ON | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Chấp nhận và chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -29,8 +29,8 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.bva003@example.com |
-| Mật khẩu | Aa1!##### (9 ký tự) |
-| Xác nhận mật khẩu | Aa1!##### |
+| Mật khẩu | ABCDEF1!a (9 ký tự; đúng 1 chữ thường) |
+| Xác nhận mật khẩu | ABCDEF1!a |
 
 ## Các bước kiểm thử
 

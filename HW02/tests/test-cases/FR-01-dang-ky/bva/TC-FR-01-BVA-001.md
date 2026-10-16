@@ -17,7 +17,7 @@
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-01-BVA-001 | BV-PWLEN-001 | Aa1!### (7 ký tự) | OFF⁻ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Từ chối vì Mật khẩu ngắn hơn 8 ký tự. |
+| COND-FR-01-BVA-001 | BV-PWLEN-001 | Aa1!xyz (7 ký tự) | OFF⁻ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Từ chối vì Mật khẩu ngắn hơn 8 ký tự; không chuyển tới trang Đăng nhập. |
 
 ## Điều kiện tiên quyết
 
@@ -29,8 +29,8 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.bva001@example.com |
-| Mật khẩu | Aa1!### (7 ký tự) |
-| Xác nhận mật khẩu | Aa1!### |
+| Mật khẩu | Aa1!xyz (7 ký tự) |
+| Xác nhận mật khẩu | Aa1!xyz |
 
 ## Các bước kiểm thử
 
@@ -41,4 +41,4 @@
 
 ## Kết quả mong đợi
 
-Từ chối vì Mật khẩu ngắn hơn 8 ký tự.
+Từ chối vì Mật khẩu ngắn hơn 8 ký tự; không chuyển tới trang Đăng nhập.
