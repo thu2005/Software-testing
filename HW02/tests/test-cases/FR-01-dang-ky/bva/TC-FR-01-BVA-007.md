@@ -1,11 +1,11 @@
-# TC-FR-01-BVA-007: Kiểm tra Số chữ hoa tại OFF⁻
+# TC-FR-01-BVA-007: Kiểm tra Số ký tự đặc biệt cho phép tại OFF⁻
 
 ## Thông tin chung
 
 | Field | Value |
 |---|---|
 | Mã yêu cầu / Nền tảng | FR-01 / Web |
-| Phân hệ / Loại kiểm thử / Kỹ thuật | Đăng ký tài khoản / Chức năng / Boundary Value Analysis |
+| Phân hệ / Loại kiểm thử / Kỹ thuật | Đăng ký / Chức năng / Boundary Value Analysis |
 | Tham chiếu yêu cầu và phân tích | [system-requirements.md](../../../../requirements/system-requirements.md#fr-01-đăng-ký-tài-khoản); [bva-analysis.md](../../../../analysis/FR-01-dang-ky/bva-analysis.md) |
 | Trạng thái / Lỗi liên quan | Not Run / None |
 
@@ -13,11 +13,11 @@
 
 | Variable / Expression | Constraint | Boundary Type | Boundary | Step | OFF- | ON | OFF+ |
 |---|---|---|---|---|---|---|---|
-| Số chữ hoa | min count=1 | Cận dưới | min count=1 | δ=1 | 0 | 1 | 2 |
+| Số ký tự đặc biệt cho phép | Số lượng nhóm mục tiêu ≥1 | Cận dưới | 1 lần xuất hiện | δ=1 | 0 | 1 | 2 |
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-01-BVA-007 | BV-UPPER-001 | abc123!xyz (0 chữ hoa) | OFF⁻ | Email mới; các field khác hợp lệ; Xác nhận khớp Mật khẩu | Từ chối đăng ký vì Mật khẩu thiếu chữ hoa. |
+| COND-FR-01-BVA-007 | BV-SPECIAL-001 | Aa1##### (0 ký tự trong @ $ ! % * ? &) | OFF⁻ | Email mới; Xác nhận khớp; các nhóm không phải mục tiêu hợp lệ | Từ chối vì Mật khẩu thiếu ký tự đặc biệt cho phép. |
 
 ## Điều kiện tiên quyết
 
@@ -29,16 +29,16 @@
 |---|---|
 | Họ Tên | Nguyễn Văn An |
 | Email | fr01.bva007@example.com |
-| Mật khẩu | abc123!xyz |
-| Xác nhận mật khẩu | abc123!xyz |
+| Mật khẩu | Aa1##### (0 ký tự trong @ $ ! % * ? &) |
+| Xác nhận mật khẩu | Aa1##### |
 
 ## Các bước kiểm thử
 
 1. Mở trang đăng ký.
-2. Nhập đúng dữ liệu trong bảng trên.
+2. Nhập đúng dữ liệu trong bảng.
 3. Nhấn nút đăng ký.
-4. Quan sát phản hồi, trang hiện tại và trạng thái tài khoản.
+4. Quan sát phản hồi, điều hướng và trạng thái tài khoản.
 
 ## Kết quả mong đợi
 
-Từ chối đăng ký vì Mật khẩu thiếu chữ hoa.
+Từ chối vì Mật khẩu thiếu ký tự đặc biệt cho phép.
