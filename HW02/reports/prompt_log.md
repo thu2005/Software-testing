@@ -338,3 +338,45 @@ Kiểm tra đã đạt: 35 file thiết kế, gồm 2 analysis + 33 test case; t
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
+## Tương tác AI - Session hiện tại / 09
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-16 18:03:28 +07:00
+- Skill: domain-testing, boundary-value-analysis, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- prompt-log-entry-template.md: Software-testing/HW02/templates/prompt-log-entry-template.md
+- package.json: Software-testing/HW02/.runtime/fr01/backend/package.json
+- package-lock.json: Software-testing/HW02/.runtime/fr01/backend/package-lock.json
+- database.js: Software-testing/HW02/.runtime/fr01/backend/database.js
+- SKILL.md: Software-testing/HW02/.agents/skills/prompt-log/SKILL.md
+
+## My request:
+phải bắt buộc có nhiêu đó test case hả, ít hơn được không. Đề bài có bắt buộc phải test mọi trường hợp không. 15 + 18 test case nhiều quá. Đẹp là 5 + 5 hoặc tỉ lệ khác sao cho tổng 10 - 15 thôi
+
+Assistant (commentary):
+Mình sẽ đối chiếu đúng yêu cầu chấm bài trong `hw02-assignment.md` và coverage của FR-01, rồi rút gọn bộ ca xuống khoảng 10–15 mà vẫn giữ được các lớp/biên quan trọng. Mình sẽ ưu tiên gộp các lớp hợp lệ tương thích và chọn đại diện có lý do, vì Domain Testing/BVA không đồng nghĩa phải kiểm tra mọi tổ hợp.
+
+Assistant (commentary):
+Đề không quy định số test case tối thiểu và cũng không yêu cầu Cartesian product hay “mọi tổ hợp”. Cụm bắt buộc là “bộ test case đầy đủ”, nên điều cần bảo vệ là mỗi rule chính có bằng chứng và cách chọn/loại ca được giải thích.
+
+Mình sẽ rút xuống **7 DT + 7 BVA = 14 ca**. DT dùng 7 luồng đại diện theo hành vi; BVA giữ 7/8/9 cho độ dài mật khẩu, dùng một chuỗi tại cận 8 để đồng thời đạt đúng 1 chữ hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt, rồi thêm bốn ca thiếu riêng từng nhóm. Cách này vẫn truy ra từng rule, nhưng bớt các ca `OFF+` có hành vi lặp lại.
+
+Assistant (commentary):
+Bộ rút gọn hiện còn đúng **14 ca**. Điểm đánh đổi đã được ghi thẳng trong analysis: ca DT rỗng gộp nhiều field nên khả năng khoanh vùng lỗi thấp hơn, còn BVA bỏ các điểm số lượng `2` vì chúng vẫn thuộc cùng miền hợp lệ với `1`. Mình đang rà lại từng test-case để chắc việc giảm số lượng không làm mất truy vết tới rule nào.
+
+Assistant (commentary):
+Kết quả rà soát cuối: 14 ca vẫn chạm đủ các rule FR-01 và quy tắc form FR-22 đã chọn. Đây là mức hợp lý hơn cho một feature trong bài có bốn feature: đủ giải thích kỹ thuật, nhưng không phình ra thành exhaustive suite. Thay đổi đã được commit ở `72a6d9f`; mình sẽ append tương tác này vào prompt log theo quy trình hiện có.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Thời điểm lưu log khác với timestamp gốc chưa được ghi nhận. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
