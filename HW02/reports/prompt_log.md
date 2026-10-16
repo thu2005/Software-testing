@@ -629,3 +629,52 @@ Assistant (commentary):
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
+## Tương tác AI - Session hiện tại / 16
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-16 21:59:18 +07:00
+- Skill: qa-workflow, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- openai.yaml: Software-testing/HW02/.agents/skills/qa-workflow/agents/openai.yaml
+- generate_fr01_test_run.py: Software-testing/HW02/.runtime/generate_fr01_test_run.py
+- generate_fr01_design.py: Software-testing/HW02/.runtime/generate_fr01_design.py
+- generate_fr01_compact.py: Software-testing/HW02/.runtime/generate_fr01_compact.py
+- SKILL.md: c:\Users\X1 Carbon\.codex\plugins\cache\openai-curated-remote\plugin-management\0.1.0\skills\plugin-management\SKILL.md
+
+## My request:
+dựa vào những gì đã thực thi, xem có thiếu sót gì không thì ghi vào ai-gap-analysis. nếu không, không ghi, không cố bịa. phân biệt ca/bug bỏ sót khác với test case không test trường hợp đó
+
+Assistant (commentary):
+Mình sẽ rà theo bằng chứng của lần chạy FR-01 và dùng đúng tiêu chí của `ai-gap-analysis`: chỉ ghi **ca/bug thực tế đã bị bỏ sót** khi evidence chứng minh có hành vi lỗi chưa được test case hoặc bug report bao phủ. Một trường hợp chưa được thiết kế/test sẽ được ghi là coverage gap riêng, không gọi là missed bug; nếu không có bằng chứng đủ mạnh thì không thêm gì.
+
+Assistant (commentary):
+Mốc phân loại mình đang dùng là:
+
+- **Ca/bug bỏ sót:** requirement hoặc hành vi lỗi đã có bằng chứng, nhưng bộ test/báo lỗi không bao phủ nó.
+- **Không kiểm tra một trường hợp:** một biến thể chưa được chọn, bị Blocked, cùng miền với ca đại diện, hoặc requirement không cho oracle; điều này không tự động là thiếu sót AI.
+
+Hiện tại bốn hành vi lỗi quan sát được đều đã có bug report. Mình đang đối chiếu thêm lịch sử thiết kế trước review để tránh bỏ qua một gap thật đã được sửa trước khi execution.
+
+Assistant (commentary):
+Kết quả đối chiếu: chưa có thiếu sót đủ điều kiện để ghi vào `ai-gap-analysis`.
+
+- 4 hành vi lỗi quan sát được đều đã được phát hiện và báo thành `BUG-FR01-001` đến `004`.
+- `DT-005`, `DT-007`, `DT-008` là các ca đã có nhưng bị Blocked; đây không phải ca bị AI bỏ sót.
+- Các biến thể như `OFF⁺=2`, từng ký tự đặc biệt, cận trên, trim/Unicode không tạo thành gap: chúng hoặc cùng miền đã chọn đại diện, hoặc không có oracle trong requirement.
+- Các lỗi thiết kế ban đầu đã được sửa trước khi chạy; execution không phát hiện thêm ca hay bug nào nằm ngoài bộ cuối.
+
+Vì vậy mình sẽ không tạo file gap rỗng. Mình cũng thấy còn một dòng cũ trong review trước execution tự nhắc khôi phục dữ liệu; mình sẽ bỏ dòng đó để nhất quán với phân công bạn vừa chốt.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
