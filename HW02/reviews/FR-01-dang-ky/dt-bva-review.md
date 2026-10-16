@@ -62,6 +62,7 @@ Vòng đầu phát hiện ba vấn đề Major và một vấn đề Minor. Các
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
-- Rà soát/chỉnh sửa của sinh viên: chưa ghi nhận; review này do Codex thực hiện và không thay thế bước sinh viên tự kiểm tra theo yêu cầu bài tập.
+- Rà soát/chỉnh sửa của sinh viên: sinh viên xác nhận đã review và duyệt bộ test case trong phiên làm việc ngày 2026-10-16.
 - Chưa được đặc tả: cú pháp Email đầy đủ, nội dung thông báo lỗi, quy tắc trim/Unicode, độ dài tối đa và cận trên của các trường.
 - Tất cả test case vẫn ở trạng thái `Not Run / None`; review không gán Pass/Fail.
+- Chuẩn bị trước execution: bảo đảm các Email được ghi là “chưa tồn tại” thực sự chưa có trong dữ liệu đầu kỳ; khi chạy lại toàn bộ suite, khôi phục dữ liệu nền hoặc dùng một bộ Email mới có cùng miền dữ liệu.
