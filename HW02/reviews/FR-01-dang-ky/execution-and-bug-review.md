@@ -10,7 +10,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Đã đối chiếu đủ 15 test case, 15 screenshot và các liên kết bug. Số liệu nhất quán: 8 Pass, 4 Fail, 3 Blocked, 0 Not Run và 4 defect riêng biệt. Bốn bug được tách theo hành vi, không theo số ca: mật khẩu hợp lệ bị từ chối; thiếu Xác nhận mật khẩu; thiếu dấu `*`; Email dùng sai type/không validation định dạng. Không phát hiện bug duplicate. Test run và bug report đã sẵn sàng làm nguồn để tạo GitHub Issues; hồ sơ chưa sẵn sàng nộp hoàn chỉnh vì thiếu thông tin môi trường và issue thật.
+Đã đối chiếu đủ 15 test case, 15 screenshot thực thi, 4 bug report và 4 screenshot trang GitHub Issue. Số liệu nhất quán: 8 Pass, 4 Fail, 3 Blocked, 0 Not Run và 4 defect riêng biệt. Bốn bug được tách theo hành vi, không theo số ca: mật khẩu hợp lệ bị từ chối; thiếu Xác nhận mật khẩu; thiếu dấu `*`; Email dùng sai type/không validation định dạng. Không phát hiện bug duplicate. Môi trường, URL, build và liên kết GitHub Issue đã được bổ sung; hồ sơ FR-01 đủ cho lần thực thi hiện tại.
 
 ## 3. Phát hiện cần sửa
 
@@ -19,8 +19,9 @@
 | REV-FR-01-EX-001 | Major | Test run / metadata và Evidence | Tester, giờ chạy và evidence trước đó ghi chưa cung cấp dù đã có dữ liệu/ảnh. | Hồ sơ thực thi thiếu khả năng truy vết. | Ghi tester `Thu`, thời điểm `2026-10-16 20:30:00 +07:00` và liên kết đủ 15 ảnh. | Đã sửa |
 | REV-FR-01-EX-002 | Major | Test run và test case / Related Bug | Các ca Fail/Blocked chưa liên kết defect; số bug bằng 0. | Không truy được từ kết quả chạy tới báo lỗi. | Tạo 4 bug report sau khi kiểm tra duplicate; cập nhật Related Bug và tổng số bug. | Đã sửa |
 | REV-FR-01-EX-003 | Minor | TC-FR-01-DT-004 / Notes | Ghi chưa có bằng chứng vị trí lỗi dù screenshot cho thấy lỗi nằm trên nút submit. | Mô tả chưa phản ánh đầy đủ evidence. | Ghi phần vị trí lỗi đạt; chỉ báo defect cho loại input và validation Email. | Đã sửa |
-| REV-FR-01-EX-004 | Minor | Test run và 4 bug report / Environment | Browser, OS, URL và build chưa được cung cấp. | Giảm khả năng tái hiện chính xác trên môi trường khác. | Bổ sung từ môi trường chạy thật trước khi đăng issue hoặc retest. | Chưa xử lý — thiếu dữ liệu |
-| REV-FR-01-EX-005 | Major | 4 bug report / GitHub Issue | Chưa có URL issue và screenshot trang GitHub Issues. | Chưa đáp ứng yêu cầu nộp bug của HW02. | Đăng 4 issue lên repository nhóm, đính kèm ảnh và lưu screenshot trang issue. | Chưa xử lý — chưa được yêu cầu đăng |
+| REV-FR-01-EX-004 | Minor | Test run và 4 bug report / Environment | Browser, OS, URL và build chưa được cung cấp. | Giảm khả năng tái hiện chính xác trên môi trường khác. | Bổ sung từ môi trường chạy thật trước khi đăng issue hoặc retest. | Đã sửa — Chrome, Windows, frontend/backend URL và commit đã được ghi nhận |
+| REV-FR-01-EX-005 | Major | 4 bug report / GitHub Issue | Chưa có URL issue và screenshot trang GitHub Issues. | Chưa đáp ứng yêu cầu nộp bug của HW02. | Đăng 4 issue lên repository nhóm, đính kèm ảnh và lưu screenshot trang issue. | Đã sửa — Issue #1 đến #4 và 4 screenshot đã được bổ sung |
+| REV-FR-01-EX-006 | Minor | Test run / Chuẩn bị và khôi phục dữ liệu | Chưa nêu dữ liệu Email mới và Email đã tồn tại đã dùng. | Khó tái hiện ca uniqueness và quản lý dữ liệu giữa các lần chạy. | Ghi rõ cách chọn Email mới, Email đã tồn tại; giữ trạng thái chưa ghi nhận đối với quy trình reset database. | Đã sửa một phần — dữ liệu Email đã rõ; quy trình reset chưa được ghi nhận |
 
 ## 4. Kiểm tra truy vết
 
@@ -51,14 +52,14 @@
 | Dấu `*` cho trường bắt buộc | DT-001 / BUG-FR01-003 | Đã report | Không duplicate | Defect UI độc lập. |
 | Email type và validation định dạng | DT-001, DT-004 / BUG-FR01-004 | Đã report | Không duplicate | Một bug bao phủ cùng hành vi Email. |
 | Evidence của 15 ca | 15 screenshot | Đầy đủ | Không | Tên file khớp Test Case ID. |
-| GitHub Issues và ảnh trang issue | Chưa có | Chưa cover | Submission gap | Không bịa URL hoặc trạng thái đăng. |
+| GitHub Issues và ảnh trang issue | Issue #1 đến #4 / 4 screenshot | Đầy đủ | Không | URL, số issue, tiêu đề, repository và nội dung ảnh khớp từng bug report. |
 
 ## 6. Kết luận
 
-**Test run và bug report Markdown đã được rà soát và nhất quán.** Trước khi coi FR-01 hoàn tất để nộp, cần bổ sung browser/OS/URL/build nếu còn truy xuất được, đăng bốn GitHub Issues lên repository nhóm, đính kèm evidence và lưu screenshot từng trang issue. Ba ca Blocked cần retest sau khi BUG-FR01-001 và BUG-FR01-002 được sửa.
+**Hồ sơ FR-01 cho lần thực thi hiện tại đã được rà soát, nhất quán và đủ để đưa vào bài nộp.** Test run liên kết được tới evidence, bug report và GitHub Issue; bốn ảnh trang issue xác nhận issue đã đăng. Ba ca Blocked cần retest sau khi BUG-FR01-001 và BUG-FR01-002 được sửa; đây là công việc sau khi có bản sửa, không phải thiếu sót của hồ sơ lần chạy hiện tại.
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
 - Người thực hiện: Nguyễn Đoàn Xuân Thu; tên hiển thị trong test run: `Thu` theo xác nhận của sinh viên.
-- Thông tin còn thiếu: browser, OS, URL/build, GitHub Issue URLs, ảnh trang GitHub Issues và kết quả retest.
+- Thông tin còn thiếu: cách reset database giữa các lần chạy chưa được ghi nhận; kết quả retest chỉ có thể bổ sung sau khi bug được sửa.
 - Không thay đổi Expected Result trong quá trình review execution.
