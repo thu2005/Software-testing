@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-07 / Web |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Giỏ hàng / Chức năng / Boundary Value Analysis |
 | Tham chiếu yêu cầu và phân tích | [system-requirements.md](../../../../requirements/system-requirements.md#fr-07-giỏ-hàng-shopping-cart); [bva-analysis.md](../../../../analysis/FR-07-gio-hang/bva-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / [BUG-FR07-001](../../../../bug-reports/BUG-FR07-001.md) |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR07-001](../../../../bug-reports/BUG-FR07-001.md) ([Issue #5](https://github.com/thu2005/CSC13003_eshop/issues/5)) |
 
 ## Phân tích biên
 

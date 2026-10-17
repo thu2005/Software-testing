@@ -9,7 +9,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Vòng đầu phát hiện một suy diễn ngoài đặc tả ở nhánh Hủy của dialog xóa và một điểm dữ liệu chưa đủ cụ thể ở ký hiệu `SP-A`/`SP-B`. Sau khi sửa, 11 test case có dữ liệu, bước chạy, oracle và liên kết truy vết nhất quán. Bộ test bao phủ toàn bộ hành vi được nêu trong FR-07; không đặt cận số lượng hoặc hành vi ở cận khi requirement không cung cấp. Đây là kết quả rà soát thiết kế, chưa phải kết quả thực thi hệ thống.
+Vòng đầu phát hiện một suy diễn ngoài đặc tả ở nhánh Hủy của dialog xóa và một điểm dữ liệu chưa đủ cụ thể ở ký hiệu `SP-A`/`SP-B`. Sau khi sửa, 11 test case có dữ liệu, bước chạy, oracle và liên kết truy vết nhất quán. Bộ test bao phủ toàn bộ hành vi được nêu trong FR-07; không đặt cận số lượng hoặc hành vi ở cận khi requirement không cung cấp. Các phát hiện thiết kế nằm ở mục 3–5; kết quả thực thi và hồ sơ defect được tổng hợp ở mục 6–7.
 
 ## 3. Phát hiện cần sửa
 
@@ -52,10 +52,11 @@ Vòng đầu phát hiện một suy diễn ngoài đặc tả ở nhánh Hủy c
 
 ## 6. Kết luận sau rà soát và thực thi
 
-Bộ test đã được sinh viên review, duyệt và thực thi đủ 11/11 ca. Kết quả gồm 1 Pass, 10 Fail, 0 Blocked và 0 Not Run; 10 ca Fail được nhóm thành 6 defect riêng biệt. Expected Result không thay đổi trong quá trình ghi nhận execution.
+Bộ test đã được sinh viên review, duyệt và thực thi đủ 11/11 ca. Kết quả gồm 1 Pass, 10 Fail, 0 Blocked và 0 Not Run; 10 ca Fail được nhóm thành 6 defect riêng biệt. Expected Result không thay đổi trong quá trình ghi nhận execution. Sáu bug report đã liên kết với GitHub Issue #5–#10 trong repository SUT và có ảnh trang issue trong repository bài làm.
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
 - Rà soát/chỉnh sửa của sinh viên: sinh viên xác nhận đã review và duyệt bộ test case trước khi thực thi.
 - Chưa được đặc tả: min/max số lượng, hành vi nút `-` tại số lượng thấp nhất, cận trên số dòng, thêm sản phẩm khác, định dạng/công thức tiền, nhãn cụ thể của nút xác nhận và trạng thái đăng nhập.
 - Kết quả thực thi được lưu tại `tests/test-runs/FR-07-gio-hang-run.md`; 10 Fail đã được nhóm thành 6 defect riêng biệt.
+- Human review: hoàn tất. Hồ sơ defect đã đăng tại GitHub Issue #5–#10 của `thu2005/CSC13003_eshop`; bug report và evidence được lưu tại `thu2005/Software-testing`.
