@@ -954,3 +954,39 @@ Vòng kiểm tra cuối đạt: 18 tài liệu liên quan không có link cục 
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Hai ca DT-003 và BVA-001 được ghi nhận là cùng một defect, không nhân đôi số bug.
+
+
+## Tương tác AI - Session hiện tại / 23
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 19:29:08 +07:00
+- Skill: qa-workflow, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Active file: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+đã xong bug report, issue. dựa vào những gì đã thực thi, xem có thiếu sót gì không thì append tiếp tục vào [HW02-ai-gap-analysis.md](Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md) . nếu không, không ghi. không cố bịa.
+
+Assistant (commentary):
+Mình sẽ dùng skill `qa-workflow` để đối chiếu riêng FR-14 theo ba lớp: yêu cầu đã thiết kế, test case đã thực thi, và sai lệch thực sự nhìn thấy trong evidence. Mình chỉ append khi xác định được ca hoặc bug bị bỏ sót; trường hợp chưa test hoặc requirement không đặc tả sẽ không bị ghi nhầm thành bug.
+
+Assistant (commentary):
+Có một thiếu sót có bằng chứng rõ: ảnh Pass của `TC-FR-14-DT-007` hiển thị `Admin Login` và nút `Login`, trái yêu cầu toàn bộ giao diện dùng tiếng Việt. Ca này chỉ đánh giá kiểm soát truy cập nên vẫn Pass theo oracle của nó; sai lệch ngôn ngữ là biểu hiện bị bỏ sót trong phạm vi defect giao diện, không phải lý do đổi DT-007 thành Fail và cũng không phải một ca “chưa test”. Mình sẽ chỉ ghi nhận gap này, không bổ sung các giả định về DOM, HTTP hay validation khác.
+
+Assistant (commentary):
+Đã append đúng một gap FR-14 và lưu ở commit `f34438a`. Mình không thêm các trường hợp token sai/hết hạn, duplicate, whitespace hay cấu trúc DOM vì chúng chưa được thực thi hoặc chưa đủ bằng chứng; cũng giữ DT-007 là Pass theo oracle phân quyền. Theo workflow của HW02, mình đang lưu lượt rà soát này vào prompt log rồi kiểm tra trạng thái cuối.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Gap FR-14 chỉ dựa trên chữ tiếng Anh quan sát trực tiếp trong evidence của DT-007 và yêu cầu FR-21.
