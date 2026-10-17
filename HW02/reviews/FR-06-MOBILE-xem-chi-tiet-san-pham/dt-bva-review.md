@@ -9,7 +9,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Sau khi sửa ba finding, 11 test case có dữ liệu cụ thể, bước chạy và oracle quan sát được. Bộ test bao phủ hiển thị chi tiết, các yêu cầu UI/navigation/accessibility có căn cứ, miền số lượng hợp lệ và bốn lớp invalid, hành động thêm giỏ, feedback, cùng cận dưới `0/1/2`. Không tạo cận trên, tồn kho hoặc hành vi lỗi tải sản phẩm khi đặc tả không cung cấp. Đây là review thiết kế; chưa có Actual Result và chưa phải kết quả thực thi hệ thống.
+Đã thực thi đủ 11 test case trên Android Emulator: 1 Pass, 10 Fail, không có Blocked hoặc Not Run. Mười ca Fail quy về 6 bug độc lập: thiếu danh mục; thiếu breadcrumb; sai màu nút tích cực; thiếu mô tả accessibility; chấp nhận năm lớp số lượng không hợp lệ; và màn hình giỏ Mobile trắng. DT-008, BVA-002, BVA-003 giữ trạng thái Fail vì màn hình trắng là sai lệch quan sát được của SUT, không phải trở ngại môi trường.
 
 ## 3. Phát hiện cần sửa
 
@@ -52,12 +52,14 @@ Sau khi sửa ba finding, 11 test case có dữ liệu cụ thể, bước chạ
 | Sản phẩm không tồn tại, loading, lỗi API/ảnh | Chưa có | Bị chặn do thiếu đặc tả | Requirement gap | FR-06 không nêu expected behavior. |
 | `<h1>`, Tab Order, dấu `*` của ô Số lượng | Chưa có | Bị chặn do thiếu ánh xạ/đặc tả Mobile | Không phải test omission đã xác nhận | Không chuyển thuật ngữ Web sang React Native hoặc suy ra field bắt buộc. |
 
-## 6. Kết luận sẵn sàng thực thi
+## 6. Kết luận sau thực thi
 
-Sẵn sàng thực thi sau khi đã sửa ba finding. Tổng cộng 11 ca gồm 8 Domain Testing và 3 Boundary Value Analysis; tất cả ở trạng thái `Not Run / None`. Khi chạy cần ghi rõ thiết bị/emulator, hệ điều hành, Expo/ứng dụng, API base URL, build SUT, trạng thái giỏ trước mỗi ca và evidence thật.
+Test run, 11 test case, hai tài liệu phân tích và 6 bug report đã được đồng bộ hai chiều. Kết quả `1 Pass / 10 Fail` khớp 14 evidence: một ảnh Pass, tám ảnh Fail đơn và ba cặp ảnh phản hồi–giỏ trắng. Năm ca invalid cùng liên kết `BUG-FR06-005`; ba ca số lượng hợp lệ không kiểm tra được trong giỏ cùng liên kết `BUG-FR06-006`. Ba sai lệch trong DT-002 được tách thành ba bug vì có tiêu chí sửa độc lập.
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
-- Rà soát/chỉnh sửa của sinh viên: chưa ghi nhận cho FR-06 Mobile; cần sinh viên review trước khi thực thi.
-- Chưa được đặc tả: số lượng tối đa, tồn kho, giá trị mặc định, thông báo validation, hành vi sản phẩm không tồn tại/loading/lỗi API, và cách ánh xạ `<h1>`/Tab Order/dấu `*` sang React Native.
-- Chưa có thông tin môi trường thực thi Mobile hoặc Actual Result; không có Pass/Fail, evidence hay bug report ở giai đoạn này.
+- Rà soát/chỉnh sửa của sinh viên: Done.
+- Môi trường: Android Emulator Pixel 4a (`sdk_gphone64_x86_64`), Android 13 API 33, `1080×2340`, Expo Go / Expo SDK 54, SUT commit `85af3ba875c88283615e22cb108f13e2fccaf0e9`.
+- Chuẩn bị và khôi phục dữ liệu: do tester thực hiện và review.
+- Chưa được đặc tả: số lượng tối đa, tồn kho, giá trị mặc định, nội dung validation, hành vi sản phẩm không tồn tại/loading/lỗi API, và cách ánh xạ `<h1>`/Tab Order/dấu `*` sang React Native.
+- GitHub Issues: chưa đăng; các bug report ghi đúng trạng thái `Chưa đăng` và không tạo URL tạm.

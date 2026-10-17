@@ -72,10 +72,10 @@ Ba ca chỉ thay đổi số lượng `0/1/2`, còn sản phẩm và trạng th�
 
 | Boundary / Value ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| BV-QTY-001 | TC-FR-06-MOBILE-BVA-001 | Đã bao phủ | Chưa chạy | Không có |
-| BV-QTY-002 | TC-FR-06-MOBILE-BVA-002 | Đã bao phủ | Chưa chạy | Không có |
-| BV-QTY-003 | TC-FR-06-MOBILE-BVA-003 | Đã bao phủ | Chưa chạy | Không có |
-| BV-QTY-004 | TC-FR-06-MOBILE-DT-008 | Chủ động loại trừ khỏi BVA | Chưa chạy | Giá trị nominal đã được Domain Testing bao phủ |
+| BV-QTY-001 | TC-FR-06-MOBILE-BVA-001 | Đã bao phủ | Fail | Không có |
+| BV-QTY-002 | TC-FR-06-MOBILE-BVA-002 | Đã bao phủ | Fail | Không có |
+| BV-QTY-003 | TC-FR-06-MOBILE-BVA-003 | Đã bao phủ | Fail | Không có |
+| BV-QTY-004 | TC-FR-06-MOBILE-DT-008 | Chủ động loại trừ khỏi BVA | Fail | Giá trị nominal đã được Domain Testing bao phủ |
 | Cận trên số lượng / tồn kho | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không tự đặt giới hạn |
 
 ## 11. Giả định và thông tin chưa được đặc tả

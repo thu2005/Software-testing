@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-06 / Mobile |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Xem chi tiết sản phẩm / Chức năng / Boundary Value Analysis |
 | Tham chiếu yêu cầu và phân tích | [FR-06](../../../../requirements/system-requirements.md#fr-06-xem-chi-tiết-sản-phẩm), [FR-24](../../../../requirements/system-requirements.md#fr-24-feedback--state-requirements); [bva-analysis.md](../../../../analysis/FR-06-MOBILE-xem-chi-tiet-san-pham/bva-analysis.md) |
-| Trạng thái / Lỗi liên quan | Not Run / None |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR06-006](../../../../bug-reports/BUG-FR06-006.md) |
 
 ## Phân tích biên
 

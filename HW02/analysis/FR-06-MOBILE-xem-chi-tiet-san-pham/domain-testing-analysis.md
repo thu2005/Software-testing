@@ -93,14 +93,14 @@ Ca xem chi tiết và ca kiểm tra giao diện được tách vì một ca đ�
 
 | Class / Dependency ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| EC-PRODUCT-V01, EC-ACTION-V01, EC-RESULT-O01, DC-01 | DT-001 | Đã bao phủ | Chưa chạy | Không có |
-| EC-PAGE-V01, EC-RESULT-O02 | DT-002 | Đã bao phủ | Chưa chạy | Gộp quan sát tĩnh và kiểm tra accessibility trên cùng trang |
-| EC-QTY-V01, EC-RESULT-O03, DC-02 | DT-003, DT-008 | Đã bao phủ | Chưa chạy | Tách nhập nominal và hành động thêm giỏ |
-| EC-QTY-I01, EC-RESULT-O04 | DT-004 | Đã bao phủ | Chưa chạy | Không có |
-| EC-QTY-I02, EC-RESULT-O04 | DT-005 | Đã bao phủ | Chưa chạy | Không có |
-| EC-QTY-I03, EC-RESULT-O04 | DT-006 | Đã bao phủ | Chưa chạy | Không có |
-| EC-QTY-I04, EC-RESULT-O04 | DT-007 | Đã bao phủ | Chưa chạy | Không có |
-| EC-ACTION-V02, EC-RESULT-O05, DC-03 | DT-008 | Đã bao phủ | Chưa chạy | Không có |
+| EC-PRODUCT-V01, EC-ACTION-V01, EC-RESULT-O01, DC-01 | DT-001 | Đã bao phủ | Fail | Không có |
+| EC-PAGE-V01, EC-RESULT-O02 | DT-002 | Đã bao phủ | Fail | Gộp quan sát tĩnh và kiểm tra accessibility trên cùng trang |
+| EC-QTY-V01, EC-RESULT-O03, DC-02 | DT-003, DT-008 | Đã bao phủ | DT-003 Pass; DT-008 Fail | Tách nhập nominal và hành động thêm giỏ |
+| EC-QTY-I01, EC-RESULT-O04 | DT-004 | Đã bao phủ | Fail | Không có |
+| EC-QTY-I02, EC-RESULT-O04 | DT-005 | Đã bao phủ | Fail | Không có |
+| EC-QTY-I03, EC-RESULT-O04 | DT-006 | Đã bao phủ | Fail | Không có |
+| EC-QTY-I04, EC-RESULT-O04 | DT-007 | Đã bao phủ | Fail | Không có |
+| EC-ACTION-V02, EC-RESULT-O05, DC-03 | DT-008 | Đã bao phủ | Fail | Không có |
 | Sản phẩm không tồn tại / lỗi tải chi tiết | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không có expected behavior, loading/error state cho trang chi tiết |
 | Số lượng tối đa / tồn kho | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không tự đặt cận trên hoặc quan hệ tồn kho |
 
