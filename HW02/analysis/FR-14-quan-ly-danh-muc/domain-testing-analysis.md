@@ -98,14 +98,14 @@ Mỗi thao tác FR-14 có ít nhất một ca hợp lệ. Tên rỗng được t
 
 | Class / Dependency ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| EC-AUTH-V01, EC-ACTION-V01, EC-PAGE-V01, EC-RESULT-O01, O06 | DT-001 | Đã bao phủ | Chưa chạy | Gộp các quan sát trên cùng trang |
-| EC-ACTION-V02, EC-NAME-V01, EC-RESULT-O02, DC-01 | DT-002 | Đã bao phủ | Chưa chạy | Không có |
-| EC-NAME-I01, EC-RESULT-O03, DC-01 | DT-003 | Đã bao phủ | Chưa chạy | Không có |
-| EC-ACTION-V03, EC-RESULT-O04, DC-02 | DT-004 | Đã bao phủ | Chưa chạy | Không có |
-| EC-AUTH-I01, EC-RESULT-O05, DC-03 | DT-005 | Đã bao phủ | Chưa chạy | Chọn trường hợp thiếu token làm đại diện lớp không có JWT hợp lệ |
-| EC-AUTH-I02, EC-RESULT-O05, DC-02, DC-03 | DT-006 | Đã bao phủ | Chưa chạy | Không có |
-| EC-AUTH-I02, EC-RESULT-O05, DC-04 | DT-007 | Đã bao phủ | Chưa chạy | Không có |
-| EC-KEYBOARD-V01, EC-RESULT-O07 | DT-008 | Đã bao phủ | Chưa chạy | Không có |
+| EC-AUTH-V01, EC-ACTION-V01, EC-PAGE-V01, EC-RESULT-O01, O06 | DT-001 | Đã bao phủ | Fail | Gộp các quan sát trên cùng trang |
+| EC-ACTION-V02, EC-NAME-V01, EC-RESULT-O02, DC-01 | DT-002 | Đã bao phủ | Pass | Không có |
+| EC-NAME-I01, EC-RESULT-O03, DC-01 | DT-003 | Đã bao phủ | Fail | Không có |
+| EC-ACTION-V03, EC-RESULT-O04, DC-02 | DT-004 | Đã bao phủ | Pass | Không có |
+| EC-AUTH-I01, EC-RESULT-O05, DC-03 | DT-005 | Đã bao phủ | Pass | Chọn trường hợp thiếu token làm đại diện lớp không có JWT hợp lệ |
+| EC-AUTH-I02, EC-RESULT-O05, DC-02, DC-03 | DT-006 | Đã bao phủ | Fail | Không có |
+| EC-AUTH-I02, EC-RESULT-O05, DC-04 | DT-007 | Đã bao phủ | Pass | Không có |
+| EC-KEYBOARD-V01, EC-RESULT-O07 | DT-008 | Đã bao phủ | Fail | Không có |
 | Sửa danh mục | Chưa có | Chủ động loại trừ | Chưa chạy | FR-14 không yêu cầu Sửa; không suy ra từ tiêu đề CRUD hoặc API spec |
 | Tên trùng, whitespace-only, ký tự/độ dài tối đa | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không tự đặt validation |
 

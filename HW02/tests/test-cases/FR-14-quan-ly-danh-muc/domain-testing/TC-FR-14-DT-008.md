@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-14 / Web Admin |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Quản lý Danh mục / Chức năng / Domain Testing |
 | Tham chiếu yêu cầu và phân tích | [FR-21](../../../../requirements/system-requirements.md#fr-21-tiêu-chuẩn-giao-diện-chung); [domain-testing-analysis.md](../../../../analysis/FR-14-quan-ly-danh-muc/domain-testing-analysis.md) |
-| Trạng thái / Lỗi liên quan | Not Run / None |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-005](../../../../bug-reports/BUG-FR14-005.md) |
 
 ## Phân tích miền
 

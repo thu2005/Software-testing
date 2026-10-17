@@ -74,9 +74,9 @@ Biên duy nhất có căn cứ là độ dài tên tại 0 vì FR-14 quy định
 | Boundary / Value ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
 | BV-NAME-000 | Chưa có | Chủ động loại trừ | Chưa chạy | Độ dài `-1` không khả thi |
-| BV-NAME-001 | TC-FR-14-BVA-001 | Đã bao phủ | Chưa chạy | Không có |
-| BV-NAME-002 | TC-FR-14-BVA-002 | Đã bao phủ | Chưa chạy | Không có |
-| BV-NAME-003 | TC-FR-14-BVA-003 | Đã bao phủ | Chưa chạy | Đại diện bên trong |
+| BV-NAME-001 | TC-FR-14-BVA-001 | Đã bao phủ | Fail | Không có |
+| BV-NAME-002 | TC-FR-14-BVA-002 | Đã bao phủ | Pass | Không có |
+| BV-NAME-003 | TC-FR-14-BVA-003 | Đã bao phủ | Pass | Đại diện bên trong |
 | Cận trên độ dài; số lượng danh mục | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không tự đặt giới hạn |
 
 ## 11. Giả định và thông tin chưa được đặc tả

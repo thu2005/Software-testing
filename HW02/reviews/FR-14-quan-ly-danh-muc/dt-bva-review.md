@@ -9,7 +9,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Sau khi sửa năm finding, 11 test case có dữ liệu cụ thể, bước chạy, oracle quan sát được và liên kết truy vết nhất quán. Bộ test bao phủ Thêm/Xem/Xóa, tên bắt buộc, quyền Admin, bảo vệ hai thao tác thay đổi dữ liệu đại diện, cấu trúc giao diện áp dụng và cận dưới độ dài tên. Không tạo cận trên, validation tên hoặc hành vi xóa chưa được đặc tả. Đây là review thiết kế; chưa có Actual Result và chưa phải kết quả thực thi hệ thống.
+Sau khi sửa năm finding thiết kế, 11/11 test case đã được thực thi và có evidence: 6 Pass, 5 Fail, 0 Blocked. Năm ca Fail quy về 5 bug độc lập; DT-003 và BVA-001 cùng phát hiện lỗi chấp nhận tên rỗng nên không đếm hai lần. Actual Result, trạng thái test case, test run, analysis và bug report đã được đối chiếu nhất quán.
 
 ## 3. Phát hiện cần sửa
 
@@ -54,12 +54,14 @@ Sau khi sửa năm finding, 11 test case có dữ liệu cụ thể, bước ch�
 | Độ dài tối đa, duplicate, whitespace-only, ký tự hợp lệ | Chưa có | Bị chặn do thiếu đặc tả | Requirement gap | Không tự đặt validation. |
 | Xóa danh mục đang được tham chiếu | Chưa có | Bị chặn do thiếu đặc tả | Requirement gap | Không có quy tắc phụ thuộc hoặc cascade. |
 
-## 6. Kết luận sẵn sàng thực thi
+## 6. Kết luận sau thực thi
 
-Sẵn sàng thực thi sau khi đã sửa các finding. Tổng cộng 11 ca gồm 8 Domain Testing và 3 Boundary Value Analysis; tất cả đang ở trạng thái `Not Run / None`. Khi chạy cần dùng fixture độc lập, ghi Actual Result/evidence và không suy diễn HTTP status, thông báo hay hành vi chưa được đặc tả.
+Bộ FR-14 đã thực thi đủ 11 ca: 6 Pass và 5 Fail. Năm bug độc lập đã được lập báo cáo tại `bug-reports/BUG-FR14-001.md` đến `BUG-FR14-005.md`. Không có ca Blocked hoặc Not Run. Kết quả dùng đúng Actual Result do tester cung cấp; các chi tiết HTTP `401` và `200`, trạng thái token và chuỗi focus không được suy ra chỉ từ ảnh.
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
-- Rà soát/chỉnh sửa của sinh viên: chưa ghi nhận cho FR-14; cần sinh viên review trước khi thực thi.
-- Chưa được đặc tả: URL Web Admin cụ thể, HTTP status/thông báo lỗi, tên trùng, trim/whitespace-only, ký tự và độ dài tối đa, xác nhận xóa, cập nhật danh mục, thứ tự danh sách và xóa danh mục có dữ liệu phụ thuộc.
-- Bộ test chưa được thực thi; không có Pass/Fail, Actual Result, evidence hoặc bug report cho FR-14 ở giai đoạn này.
+- Human review: Done.
+- Test run: [`FR-14-quan-ly-danh-muc-run.md`](../../tests/test-runs/FR-14-quan-ly-danh-muc-run.md).
+- Trình duyệt, hệ điều hành, URL và build runtime của lần chạy FR-14 chưa được cung cấp nên không kế thừa dữ liệu môi trường từ feature khác.
+- GitHub Issues cho 5 bug FR-14 chưa được đăng; các bug report hiện liên kết evidence cục bộ và ghi đúng trạng thái này.
+- Các điểm chưa được đặc tả vẫn giữ nguyên: tên trùng, trim/whitespace-only, ký tự và độ dài tối đa, xác nhận xóa, cập nhật danh mục, thứ tự danh sách và xóa danh mục có dữ liệu phụ thuộc. Không biến các điểm này thành lỗi thực thi.

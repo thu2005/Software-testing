@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-14 / Web Admin |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Quản lý Danh mục / Chức năng / Boundary Value Analysis |
 | Tham chiếu yêu cầu và phân tích | [FR-14](../../../../requirements/system-requirements.md#fr-14-quản-lý-danh-mục-category-crud), [FR-22](../../../../requirements/system-requirements.md#fr-22-form-requirements); [bva-analysis.md](../../../../analysis/FR-14-quan-ly-danh-muc/bva-analysis.md) |
-| Trạng thái / Lỗi liên quan | Not Run / None |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-003](../../../../bug-reports/BUG-FR14-003.md) |
 
 ## Phân tích biên
 
