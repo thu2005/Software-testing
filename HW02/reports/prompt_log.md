@@ -1103,3 +1103,37 @@ Các tài liệu đã được đồng bộ theo kết quả thực thi: test ru
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Mười ca Fail được quy về sáu defect độc lập; chưa có GitHub Issue FR-06 trong context.
+
+
+## Tương tác AI - Session hiện tại / 26
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 21:11:48 +07:00
+- Skill: qa-workflow, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+đã xong bug report, issue, human review done. dựa vào những gì đã thực thi, xem có thiếu sót gì không thì append tiếp tục vào [HW02-ai-gap-analysis.md](Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md) . nếu không, không ghi. không cố bịa.
+
+Assistant (commentary):
+Mình sẽ dùng skill `qa-workflow` để đối chiếu riêng FR-06 giữa requirement, 11 test case, test run, 6 bug report và toàn bộ evidence. Mình chỉ append khi evidence cho thấy một ca hoặc một biểu hiện lỗi thực sự bị bỏ sót; những trường hợp chưa được test hoặc chưa có oracle trong đặc tả sẽ không được ghi thành gap.
+
+Assistant (commentary):
+Qua tài liệu hiện tại, số test và sáu defect đã khớp. Mình đang rà hai điểm còn có thể tạo gap thật: các sai lệch phụ nhìn thấy trong screenshot nhưng nằm ngoài Actual Result, và việc một ca Pass có che khuất lỗi thuộc yêu cầu dùng chung hay không. Trạng thái “GitHub Issues: chưa đăng” trong review là thông tin tài liệu đã cũ sau commit issue, nhưng tự nó không phải ca/bug bị AI bỏ sót trong thực thi.
+
+Assistant (commentary):
+Đối chiếu xong, mình không tìm thấy gap FR-06 có đủ căn cứ để append. Mọi sai lệch quan sát được trong 14 ảnh đều đã nằm trong sáu bug; ảnh Pass DT-003 chỉ lặp lại các lỗi giao diện đã được DT-001/DT-002 ghi nhận. Phần status bar chồng lên header có thể nhìn thấy, nhưng đặc tả không cung cấp oracle về safe area/layout Mobile và bộ test không kiểm tra điều đó, nên không được nâng thành “bug bị bỏ sót”. Mình sẽ giữ nguyên `HW02-ai-gap-analysis.md`.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Không append FR-06 vào AI gap analysis vì không có ca hoặc bug bỏ sót được evidence và đặc tả cùng xác nhận.
