@@ -97,12 +97,12 @@ Mỗi trạng thái hoặc thao tác có hành vi riêng được chọn một �
 
 | Class / Dependency ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
-| EC-CART-V01, EC-RESULT-O01, EC-RESULT-O07, DC-03 | TC-FR-07-DT-001 | Đã bao phủ | Chưa chạy | Gộp các quan sát trên cùng trang giỏ có dữ liệu |
-| EC-SAME-V01, EC-RESULT-O02, DC-01 | TC-FR-07-DT-002 | Đã bao phủ | Chưa chạy | Không có |
-| EC-ADJUST-V01, EC-ADJUST-V02, EC-RESULT-O03 | TC-FR-07-DT-003, TC-FR-07-DT-004 | Đã bao phủ | Chưa chạy | Mỗi nút một ca |
-| EC-DELETE-V01, EC-DELETE-V02, EC-RESULT-O04, EC-RESULT-O05, DC-02 | TC-FR-07-DT-005, TC-FR-07-DT-006 | Đã bao phủ | Chưa chạy | Tách quan sát dialog và xác nhận xóa |
-| EC-NAV-V01, EC-RESULT-O06 | TC-FR-07-DT-007 | Đã bao phủ | Chưa chạy | Không có |
-| EC-CART-V02, EC-RESULT-O08, DC-03 | TC-FR-07-DT-008 | Đã bao phủ | Chưa chạy | Không có |
+| EC-CART-V01, EC-RESULT-O01, EC-RESULT-O07, DC-03 | TC-FR-07-DT-001 | Đã bao phủ | Fail | Gộp các quan sát trên cùng trang giỏ có dữ liệu |
+| EC-SAME-V01, EC-RESULT-O02, DC-01 | TC-FR-07-DT-002 | Đã bao phủ | Fail | Không có |
+| EC-ADJUST-V01, EC-ADJUST-V02, EC-RESULT-O03 | TC-FR-07-DT-003, TC-FR-07-DT-004 | Đã bao phủ | Fail / Fail | Mỗi nút một ca |
+| EC-DELETE-V01, EC-DELETE-V02, EC-RESULT-O04, EC-RESULT-O05, DC-02 | TC-FR-07-DT-005, TC-FR-07-DT-006 | Đã bao phủ | Fail / Fail | Tách quan sát dialog và xác nhận xóa |
+| EC-NAV-V01, EC-RESULT-O06 | TC-FR-07-DT-007 | Đã bao phủ | Pass | Không có |
+| EC-CART-V02, EC-RESULT-O08, DC-03 | TC-FR-07-DT-008 | Đã bao phủ | Fail | Không có |
 | Số lượng bằng 0/âm; cận trên; thêm sản phẩm khác | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | FR-07 không đặc tả miền hoặc hành vi này |
 
 ## 9. Giả định và thông tin chưa được đặc tả
@@ -110,4 +110,4 @@ Mỗi trạng thái hoặc thao tác có hành vi riêng được chọn một �
 - Không có min/max số lượng, giới hạn số dòng, cách làm tròn/định dạng tiền hoặc công thức tính Thành tiền/Tổng cộng.
 - Không có hành vi khi bấm `-` tại số lượng thấp nhất, chỉnh trực tiếp số lượng, thêm sản phẩm chưa có, hay trạng thái đăng nhập.
 - Tên nút xác nhận trong dialog chưa được đặc tả; bước kiểm thử dùng hành động theo ý nghĩa, không áp đặt nhãn UI. Nhánh Hủy không được dùng làm oracle.
-- Các ca chưa được thực thi; trạng thái ban đầu là `Not Run / None`.
+- Các ca đã được thực thi; kết quả chi tiết nằm trong `tests/test-runs/FR-07-gio-hang-run.md`.

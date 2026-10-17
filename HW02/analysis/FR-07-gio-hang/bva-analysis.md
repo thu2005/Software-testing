@@ -75,9 +75,9 @@ Biên duy nhất có căn cứ là số dòng bằng `0`, do FR-07 quy định r
 | Boundary / Value ID | Test Case IDs | Design Coverage | Execution Coverage | Gap / Exclusion Reason |
 |---|---|---|---|---|
 | BV-ROWS-000 | Chưa có | Chủ động loại trừ | Chưa chạy | -1 dòng không phải trạng thái khả thi |
-| BV-ROWS-001 | TC-FR-07-BVA-001 | Đã bao phủ | Chưa chạy | Không có |
-| BV-ROWS-002 | TC-FR-07-BVA-002 | Đã bao phủ | Chưa chạy | Không có |
-| BV-ROWS-003 | TC-FR-07-BVA-003 | Đã bao phủ | Chưa chạy | Đại diện bên trong |
+| BV-ROWS-001 | TC-FR-07-BVA-001 | Đã bao phủ | Fail | Không có |
+| BV-ROWS-002 | TC-FR-07-BVA-002 | Đã bao phủ | Fail | Không có |
+| BV-ROWS-003 | TC-FR-07-BVA-003 | Đã bao phủ | Fail | Đại diện bên trong |
 | Cận trên số dòng; biên Số lượng | Chưa có | Bị chặn do thiếu requirement | Chưa chạy | Không tự đặt giới hạn hoặc hành vi |
 
 ## 11. Giả định và thông tin chưa được đặc tả
@@ -85,4 +85,4 @@ Biên duy nhất có căn cứ là số dòng bằng `0`, do FR-07 quy định r
 - Không có cận trên số dòng sản phẩm hoặc số lượng của một sản phẩm.
 - Không có cận dưới `Số lượng`; không suy ra `1` chỉ từ việc giao diện có nút +/-.
 - Không có giới hạn UI cho số dòng; không tạo thêm điểm cực đại thực tế.
-- Các ca chưa được thực thi; trạng thái ban đầu là `Not Run / None`.
+- Các ca đã được thực thi; kết quả chi tiết nằm trong `tests/test-runs/FR-07-gio-hang-run.md`.

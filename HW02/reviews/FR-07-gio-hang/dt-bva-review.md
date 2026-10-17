@@ -50,12 +50,12 @@ Vòng đầu phát hiện một suy diễn ngoài đặc tả ở nhánh Hủy c
 | Biên số lượng, hành vi tại số lượng thấp nhất | Chưa có | Bị chặn do thiếu đặc tả | Requirement gap | Không tự đặt min/max hoặc hành vi nút -. |
 | Lớp input invalid | Chưa có | Không áp dụng | Không phải coverage gap | FR-07 không nêu dữ liệu nhập sai hoặc miền số lượng. |
 
-## 6. Kết luận sẵn sàng thực thi
+## 6. Kết luận sau rà soát và thực thi
 
-**Sẵn sàng thực thi.** Hai finding đã được sửa. Tất cả 11 ca có trạng thái `Not Run / None`, không còn placeholder, không có expected result vượt quá FR-07 và không có liên kết cục bộ bị hỏng.
+Bộ test đã được sinh viên review, duyệt và thực thi đủ 11/11 ca. Kết quả gồm 1 Pass, 10 Fail, 0 Blocked và 0 Not Run; 10 ca Fail được nhóm thành 6 defect riêng biệt. Expected Result không thay đổi trong quá trình ghi nhận execution.
 
 ## 7. Rà soát của sinh viên và thông tin còn thiếu
 
-- Rà soát/chỉnh sửa của sinh viên: chưa ghi nhận trong lượt này; tài liệu trên là kết quả rà soát bằng AI theo yêu cầu hiện tại.
+- Rà soát/chỉnh sửa của sinh viên: sinh viên xác nhận đã review và duyệt bộ test case trước khi thực thi.
 - Chưa được đặc tả: min/max số lượng, hành vi nút `-` tại số lượng thấp nhất, cận trên số dòng, thêm sản phẩm khác, định dạng/công thức tiền, nhãn cụ thể của nút xác nhận và trạng thái đăng nhập.
-- Chưa có ca hoặc bug bỏ sót được xác nhận vì bộ FR-07 chưa được thực thi.
+- Kết quả thực thi được lưu tại `tests/test-runs/FR-07-gio-hang-run.md`; 10 Fail đã được nhóm thành 6 defect riêng biệt.
