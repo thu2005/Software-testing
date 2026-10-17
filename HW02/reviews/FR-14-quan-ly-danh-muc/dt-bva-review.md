@@ -62,6 +62,6 @@ Bộ FR-14 đã thực thi đủ 11 ca: 6 Pass và 5 Fail. Năm bug độc lập
 
 - Human review: Done.
 - Test run: [`FR-14-quan-ly-danh-muc-run.md`](../../tests/test-runs/FR-14-quan-ly-danh-muc-run.md).
-- Trình duyệt, hệ điều hành, URL và build runtime của lần chạy FR-14 chưa được cung cấp nên không kế thừa dữ liệu môi trường từ feature khác.
-- GitHub Issues cho 5 bug FR-14 chưa được đăng; các bug report hiện liên kết evidence cục bộ và ghi đúng trạng thái này.
+- Môi trường thực thi đã được xác nhận trong test run và bug report: Google Chrome `155.0.8059.80`, Windows `10.0.26100.0`, viewport `1440×1000`, frontend `http://127.0.0.1:5174`, API `http://127.0.0.1:3000`, build `main@85af3ba875c88283615e22cb108f13e2fccaf0e9`.
+- Năm bug FR-14 đã được đăng thành GitHub Issue #11–#15 bởi `thu2005`, gắn label `bug`; mỗi bug report đã liên kết issue, evidence lỗi và ảnh chụp trang issue tương ứng.
 - Các điểm chưa được đặc tả vẫn giữ nguyên: tên trùng, trim/whitespace-only, ký tự và độ dài tối đa, xác nhận xóa, cập nhật danh mục, thứ tự danh sách và xóa danh mục có dữ liệu phụ thuộc. Không biến các điểm này thành lỗi thực thi.
