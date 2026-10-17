@@ -860,3 +860,41 @@ Mình đã ghi gap theo đúng mức bằng chứng: **5 sai lệch đã thấy 
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
+## Tương tác AI - Session hiện tại / 21
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 18:18:22 +07:00
+- Skill: domain-testing, boundary-value-analysis, test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+đã xong FR-07, cứ theo cách nãy giờ chúng ta đã làm, làm tiếp FR-14. Dùng skill domain-testing, boundary-value-analysis. Sau khi có test case, dùng test-case-review.
+Review lại output và chỉnh sửa nếu có.
+Xong thì append log vào prompt log
+
+Assistant (commentary):
+Mình sẽ làm FR-14 theo cùng cấu trúc FR-07: đọc requirement và phần Web Admin liên quan, lập Domain Testing và BVA, sinh bộ test gọn trong khoảng 10–15 ca, rồi dùng `test-case-review` rà coverage, oracle, dữ liệu và các giả định. Mình sẽ sửa trực tiếp mọi finding hợp lệ, để trạng thái `Not Run / None`, ghi rõ human review chưa thực hiện cho FR-14, commit từng bước và append nguyên văn lượt này vào prompt log.
+
+Assistant (commentary):
+Phạm vi FR-14 đã chốt theo đặc tả: Thêm/Xem/Xóa danh mục, tên bắt buộc không rỗng, quyền Admin và bảo vệ API thay đổi dữ liệu theo FR-12, cùng các yêu cầu giao diện chung thực sự áp dụng cho trang/form. Bộ dự kiến gồm **8 ca Domain Testing + 3 ca BVA**; BVA chỉ dùng cận độ dài tên `0/1/2`, không tự đặt độ dài tối đa, quy tắc trùng tên hay xử lý khoảng trắng vì đặc tả không nêu.
+
+Assistant (commentary):
+Vòng review phát hiện bốn điểm cần chỉnh nhưng không làm thay đổi số ca: chú thích sai độ dài `DM-FR14-THEM`, một placeholder ID động trong bước DELETE, lớp token không hợp lệ mô tả quá hẹp và oracle Tab Order thêm điều kiện “không bỏ qua control” ngoài câu chữ đặc tả. Hai điểm đầu đã được sửa trong lúc kiểm tra file; mình đang sửa hai điểm còn lại và ghi đầy đủ finding vào review report.
+
+Assistant (commentary):
+Review cuối đạt: **11/11 ca** có ID/condition nhất quán, link cục bộ tồn tại, dữ liệu biên `0/1/2` đúng độ dài, không còn placeholder và toàn bộ trạng thái là `Not Run / None`. Coverage gồm Thêm/Xem/Xóa, tên rỗng/không rỗng, quyền Admin và các yêu cầu giao diện áp dụng; phần Sửa, độ dài tối đa, duplicate, whitespace-only và xóa danh mục có dữ liệu phụ thuộc đều được loại trừ hoặc ghi thiếu đặc tả thay vì tự suy diễn. Human review cho FR-14 vẫn được ghi đúng là chưa thực hiện.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
