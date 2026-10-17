@@ -833,3 +833,30 @@ Phần chính đã hoàn tất và được lưu ở commit `8c4d30b`: 11/11 tes
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
+## Tương tác AI - Session hiện tại / 20
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 17:44:28 +07:00
+- Skill: qa-workflow, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+dựa vào những gì đã thực thi, xem có thiếu sót gì không thì ghi vào ai-gap-analysis. nếu không, không ghi, không cố bịa. phân biệt ca/bug bỏ sót khác với test case không test trường hợp đó
+
+Assistant (commentary):
+Mình sẽ đối chiếu FR-07 theo ba lớp riêng: yêu cầu đã được thiết kế thành test case, test case đã thực thi, và defect đã được ghi nhận từ kết quả Fail. Chỉ khi có ca hoặc bug thực sự bị bỏ sót mình mới thêm vào `ai-gap-analysis`; phạm vi không được đặc tả hoặc đơn giản chưa được test sẽ không bị gọi nhầm là bug bỏ sót.
+
+Assistant (commentary):
+Có thiếu sót thực, nhưng không nằm ở sáu hành vi FR-07 đã được báo cáo. Ảnh của giỏ có dữ liệu cho thấy bộ test và test run đã bỏ qua các yêu cầu áp dụng trực tiếp cho trang Giỏ hàng: nhãn `Tiếp tục mua sắm` bị đổi thành `Mua tiếp`, không có breadcrumb, không có badge số lượng, trang hiện tại không được highlight và nút thanh toán dùng màu xanh lá. Đây là bug bỏ sót vì evidence đã thể hiện sai lệch; còn kiểm tra semantic `<h1>` và Tab Order chưa từng được thực thi nên chỉ là ca kiểm thử bỏ sót, chưa được kết luận thành bug.
+
+Assistant (commentary):
+Mình đã ghi gap theo đúng mức bằng chứng: **5 sai lệch đã thấy trong ảnh** được phân loại là bug bỏ sót; **2 yêu cầu chưa từng được thực thi** chỉ được phân loại là ca bỏ sót và ghi rõ “không kết luận bug”. Không sửa trạng thái 11 test case cũ, không tự tạo bug report/GitHub Issue mới, và không biến các giới hạn chưa được đặc tả thành gap.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
