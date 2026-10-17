@@ -30,11 +30,12 @@
 
 | Field | Value |
 |---|---|
+| Trạng thái giỏ ban đầu | Không có `SP-FR06-MOBILE` |
 | Số lượng | `-1` |
 
 ## Các bước kiểm thử
 
-1. Mở trang chi tiết fixture.
+1. Bảo đảm giỏ chưa có `SP-FR06-MOBILE`, sau đó mở trang chi tiết fixture.
 2. Thử nhập hoặc dán `-1` vào ô Số lượng.
 3. Bấm `Thêm vào giỏ hàng` nếu control cho phép giữ giá trị và quan sát kết quả.
 

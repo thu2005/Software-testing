@@ -32,7 +32,7 @@ Không có biên có căn cứ cho giá, số lượng tồn kho, kích thước
 
 | Boundary Value ID | Variable / Expression | Constraint | Point | Formula | Test Value | Validity | Expected Behavior | Requirement Reference |
 |---|---|---|---|---|---|---|---|---|
-| BV-QTY-001 | Số lượng `q` | `q ≥ 1` | OFF⁻ | `1 - 1` | `0` | Không hợp lệ | Không chấp nhận để thêm sản phẩm | FR-06 |
+| BV-QTY-001 | Số lượng `q` | `q ≥ 1` | OFF⁻ | `1 - 1` | `0` | Không hợp lệ | Không dùng `0` làm số lượng hiệu lực; control từ chối hoặc chuẩn hóa về giá trị hợp lệ trước thao tác | FR-06 |
 | BV-QTY-002 | Số lượng `q` | `q ≥ 1` | ON | `1` | `1` | Hợp lệ | Chấp nhận và thêm 1 sản phẩm | FR-06 |
 | BV-QTY-003 | Số lượng `q` | `q ≥ 1` | OFF⁺ | `1 + 1` | `2` | Hợp lệ | Chấp nhận và thêm 2 sản phẩm | FR-06 |
 | BV-QTY-004 | Số lượng `q` | `q ≥ 1` | Đại diện bên trong | `1 + 4` | `5` | Hợp lệ | Chấp nhận và thêm 5 sản phẩm | FR-06 |
@@ -47,7 +47,7 @@ Không có biên có căn cứ cho giá, số lượng tồn kho, kích thước
 
 | Test Condition ID | Target Variable | Boundary Value ID | Point | Test Data | Other Constraints | Expected Validity | Expected Result | Selection Reason |
 |---|---|---|---|---|---|---|---|---|
-| COND-FR-06-MOBILE-BVA-001 | Số lượng `q` | BV-QTY-001 | OFF⁻ | `0` | Fixture hợp lệ; giỏ chưa có fixture | Không hợp lệ | Không thêm sản phẩm dựa trên số lượng `0`; không hiển thị feedback thành công. | Kiểm tra ngay dưới cận. |
+| COND-FR-06-MOBILE-BVA-001 | Số lượng `q` | BV-QTY-001 | OFF⁻ | `0` | Fixture hợp lệ; giỏ chưa có fixture | Không hợp lệ | Không dùng `0` làm số lượng hiệu lực; control từ chối thao tác hoặc chuẩn hóa về số nguyên dương trước khi thêm. | Kiểm tra ngay dưới cận. |
 | COND-FR-06-MOBILE-BVA-002 | Số lượng `q` | BV-QTY-002 | ON | `1` | Fixture hợp lệ; giỏ chưa có fixture | Hợp lệ | Thêm fixture với số lượng `1` và có toast hoặc badge cập nhật. | Kiểm tra đúng cận nhỏ nhất hợp lệ. |
 | COND-FR-06-MOBILE-BVA-003 | Số lượng `q` | BV-QTY-003 | OFF⁺ | `2` | Fixture hợp lệ; giỏ chưa có fixture | Hợp lệ | Thêm fixture với số lượng `2` và có toast hoặc badge cập nhật. | Kiểm tra ngay phía trong miền. |
 
@@ -81,5 +81,5 @@ Ba ca chỉ thay đổi số lượng `0/1/2`, còn sản phẩm và trạng th�
 ## 11. Giả định và thông tin chưa được đặc tả
 
 - Không có số lượng tối đa, quy tắc tồn kho, giới hạn control hoặc hành vi khi vượt khả năng lưu trữ.
-- Cách UI chặn `0` và nội dung lỗi chưa được quy định; oracle chỉ yêu cầu giá trị này không được dùng để thêm giỏ.
+- Cách UI xử lý `0` và nội dung lỗi chưa được quy định; oracle chấp nhận việc từ chối hoặc chuẩn hóa về một số nguyên dương trước thao tác, nhưng không chấp nhận dùng `0` làm số lượng hiệu lực.
 - Fixture và trạng thái giỏ phải được tester chuẩn bị độc lập; việc khôi phục dữ liệu do tester thực hiện và review.

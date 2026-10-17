@@ -109,5 +109,6 @@ Ca xem chi tiết và ca kiểm tra giao diện được tách vì một ca đ�
 - Không có quy định về số lượng tối đa, tồn kho, giá trị mặc định, cách hiển thị lỗi hoặc cách control ngăn dữ liệu không hợp lệ.
 - Không có expected behavior cho sản phẩm không tồn tại, API lỗi, ảnh lỗi hoặc trạng thái loading của trang chi tiết.
 - FR-21 dùng thuật ngữ HTML `<h1>` và Tab Order; cách ánh xạ sang React Native chưa được đặc tả nên không tạo oracle cho hai mục này. FR-23 và FR-24 được kiểm tra theo kết quả quan sát được trên Mobile.
+- FR-22 không nói rõ ô Số lượng của FR-06 là trường bắt buộc có nhãn `*` hay có giá trị mặc định trên Mobile; bộ test không tự áp đặt ký hiệu này.
 - Đặc tả không yêu cầu đăng nhập để xem hoặc thêm giỏ trong FR-06; bộ test không tự thêm điều kiện xác thực.
 - Fixture và trạng thái giỏ phải được tester chuẩn bị độc lập; việc khôi phục dữ liệu do tester thực hiện và review.

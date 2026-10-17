@@ -17,7 +17,7 @@
 
 | Test Condition ID | Boundary Value ID | Test Value | Point | Other Constraints | Expected Result |
 |---|---|---|---|---|---|
-| COND-FR-06-MOBILE-BVA-001 | BV-QTY-001 | `0` | OFF⁻ | Fixture hợp lệ; giỏ chưa có fixture | Không thêm sản phẩm dựa trên số lượng `0`; không hiển thị feedback thành công. |
+| COND-FR-06-MOBILE-BVA-001 | BV-QTY-001 | `0` | OFF⁻ | Fixture hợp lệ; giỏ chưa có fixture | Không dùng `0` làm số lượng hiệu lực; control từ chối thao tác hoặc chuẩn hóa về số nguyên dương trước khi thêm. |
 
 ## Điều kiện tiên quyết
 
@@ -41,4 +41,4 @@
 
 ## Kết quả mong đợi
 
-Số lượng `0` không được dùng để thêm sản phẩm. Control có thể chặn/điều chỉnh về giá trị hợp lệ hoặc hệ thống từ chối thao tác; giỏ không được nhận fixture dựa trên số lượng `0` và không có feedback thêm thành công.
+Số lượng hiệu lực không được là `0`. Control có thể chặn/từ chối thao tác hoặc chuẩn hóa về một số nguyên dương trước khi thêm. Nếu giỏ thay đổi, số lượng được thêm phải đúng giá trị hợp lệ đang hiển thị sau khi chuẩn hóa; nội dung lỗi cụ thể chưa được đặc tả.
