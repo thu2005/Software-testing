@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-14 / Web Admin |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Quản lý Danh mục / Chức năng / Domain Testing |
 | Tham chiếu yêu cầu và phân tích | [FR-12](../../../../requirements/system-requirements.md#fr-12-kiểm-soát-truy-cập-access-control), [FR-14](../../../../requirements/system-requirements.md#fr-14-quản-lý-danh-mục-category-crud); [domain-testing-analysis.md](../../../../analysis/FR-14-quan-ly-danh-muc/domain-testing-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-004](../../../../bug-reports/BUG-FR14-004.md) |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-004](../../../../bug-reports/BUG-FR14-004.md) ([Issue #14](https://github.com/thu2005/CSC13003_eshop/issues/14)) |
 
 ## Phân tích miền
 

@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-14 / Web Admin |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Quản lý Danh mục / Chức năng / Domain Testing |
 | Tham chiếu yêu cầu và phân tích | [FR-14](../../../../requirements/system-requirements.md#fr-14-quản-lý-danh-mục-category-crud), [FR-22](../../../../requirements/system-requirements.md#fr-22-form-requirements); [domain-testing-analysis.md](../../../../analysis/FR-14-quan-ly-danh-muc/domain-testing-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-003](../../../../bug-reports/BUG-FR14-003.md) |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR14-003](../../../../bug-reports/BUG-FR14-003.md) ([Issue #13](https://github.com/thu2005/CSC13003_eshop/issues/13)) |
 
 ## Phân tích miền
 
