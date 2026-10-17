@@ -791,3 +791,45 @@ Local artifacts đã hoàn tất và được rà lại: 11/11 evidence khớp A
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. GitHub Issue chưa được tạo do automatic approval review từ chối thao tác external.
+
+## Tương tác AI - Session hiện tại / 19
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 17:36:29 +07:00
+- Skill: bug-report, test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+mình đã mở các github issue và screenshot lại trong @Software-testing/HW02/bug-reports/screenshots/. [BUG-FR07-001 — Issue #5](https://github.com/thu2005/CSC13003_eshop/issues/5)
+
+1. [BUG-FR07-002 — Issue #6](https://github.com/thu2005/CSC13003_eshop/issues/6)
+2. [BUG-FR07-003 — Issue #7](https://github.com/thu2005/CSC13003_eshop/issues/7)
+3. [BUG-FR07-004 — Issue #8](https://github.com/thu2005/CSC13003_eshop/issues/8)
+4. [BUG-FR07-005 — Issue #9](https://github.com/thu2005/CSC13003_eshop/issues/9)
+5. [BUG-FR07-006 — Issue #10](https://github.com/thu2005/CSC13003_eshop/issues/10)
+
+Cập nhật lại bug report. Các phần evidence, link đến file nhớ link đúng, vì assignment làm trong @Software-testing/ (repo [https://github.com/thu2005/Software-testing.git](https://github.com/thu2005/Software-testing.git)), eshop nằm ở @CSC13003-eshop/ (repo [https://github.com/thu2005/CSC13003_eshop.git](https://github.com/thu2005/CSC13003_eshop.git)).
+
+Kiểm tra lại các tài liệu của FR-07 đã hoàn tất, nội dung các chỗ điền tạm đã điền lại đủ chưa. Human review đã done. Review lại và chỉnh sửa nếu có.
+
+Xong thì append log vào prompt log
+
+Assistant (commentary):
+Mình sẽ rà toàn bộ FR-07 theo hai repository đã xác nhận: artifact/evidence thuộc `thu2005/Software-testing`, còn GitHub Issues thuộc `thu2005/CSC13003_eshop`. Mình sẽ kiểm tra 6 ảnh issue, cập nhật URL và ảnh trang issue vào từng bug report/test run, tìm placeholder hoặc thông tin tạm còn sót, xác nhận human review, sửa các liên kết sai rồi append prompt log.
+
+Assistant (commentary):
+Sáu ảnh đều đúng repository, mã bug và Issue #5–#10; nội dung issue cũng khớp test case, môi trường, build và bằng chứng trong bug report. Mình đang cập nhật traceability hai chiều: bug report → issue/ảnh issue và test case/test run → bug report/issue, đồng thời giữ rõ bằng chứng local thuộc repo `Software-testing`.
+
+Assistant (commentary):
+Rà soát nội dung phát hiện một câu cũ trong review nói “chưa phải kết quả thực thi”, trong khi phần sau đã ghi kết quả chạy. Mình đã sửa câu này để tách rõ review thiết kế ở mục 3–5 và kết quả thực thi/defect ở mục 6–7; các dòng “Chưa có” còn lại đều là khoảng trống đặc tả được chủ động ghi nhận, không phải chỗ điền tạm.
+
+Assistant (commentary):
+Phần chính đã hoàn tất và được lưu ở commit `8c4d30b`: 11/11 test case đồng bộ với test run, 6 bug report liên kết Issue #5–#10 và 6 ảnh trang issue. Kiểm tra local link, số lượng evidence, trạng thái Pass/Fail và placeholder đều đạt; mình đang append nguyên văn tương tác này vào prompt log rồi kiểm tra commit cuối.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
