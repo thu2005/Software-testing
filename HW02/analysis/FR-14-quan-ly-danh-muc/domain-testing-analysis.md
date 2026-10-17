@@ -30,7 +30,7 @@ Quy ước dữ liệu: `DM-FR14-XEM` là danh mục đã tồn tại để ki�
 | Class ID | Variable / Condition | Description | Validity / Output Category | Representative | Expected Behavior | Requirement Reference |
 |---|---|---|---|---|---|---|
 | EC-AUTH-V01 | Xác thực và vai trò | JWT hợp lệ, role Admin | Hợp lệ | Tài khoản Admin mặc định | Được truy cập và thay đổi danh mục | FR-12 |
-| EC-AUTH-I01 | Xác thực và vai trò | Không gửi token | Không hợp lệ | POST không có `Authorization` | Request bị từ chối, dữ liệu không đổi | FR-12 |
+| EC-AUTH-I01 | Xác thực và vai trò | Không có JWT hợp lệ: thiếu, sai hoặc hết hạn | Không hợp lệ | POST không có `Authorization` | Request bị từ chối, dữ liệu không đổi | FR-12 |
 | EC-AUTH-I02 | Xác thực và vai trò | JWT hợp lệ nhưng role không phải Admin | Không hợp lệ | Token của user test | Truy cập/thay đổi bị từ chối, dữ liệu không đổi | FR-12 |
 | EC-ACTION-V01 | Thao tác quản lý | Xem danh sách | Hợp lệ | Mở mục Danh mục | Hiển thị danh mục hiện có | FR-14 |
 | EC-ACTION-V02 | Thao tác quản lý | Thêm danh mục | Hợp lệ | Thêm `DM-FR14-THEM` | Danh mục mới được tạo | FR-14 |
@@ -102,7 +102,7 @@ Mỗi thao tác FR-14 có ít nhất một ca hợp lệ. Tên rỗng được t
 | EC-ACTION-V02, EC-NAME-V01, EC-RESULT-O02, DC-01 | DT-002 | Đã bao phủ | Chưa chạy | Không có |
 | EC-NAME-I01, EC-RESULT-O03, DC-01 | DT-003 | Đã bao phủ | Chưa chạy | Không có |
 | EC-ACTION-V03, EC-RESULT-O04, DC-02 | DT-004 | Đã bao phủ | Chưa chạy | Không có |
-| EC-AUTH-I01, EC-RESULT-O05, DC-03 | DT-005 | Đã bao phủ | Chưa chạy | Không có |
+| EC-AUTH-I01, EC-RESULT-O05, DC-03 | DT-005 | Đã bao phủ | Chưa chạy | Chọn trường hợp thiếu token làm đại diện lớp không có JWT hợp lệ |
 | EC-AUTH-I02, EC-RESULT-O05, DC-02, DC-03 | DT-006 | Đã bao phủ | Chưa chạy | Không có |
 | EC-AUTH-I02, EC-RESULT-O05, DC-04 | DT-007 | Đã bao phủ | Chưa chạy | Không có |
 | EC-KEYBOARD-V01, EC-RESULT-O07 | DT-008 | Đã bao phủ | Chưa chạy | Không có |
