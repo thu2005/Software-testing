@@ -19,9 +19,7 @@ Mọi đường dẫn đầu ra dưới đây tính từ `HW02/`. Với FR-06 tr
 | Thiếu sót AI | [ai-gap-analysis-template.md](ai-gap-analysis-template.md) | `$qa-workflow` khi có bằng chứng | `ai-gap-analysis/<FEATURE-ID>-<feature-name>.md` |
 | Tương tác AI | [prompt-log-entry-template.md](prompt-log-entry-template.md) | `$prompt-log` | Nối vào `reports/prompt_log.md` |
 | Báo cáo chính | [report-template.md](report-template.md) | Tổng hợp báo cáo | `reports/report.md` |
-| Báo cáo kiểm toán AI | [ai-audit-report-template.md](ai-audit-report-template.md) | Tổng hợp phụ lục AI | `reports/ai-audit-report.md` |
 | Đoạn phản biện AI | [ai-critique-template.md](ai-critique-template.md) | Tổng hợp báo cáo | `reports/ai-critique.md` |
 | Tự đánh giá và tổng kết | [readme-template.md](readme-template.md) | Chuẩn bị bài nộp | `README.md` |
-| Video minh họa | [demo-videos-template.md](demo-videos-template.md) | Chuẩn bị bài nộp | `reports/demo-videos.md` |
 
 PDF được xuất từ báo cáo Markdown đã điền; không cần mẫu PDF riêng. Git log xuất trực tiếp từ lịch sử thật vào `reports/git_log.txt`. Ảnh, video và URL issue phải lấy từ thực tế, không sinh từ mẫu.

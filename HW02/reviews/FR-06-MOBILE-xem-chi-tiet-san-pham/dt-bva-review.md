@@ -62,4 +62,4 @@ Test run, 11 test case, hai tài liệu phân tích và 6 bug report đã đư�
 - Môi trường: Android Emulator Pixel 4a (`sdk_gphone64_x86_64`), Android 13 API 33, `1080×2340`, Expo Go / Expo SDK 54, SUT commit `85af3ba875c88283615e22cb108f13e2fccaf0e9`.
 - Chuẩn bị và khôi phục dữ liệu: do tester thực hiện và review.
 - Chưa được đặc tả: số lượng tối đa, tồn kho, giá trị mặc định, nội dung validation, hành vi sản phẩm không tồn tại/loading/lỗi API, và cách ánh xạ `<h1>`/Tab Order/dấu `*` sang React Native.
-- GitHub Issues: chưa đăng; các bug report ghi đúng trạng thái `Chưa đăng` và không tạo URL tạm.
+- GitHub Issues: đã đăng Issues #16–#21 tại `thu2005/CSC13003_eshop`; sáu bug report đã có URL thật và ảnh chụp trang issue trong `bug-reports/screenshots/`.
