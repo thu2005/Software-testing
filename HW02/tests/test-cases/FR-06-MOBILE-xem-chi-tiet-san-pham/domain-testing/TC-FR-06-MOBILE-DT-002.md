@@ -7,7 +7,7 @@
 | Mã yêu cầu / Nền tảng | FR-06 / Mobile |
 | Phân hệ / Loại kiểm thử / Kỹ thuật | Xem chi tiết sản phẩm / Chức năng / Domain Testing |
 | Tham chiếu yêu cầu và phân tích | [FR-06](../../../../requirements/system-requirements.md#fr-06-xem-chi-tiết-sản-phẩm), [FR-21 đến FR-24](../../../../requirements/system-requirements.md#fr-21-tiêu-chuẩn-giao-diện-chung); [domain-testing-analysis.md](../../../../analysis/FR-06-MOBILE-xem-chi-tiet-san-pham/domain-testing-analysis.md) |
-| Trạng thái / Lỗi liên quan | Fail / [BUG-FR06-002](../../../../bug-reports/BUG-FR06-002.md), [BUG-FR06-003](../../../../bug-reports/BUG-FR06-003.md), [BUG-FR06-004](../../../../bug-reports/BUG-FR06-004.md) |
+| Trạng thái / Lỗi liên quan | Fail / [BUG-FR06-002](../../../../bug-reports/BUG-FR06-002.md) ([Issue #17](https://github.com/thu2005/CSC13003_eshop/issues/17)), [BUG-FR06-003](../../../../bug-reports/BUG-FR06-003.md) ([Issue #18](https://github.com/thu2005/CSC13003_eshop/issues/18)), [BUG-FR06-004](../../../../bug-reports/BUG-FR06-004.md) ([Issue #19](https://github.com/thu2005/CSC13003_eshop/issues/19)) |
 
 ## Phân tích miền
 
