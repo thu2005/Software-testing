@@ -1029,3 +1029,77 @@ Review cuối đã đạt sau chỉnh sửa: **11/11 ca** có ID/condition duy n
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. FR-06 được tổ chức bằng mã tệp `FR-06-MOBILE` nhưng truy vết nghiệp vụ về FR-06.
+
+
+## Tương tác AI - Session hiện tại / 25
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 20:57:16 +07:00
+- Skill: test-execution, bug-report, test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+human review done.
+
+Đã thực thi xong toàn bộ 11 test case FR-06 Mobile.
+
+Kết quả: **1 Pass, 10 Fail**
+
+| Test case | Kết quả | Actual result                                                                                                              |
+| --------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
+| DT-001    | Fail    | Thiếu thông tin danh mục sản phẩm.                                                                                         |
+| DT-002    | Fail    | Không có breadcrumb; nút thêm giỏ màu xanh lá thay vì xanh dương; ảnh không có mô tả accessibility.                        |
+| DT-003    | Pass    | Control chấp nhận và giữ đúng số lượng `3`.                                                                                |
+| DT-004    | Fail    | Để trống số lượng vẫn báo thêm giỏ thành công.                                                                             |
+| DT-005    | Fail    | Số lượng `-1` vẫn được thêm.                                                                                               |
+| DT-006    | Fail    | Số lượng `1.5` vẫn được thêm.                                                                                              |
+| DT-007    | Fail    | Giá trị `abc` vẫn được thêm.                                                                                               |
+| DT-008    | Fail    | Nhập `5` có thông báo thành công và badge cập nhật, nhưng mở giỏ chỉ hiện màn hình trắng nên không xác nhận được số lượng. |
+| BVA-001   | Fail    | Số lượng `0` vẫn được thêm thay vì bị từ chối hoặc chuẩn hóa rõ ràng trước khi thêm.                                       |
+| BVA-002   | Fail    | Nhập `1` có phản hồi thành công, nhưng màn hình giỏ hàng trắng, không xác nhận được sản phẩm và số lượng.                  |
+| BVA-003   | Fail    | Nhập `2` có phản hồi thành công, nhưng màn hình giỏ hàng trắng, không xác nhận được sản phẩm và số lượng.                  |
+
+Môi trường:
+
+- Android Emulator: Pixel 4a / `sdk_gphone64_x86_64`
+- Android 13, API 33
+- Độ phân giải: 1080×2340
+- Expo Go / Expo SDK 54
+- SUT commit: `85af3ba875c88283615e22cb108f13e2fccaf0e9`
+
+Ảnh đã lưu tại:
+
+- Pass: [tests/test-runs/screenshots](D:\testing\CSC13003\Software-testing\HW02\tests\test-runs\screenshots)
+- Fail: [bug-reports/screenshots](D:\testing\CSC13003\Software-testing\HW02\bug-reports\screenshots)
+
+Viết bug report.
+
+review lại và chỉnh sửa nếu có.
+
+append log.
+
+Assistant (commentary):
+Mình sẽ dùng `test-execution`, `bug-report`, `test-case-review` và `prompt-log`: đối chiếu đủ 11 ảnh với kết quả bạn cung cấp, cập nhật test run và trạng thái từng test case, nhóm các Fail theo hành vi độc lập, tạo bug report từ evidence thật, rồi rà lại analysis/review và số liệu. Dự kiến 10 ca Fail quy về **6 bug độc lập**: thiếu danh mục; thiếu breadcrumb; sai màu nút; thiếu mô tả accessibility; không validation số lượng; và màn hình giỏ Mobile trắng.
+
+Assistant (commentary):
+Evidence đã khớp với bảng kết quả. Mình giữ `Fail` cho DT-008, BVA-002 và BVA-003 vì màn hình giỏ trắng là sai lệch quan sát được của SUT, không phải trở ngại môi trường; đồng thời gộp 5 ca số lượng không hợp lệ vào một bug chung vì cùng hành vi và nguyên nhân xử lý đầu vào.
+
+Assistant (commentary):
+Sáu bug được tách theo sáu yêu cầu/hành vi độc lập: dữ liệu danh mục, breadcrumb, màu nút tích cực, accessibility của ảnh, validation số lượng, và màn hình giỏ. Cách nhóm này giữ đúng quan hệ nhiều test case có thể cùng phát hiện một defect, đồng thời tránh gộp các lỗi UI có tiêu chí sửa khác nhau.
+
+Assistant (commentary):
+Các tài liệu đã được đồng bộ theo kết quả thực thi: test run ghi `1 Pass / 10 Fail`, 11 test case có trạng thái và liên kết bug, analysis có execution coverage, review ghi `Human review: Done`, và 6 bug report đều trỏ tới evidence thật. Các trường GitHub Issue vẫn để `Chưa đăng` vì hiện chưa có URL issue FR-06 được cung cấp.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Mười ca Fail được quy về sáu defect độc lập; chưa có GitHub Issue FR-06 trong context.
