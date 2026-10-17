@@ -990,3 +990,42 @@ Assistant (commentary):
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Gap FR-14 chỉ dựa trên chữ tiếng Anh quan sát trực tiếp trong evidence của DT-007 và yêu cầu FR-21.
+
+
+## Tương tác AI - Session hiện tại / 24
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 20:01:37 +07:00
+- Skill: domain-testing, boundary-value-analysis, test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+đã xong FR-14, cứ theo cách nãy giờ chúng ta đã làm, làm tiếp FR-06 (mobile). Dùng skill domain-testing, boundary-value-analysis. Sau khi có test case, dùng test-case-review.
+Review lại output và chỉnh sửa nếu có.
+Xong thì append log vào prompt log
+
+Assistant (commentary):
+Mình sẽ làm FR-06 Mobile theo đúng quy trình đã dùng cho FR-07/FR-14: đọc đặc tả và cấu trúc ứng dụng Mobile, lập Domain Testing và BVA, tạo bộ test gọn trong khoảng 10–15 ca, rồi dùng `test-case-review` rà traceability, dữ liệu, oracle và giả định. Mọi finding hợp lệ sẽ được sửa trước khi chốt; test case giữ `Not Run / None`, human review ghi chưa thực hiện, commit dùng prefix `[HW02]`, sau đó append nguyên văn lượt này vào prompt log.
+
+Assistant (commentary):
+Phạm vi FR-06 Mobile có một biên có căn cứ là số lượng tối thiểu `1`; không có cận trên được đặc tả. Mình dự kiến **8 ca Domain Testing + 3 ca BVA**: hiển thị đủ thông tin sản phẩm, các yêu cầu giao diện dùng chung áp dụng được trên Mobile, bốn lớp số lượng hợp lệ/không hợp lệ, và hành vi thêm vào giỏ kèm phản hồi. BVA chỉ dùng `0/1/2`; không tự đặt tồn kho, số lượng tối đa hay quy tắc cho sản phẩm không tồn tại.
+
+Assistant (commentary):
+Vòng review phát hiện hai điểm cần sửa trong oracle và dữ liệu chạy: bốn ca invalid chưa cố định trạng thái giỏ ban đầu nên khó chứng minh “không thêm”, và BVA tại `0` đang ép hệ thống phải từ chối hoàn toàn dù việc control tự chuẩn hóa về `1` trước submit vẫn thỏa điều kiện “chỉ nhận số nguyên dương”. Mình sẽ sửa các ca này để đo **số lượng hiệu lực** thay vì áp đặt cách validation, đồng thời ghi rõ giới hạn áp dụng FR-22 trên React Native. Số lượng test case giữ nguyên 11.
+
+Assistant (commentary):
+Review cuối đã đạt sau chỉnh sửa: **11/11 ca** có ID/condition duy nhất, liên kết cục bộ hợp lệ, dữ liệu `0/1/2` đúng BVA, mọi test case ở `Not Run / None`, và không còn oracle áp đặt cách xử lý chưa được đặc tả. Coverage gồm đủ năm trường chi tiết, UI Mobile có căn cứ, bốn lớp số lượng invalid, thêm giỏ/feedback và cận dưới; cận trên, tồn kho, lỗi tải và các khái niệm HTML chưa có ánh xạ Mobile được ghi là thiếu đặc tả thay vì tự suy diễn. Human review vẫn được ghi đúng là chưa thực hiện.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. FR-06 được tổ chức bằng mã tệp `FR-06-MOBILE` nhưng truy vết nghiệp vụ về FR-06.
