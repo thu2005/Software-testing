@@ -898,3 +898,59 @@ Review cuối đạt: **11/11 ca** có ID/condition nhất quán, link cục b�
 ### Ghi chú
 
 Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi.
+
+
+## Tương tác AI - Session hiện tại / 22
+
+- Model: Codex; model/version chưa xác định
+- Timestamp: Không ghi nhận thời điểm gốc của từng message
+- Thời điểm lưu log: 2026-10-17 18:35:50 +07:00
+- Skill: test-execution, bug-report, test-case-review, prompt-log
+
+### Hội thoại nguyên văn
+
+````text
+User:
+# Context from my IDE setup:
+
+## Open tabs:
+- HW02-ai-gap-analysis.md: Software-testing/HW02/ai-gap-analysis/HW02-ai-gap-analysis.md
+
+## My request:
+human review: done. đã execute và screenshot trong @Software-testing/HW02/tests/test-runs/screenshots/, @Software-testing/HW02/bug-reports/screenshots/. Dùng skill và tạo bug report. Review lại và chỉnh sửa nếu có, xong thì append log vào prompt log.
+
+
+
+| Test case        | Status | Actual Result                                                                                                                                     |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TC-FR-14-DT-001  | Fail   | Fixture hiển thị, đúng 1 `<h1>`, menu active và màu nút đúng; nhưng thiếu dấu `*` cạnh trường bắt buộc và còn nội dung tiếng Anh như `Dashboard`. |
+| TC-FR-14-DT-002  | Pass   | Tạo thành công `DM-FR14-THEM`, danh mục xuất hiện trong danh sách.                                                                                |
+| TC-FR-14-DT-003  | Fail   | Tên rỗng vẫn được gửi và tạo thành một dòng danh mục trống; không có validation phù hợp.                                                          |
+| TC-FR-14-DT-004  | Pass   | Xóa đúng `DM-FR14-XOA`; các danh mục khác không bị ảnh hưởng.                                                                                     |
+| TC-FR-14-DT-005  | Pass   | POST không token bị từ chối với HTTP `401 Unauthorized`; danh mục không được tạo.                                                                 |
+| TC-FR-14-DT-006  | Fail   | Token user thường xóa danh mục thành công với HTTP `200`; `DM-FR14-BAOVE` bị xóa.                                                                 |
+| TC-FR-14-DT-007  | Pass   | User thường bị giữ tại trang login, nhận thông báo không phải admin và không có `adminToken`.                                                     |
+| TC-FR-14-DT-008  | Fail   | Các mục navigation không thể nhận focus bằng Tab; focus bắt đầu từ ô tên rồi chuyển sang nút Thêm/Xóa.                                            |
+| TC-FR-14-BVA-001 | Fail   | Tên 0 ký tự vẫn tạo thêm danh mục trống, không hiển thị lỗi validation.                                                                           |
+| TC-FR-14-BVA-002 | Pass   | Tạo thành công danh mục `A` dài 1 ký tự.                                                                                                          |
+| TC-FR-14-BVA-003 | Pass   | Tạo thành công danh mục `AB` dài 2 ký tự.                                                                                                         |
+
+Assistant (commentary):
+Mình sẽ dùng `test-execution`, `bug-report`, `test-case-review` và `prompt-log`: đối chiếu đủ 11 ảnh với bảng kết quả, cập nhật test case/test run, nhóm các Fail theo hành vi độc lập, tạo bug report với evidence thật, rồi rà lại số liệu và human review. Thông tin môi trường nào chưa được cung cấp cho FR-14 sẽ được ghi đúng là chưa có, không kế thừa từ FR-07 hoặc tự suy ra.
+
+Assistant (commentary):
+Mình đã đối chiếu đủ 11 evidence: 6 Pass và 5 Fail. Hai ca DT-003/BVA-001 cùng một lỗi chấp nhận tên rỗng, nên sẽ quy về một bug; tổng cộng có 5 bug độc lập, không nhân đôi theo số test case.
+
+Assistant (commentary):
+Kết quả review cho thấy năm lỗi có oracle rõ từ FR-12/FR-14/FR-21/FR-22; không có lỗi nào phải suy diễn từ hành vi chưa đặc tả. Mình đang ghi test run với môi trường chưa được cung cấp đúng trạng thái thực tế, đồng thời cập nhật hai chiều giữa test case, phân tích, review và bug report.
+
+Assistant (commentary):
+Các artifact chính đã đồng bộ: 11/11 test case có trạng thái và liên kết bug, test run ghi 6 Pass/5 Fail, hai analysis phản ánh execution coverage, và review đã chuyển sang trạng thái sau thực thi với `Human review: Done`. Năm bug report đều dùng evidence cục bộ thật; các trường môi trường chưa được cung cấp được ghi rõ, không lấy lại dữ liệu FR-07.
+
+Assistant (commentary):
+Vòng kiểm tra cuối đạt: 18 tài liệu liên quan không có link cục bộ hỏng, 11/11 evidence được tham chiếu, không còn test case `Not Run`, bảng Markdown nhất quán và không có ký tự lỗi mã hóa. Phần thực thi cùng 5 bug report đã được lưu ở commit `0cb0296`; mình đang append nguyên văn lượt này vào prompt log và sẽ kiểm tra commit cuối.
+````
+
+### Ghi chú
+
+Phạm vi: prompt gần nhất và các message Assistant hiển thị trong lượt này. Không log tool call/output, nội dung skill, system/developer instructions hoặc suy luận riêng tư. Bản ghi dừng trước câu trả lời cuối; không tạo trước nội dung chưa được gửi. Hai ca DT-003 và BVA-001 được ghi nhận là cùng một defect, không nhân đôi số bug.
