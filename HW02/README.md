@@ -103,14 +103,14 @@ Ba ca FR-01 bị `Blocked` do thiếu trường Xác nhận mật khẩu hoặc 
 | Deliverable | Path | Status |
 |---|---|---|
 | Báo cáo chính | [reports/main-report.md](reports/main-report.md) | Đã có |
-| Báo cáo chính PDF | `reports/main-report.pdf` | Chưa xuất PDF |
+| Báo cáo chính PDF | [reports/main-report.pdf](reports/main-report.pdf) | Đã có |
 | AI Critique | [reports/ai-critique.md](reports/ai-critique.md) | Đã có |
-| AI Critique PDF | `reports/ai-critique.pdf` | Chưa xuất PDF |
+| AI Critique PDF | [reports/ai-critique.pdf](reports/ai-critique.pdf) | Đã có |
 | AI Audit Report | [reports/ai-audit-report.md](reports/ai-audit-report.md) | Đã có |
-| AI Audit Report PDF | `reports/ai-audit-report.pdf` | Chưa xuất PDF |
+| AI Audit Report PDF | [reports/ai-audit-report.pdf](reports/ai-audit-report.pdf) | Đã có |
 | AI Gap Analysis | [ai-gap-analysis/HW02-ai-gap-analysis.md](ai-gap-analysis/HW02-ai-gap-analysis.md) | Đã có |
-| Prompt log | [reports/prompt_log.md](reports/prompt_log.md) | Đã có |
-| Git commit log | `git_log.md` | Chưa xuất |
+| Prompt log | [reports/prompt_log.md](reports/prompt_log.md) / [PDF](reports/prompt_log.pdf) | Đã có |
+| Git commit log | [reports/git_log.md](reports/git_log.md) | Đã xuất 53 commit `[HW02]` |
 | Requirements | [requirements/](requirements/) | Đã có |
 | Analysis artifacts | [analysis/](analysis/) | Đã có |
 | Test cases | [tests/test-cases/](tests/test-cases/) | Đã có |
