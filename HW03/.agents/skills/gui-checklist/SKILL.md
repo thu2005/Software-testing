@@ -1,0 +1,182 @@
+---
+name: gui-checklist
+description: Run HW03 Task 1 end to end — design more than 40 GUI checklist items covering IA-01 (general UI), IA-02 (forms), IA-03 (navigation), and IA-04 (feedback/state) on chosen EShop screens, critique the AI's first pass and add human-found gaps with reasoning, execute the checklist against the running SUT, and file bugs for failures. Use when the student is starting or continuing the GUI checklist deliverable for HW03.
+---
+
+# GUI Checklist (HW03 Task 1)
+
+## Workspace boundary
+
+The course-assignment Git repository is `Software-testing/`; the homework
+root is `Software-testing/HW03/`; and the SUT is the separate sibling
+repository `CSC13003-eshop/`. Treat every relative output path in this skill
+as relative to `Software-testing/HW03/`. Read the SUT repository as ground
+truth, but never write HW03 deliverables into it.
+
+**Language: every file this skill writes (`checklist/gui-checklist.md`,
+`ai-gap-analysis/*.md`, the Task 1 section of `reports/main-report.md`) must
+be natural, fluent Vietnamese — checklist item text, gap-analysis reasoning,
+notes, everything. Only keep jargon in English: IA-01–IA-04 codes, field/column
+names that are schema (`Source`, `Result`, `Bug ID`), and UI/technical terms
+with no natural Vietnamese equivalent (e.g. "skeleton state", "touch target").
+Checklist items you draft or ask the AI to draft should read as something a
+Vietnamese tester would actually write, not a translated English sentence.**
+
+Guides the AI through the checklist technique step by step, the way it's
+taught — not a single "generate a GUI checklist" prompt. Output lands in
+`checklist/gui-checklist.md` (the working table) which the student exports to
+`.xlsx` before submission (§14 requires an Excel file). "More than 40" means
+at least **41** distinct, meaningful items; exactly 40 is insufficient.
+
+## Phase A — Scope
+
+1. Ask the student which screen(s) they're covering if not already recorded.
+   One screen is allowed but won't realistically reach 40 non-repetitive
+   items (per §5) — recommend 3–5 screens across pools, e.g. Home + Product
+   Detail + Cart + Checkout, or an Admin screen, or a Mobile screen.
+2. Check `README.md`'s scope section (or the student directly) for which
+   screens teammates already claimed — §5 forbids duplicating a teammate's
+   primary screen within the group.
+3. Record the chosen screens, the build/commit tested, and the SUT URL in
+   `README.md`'s scope section — not in `checklist/gui-checklist.md`, which
+   the spec (§6, §14) only requires to hold the item table and per-IA
+   summary, nothing else.
+4. Commit:
+   ```bash
+   git add README.md
+   git commit -m "docs: select GUI checklist scope — <screens>"
+   ```
+
+## Phase B — AI-generated first pass, one IA aspect at a time
+
+Before generating for any screen, read `../../CSC13003-eshop/README.md` —
+the SUT repository's own system-requirements specification.
+FR-05/FR-06 describe the product listing/detail screens' required elements,
+and FR-21–FR-24 map almost directly onto IA-01–IA-04 (general UI, forms,
+navigation, feedback/state). Ground every generated item in these FRs where
+one applies — this gives the AI concrete, checkable ground truth instead of
+free-associating from a live screenshot alone. Don't skip this file just
+because a browser automation agent can see the rendered page; the FRs state
+requirements (e.g. "breadcrumb required on sub-pages") that aren't always
+obvious from looking at one state of the UI.
+
+Do **not** ask for all 41+ items in one generic prompt. Run one focused prompt
+per (IA aspect × screen) combination, e.g. "List IA-02 (forms) checklist items
+for the Checkout screen's coupon + payment form, covering validation,
+labeling, error messaging, and required-field indication." See
+`references/ia-seed-categories.md` for the sub-topics to steer each prompt
+toward so the AI has something concrete to check instead of free-associating.
+
+For each prompt run:
+1. Send it, capture the output.
+2. Log it immediately with the `ai-audit-log` skill (tool, prompt, output,
+   verdict, reasoning) — don't defer logging to the end.
+3. Append the surviving items to `checklist/gui-checklist.md` using this
+   schema:
+
+   | ID | IA | Screen | Item | Source | Result | Notes | Screenshot | Bug ID |
+   |---|---|---|---|---|---|---|---|---|
+   | GUI-001 | IA-02 | Checkout | Coupon field shows inline error for an invalid code before submit | AI | Not Run | | | |
+
+   `Source` is `AI` or `Human` — every item must be traceable.
+
+## Phase C — Critical human review (mandatory, not optional)
+
+HW03 explicitly requires: "Critically review the AI-generated items and add
+to your checklist any items the AI missed. For each item you add, explain why
+the AI missed it." This is graded, so do it deliberately:
+
+1. After each AI batch, actively look for gaps using
+   `references/ia-seed-categories.md` as a checklist-of-checklists — the spec
+   calls out accessibility, RTL layout, and dark mode as *examples* of things
+   AI commonly skips, not the full list. Also check: keyboard-only navigation,
+   focus order, touch-target size on mobile, loading/skeleton states, offline
+   /slow-network feedback, empty-state design, destructive-action
+   confirmation, session-timeout messaging, and Vietnamese-specific concerns
+   (currency formatting ₫, date format, diacritics rendering, VN phone/ID
+   validation).
+2. For every item you (the human) add, write a one-line reason in a
+   `ai-gap-analysis/gui-checklist-gaps.md` entry. If it does not exist, create
+   it with fields for checklist ID, source prompt/batch, missed aspect, reason,
+   and student-added item. Attribute the miss to one of: prompt scope (you
+   didn't ask), model limitation (it doesn't know this SUT's specifics), or
+   interface-specific trait (something unique to EShop's design). Do not
+   write generic filler reasons; tie each to the actual prompt that was sent.
+3. Mark those rows `Source = Human` in the checklist table.
+4. Commit:
+   ```bash
+   git add checklist/gui-checklist.md ai-gap-analysis/gui-checklist-gaps.md
+   git commit -m "docs(checklist): design + gap analysis for <IA aspect/screen>"
+   ```
+
+## Phase D — Execution against the running SUT
+
+1. Confirm the SUT is running locally (per `eshop-sut` repo instructions) and
+   record the build/commit hash and URL in `README.md`'s scope section (fill
+   in the `<TODO>` placeholders left from Phase A if not already done).
+2. **If browser automation is available to the agent**, drive the browser
+   directly instead of waiting for the student to narrate each check:
+   - Navigate to the target screen yourself, perform the exact interaction
+     each row describes (click, type, resize, toggle), and read the actual
+     rendered state back from the page — don't infer Pass/Fail from the HTML
+     alone if the check is visual (spacing, alignment, contrast).
+   - Go through every row in order. For each: perform the check, set
+     `Result` to `Passed` or `Failed` based on what you observed.
+   - For **Failed** rows only: capture a screenshot through the extension,
+     save it under `checklist/screenshots/GUI-<id>.png`, and link it in the
+     `Screenshot` column. Fill `Notes` with the concrete reason (what you saw
+     vs. expected).
+   - Narrate what you're doing and finding as you go (one line per row is
+     enough) so the student watching can catch a misjudgment in real time —
+     this is still the student's checklist, and a wrong Pass/Fail call is on
+     them if unreviewed. Pause and ask the student if a check is genuinely
+     ambiguous (e.g. a subjective "does this look right" call).
+   - If the extension isn't connected or a check needs something it can't do
+     (multi-window, OS-level dialogs, devtools inspection), fall back to
+     step 3.
+3. **Without browser automation**: go through every row in order. For each,
+   ask the student to perform the check and describe what they saw; set
+   `Result` to `Passed` or `Failed` from their description. For **Failed**
+   rows only, have the student save a screenshot under
+   `checklist/screenshots/GUI-<id>.png` and link it in the `Screenshot`
+   column, with `Notes` describing the concrete reason it failed.
+4. For any Failed row, file it with the `bug-report` skill and record the
+   returned `BUG-ID` in the `Bug ID` column.
+5. For **Passed** rows, leave `Screenshot` empty — §6 says screenshots are for
+   failed items only; don't pad the report with pass screenshots.
+6. Commit after the execution pass:
+   ```bash
+   git add checklist/gui-checklist.md checklist/screenshots/
+   git commit -m "test(checklist): execute <IA aspect/screen> items against SUT"
+   ```
+   (Bug reports get their own commit — see the `bug-report` skill.)
+
+## Phase E — Roll up into the main report
+
+Once execution is complete, update `reports/main-report.md`'s Task 1 section
+with: screens covered, total items (must exceed 40), pass/fail counts per IA
+aspect, and links to filed bugs. Keep the full item-by-item table in
+`checklist/gui-checklist.md` / the exported `.xlsx` — the main report should
+summarize, not duplicate, the whole table. Refresh `git-log.txt` too:
+```bash
+git log --pretty=format:'%h %ad %s' --date=short > git-log.txt
+git add git-log.txt reports/main-report.md
+git commit -m "docs: roll up GUI checklist into main report"
+```
+
+## Guardrails
+
+- Never mark an item `Passed` without actually exercising it on the running
+  SUT — this skill supports execution, it doesn't simulate it. This applies
+  whether the click happened via browser automation or the student's own hand;
+  never mark a row from guessing what "probably" happens.
+- Keep IA coverage balanced; a 41-item checklist that is almost entirely
+  IA-01 with only one item for each other aspect is shallow even though it
+  exceeds the numerical minimum.
+- If the AI batch already included a good item, don't re-derive it as a fake
+  "human gap" just to pad the gap-analysis section — that misrepresents the
+  review and is exactly the kind of raw-AI-output-without-review the
+  assignment forbids.
+- Commit each phase separately (§12) — never squash scope + generation +
+  review + execution into one commit, and never amend/rebase past commits to
+  "clean up" the history.
