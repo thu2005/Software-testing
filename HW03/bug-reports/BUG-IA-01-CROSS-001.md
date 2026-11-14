@@ -28,4 +28,4 @@ Cả Giỏ Hàng và Xác Nhận Đơn Hàng đều dùng h2; số h1 là 0.
 ![BUG-IA-01-CROSS-001](screenshots/BUG-IA-01-CROSS-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/46

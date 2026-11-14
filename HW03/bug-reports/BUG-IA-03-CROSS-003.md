@@ -29,4 +29,4 @@ Link chỉ có chữ Giỏ hàng, không có badge ở cả trạng thái có s�
 ![BUG-IA-03-CROSS-003](screenshots/BUG-IA-03-CROSS-003.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/54

@@ -28,4 +28,4 @@ Link Cart không có active style/aria-current; navbar không có mục Checkout
 ![BUG-IA-03-CROSS-004](screenshots/BUG-IA-03-CROSS-004.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/55

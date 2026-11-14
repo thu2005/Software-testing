@@ -29,4 +29,4 @@ Tổng tiền là input type=number không có readonly/disabled và sửa trự
 ![BUG-IA-02-CHECKOUT-001](screenshots/BUG-IA-02-CHECKOUT-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/49

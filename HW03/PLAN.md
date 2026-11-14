@@ -95,9 +95,9 @@ expected result kiểm tra được; tất cả còn `Not Run`.
 
 ### M3 — Baseline execution và bugs
 
-**Trạng thái: Đã execute 65/65 item trên Chrome 157 / Windows — 31 Passed,
-34 Failed; đã tạo 34 screenshot và 20 Markdown bug report. Chờ sinh viên xác
-nhận commit/push evidence và tạo 20 GitHub Issue trước khi đóng M3.**
+**Trạng thái: Hoàn tất. Đã execute 65/65 item trên Chrome 157 / Windows —
+31 Passed, 34 Failed; tạo 34 screenshot, 20 Markdown bug report và 20 GitHub
+Issue (#44–#63), có liên kết ngược từ checklist/report.**
 
 Chạy toàn bộ checklist trên Chrome/Windows theo thứ tự Product Detail → Shopping
 Cart → Checkout.

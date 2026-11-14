@@ -28,4 +28,4 @@ Có message và action nhưng không có icon hoặc hình minh họa.
 ![BUG-IA-04-CART-001](screenshots/BUG-IA-04-CART-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/56

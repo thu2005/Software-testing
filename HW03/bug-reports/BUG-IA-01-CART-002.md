@@ -29,4 +29,4 @@ Xóa chỉ khoảng 27×24 px, Checkout cao 42 px và không có nút −/+.
 ![BUG-IA-01-CART-002](screenshots/BUG-IA-01-CART-002.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/45

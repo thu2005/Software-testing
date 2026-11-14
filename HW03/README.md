@@ -85,7 +85,7 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 | Checklist items executed | 65 / 65 |
 | Passed | 31 |
 | Failed | 34 |
-| Bugs | 20 bug reports; GitHub Issues chờ xác nhận tạo |
+| Bugs | 20 bug reports; 20 GitHub Issues (#44–#63) |
 | Usability flows | 1 |
 | Real participants | TODO / 7 |
 | Cross-platform targets completed | TODO / ≥3 |

@@ -29,4 +29,4 @@ Sản phẩm vẫn được thêm với số lượng 0, số thập phân bị 
 ![BUG-IA-02-PRODUCT-001](screenshots/BUG-IA-02-PRODUCT-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/50

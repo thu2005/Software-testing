@@ -240,3 +240,26 @@ Cần bạn xác nhận bước public: cho phép mình commit + push evidence/r
 
 ---
 
+## [8] Codex — 5:18 PM 14/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+prompt vừa rồi có ai-audit nhé (verdict incomplete vì chưa push issue), bây giờ commit (tiền tố [HW03]), tạo issue, mình cho phép nhé
+```
+
+**Output:**
+```text
+Đã hoàn thành phần local:
+
+- AI Audit Entry #6 cho prompt M3 có verdict `INCOMPLETE`, đúng lý do chưa push và chưa tạo issue.
+- Đã tạo commit `57aa2b2d12d338f99133d0410d2f03f0e7795cd2` với message `[HW03] test: execute M3 baseline and prepare bug reports`.
+
+Push và tạo issue hiện chưa thể hoàn tất vì máy chưa có GitHub credential dùng được: SSH báo `Permission denied (publickey)`, HTTPS chưa có credential, còn GitHub plugin trả `403 Resource not accessible by integration` khi ghi file vào repo `thu2005/Software-testing`. Mình chưa tạo 20 issue vì các raw screenshot evidence sẽ bị hỏng khi commit chưa có trên GitHub.
+
+Bạn hãy chạy `gh auth login` trong PowerShell, chọn GitHub.com → HTTPS → đăng nhập bằng browser, rồi nhắn “đã login”. Sau đó mình sẽ push, kiểm tra URL evidence, tạo 20 issue, cập nhật link issue vào report/checklist và tạo commit `[HW03]` cuối.
+```
+
+---
+

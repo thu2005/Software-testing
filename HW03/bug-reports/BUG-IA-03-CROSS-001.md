@@ -29,4 +29,4 @@ Computed style cho thấy outline-style=none và box-shadow=none; người dùng
 ![BUG-IA-03-CROSS-001](screenshots/BUG-IA-03-CROSS-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/52

@@ -29,4 +29,4 @@ Cột chỉ hiển thị quantity dạng text; hoàn toàn không có nút −/+
 ![BUG-IA-02-CART-001](screenshots/BUG-IA-02-CART-001.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/48

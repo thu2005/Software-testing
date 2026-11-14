@@ -28,4 +28,4 @@ Không trang nào hiển thị breadcrumb.
 ![BUG-IA-03-CROSS-002](screenshots/BUG-IA-03-CROSS-002.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/53

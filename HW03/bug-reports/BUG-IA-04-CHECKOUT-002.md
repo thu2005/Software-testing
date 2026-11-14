@@ -29,4 +29,4 @@ UI hiển thị Tiết kiệm -270.000.000 ₫ và Thành tiền 300.000.000 ₫
 ![BUG-IA-04-CHECKOUT-002](screenshots/BUG-IA-04-CHECKOUT-002.png)
 
 ## GitHub Issue
-TODO — tạo sau khi sinh viên xác nhận title/labels và cho phép push evidence.
+https://github.com/thu2005/CSC13003_eshop/issues/60
