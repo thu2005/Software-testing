@@ -125,6 +125,10 @@ hai sheet Checklist/Summary; tổng hợp Task 1 cùng 20 bug links trong
 
 ### M5 — Chuẩn bị usability study
 
+**Trạng thái: Đã tạo preparation pack; chưa đóng M5. Còn chờ sinh viên nhập 7
+participant thật ngoài lớp, contact đã mask và consent, đồng thời tạo Google
+Form từ survey source. AI không được phép tự điền các dữ liệu này.**
+
 Một prompt lớn tạo bộ tài liệu chuẩn bị cho flow đã chọn:
 
 - Objectives và task scenario theo mục tiêu, không hướng dẫn từng click.

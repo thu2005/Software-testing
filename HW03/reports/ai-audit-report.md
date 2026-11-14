@@ -542,14 +542,70 @@ toàn bộ totals/hyperlinks; không cần chỉnh sửa nội dung thêm.
 
 ---
 
+## Entry #10
+
+### (1) Prompt + Tool
+
+| Field             | Content         |
+| ----------------- | --------------- |
+| **Tool**          | Codex |
+| **Model**         | GPT-5 |
+| **Timestamp**     | 6:52 PM 14/11/2026 |
+| **Artifact type** | M5 — Usability study preparation pack |
+
+**Full prompt:**
+
+```text
+tiếp theo, làm M5, có audit AI
+```
+
+### (2) AI Output
+
+```text
+M5 đã hoàn thành phần AI được phép chuẩn bị; AI Audit có verdict `INCOMPLETE`.
+
+- Đã tạo `usability/plan.md`: objectives, research questions, scenario mua `iPhone 15 Pro Max` với `SAVE10`, success criteria, metrics, SUS justification, probes, privacy và pilot gate.
+- Đã tạo `post-test-survey.md`: đủ 10/10 câu SUS chuẩn, đúng thứ tự/polarity, kèm bản dịch tiếng Việt và công thức scoring.
+- Đã tạo `session-script.md`, `session-template.md` và `participants.md`; participant table có đúng 7 dòng `P01`–`P07` nhưng chỉ chứa `TODO`.
+- README và PLAN đã được cập nhật theo scenario/instrument; M5 chưa được đóng.
+
+Verdict chưa thể là `VALID` vì còn hai human-only input: danh sách 7 participant thật ngoài lớp với contact đã mask/consent và Google Form URL được tạo từ survey source. AI không được phép giả lập hai phần này. AI Audit Entry #10 là `INCOMPLETE`; tổng hiện có 10 entry: 5 `VALID`, 5 `INCOMPLETE`.
+
+Các artifact và log đã được commit cục bộ với tiền tố `[HW03]`. Mình không push repo. Khi bạn điền participant thật và Form URL, mình sẽ kiểm tra privacy/coverage rồi audit follow-up `VALID` trước khi sang pilot M6.
+```
+
+### (3) Verdict
+
+**`INCOMPLETE`**
+
+### (4) Reasoning
+
+Preparation pack bám đúng flow đã chọn và yêu cầu đề: scenario có mục tiêu nhưng
+không chỉ từng click; SUS có đủ 10 câu chuẩn đúng thứ tự/polarity và công thức;
+probe bao phủ clarity, error recovery, speed, trust; moderator script giữ vai
+trò trung lập; session template lưu timestamps, task success, observation,
+raw response và evidence. Tuy nhiên, M5 còn yêu cầu participant thật có contact
+xác minh và survey thực tế. Bảng hiện chỉ có 7 placeholder, Google Form URL còn
+`TODO`; đây là dữ liệu/hành động chỉ sinh viên được cung cấp. Vì chưa đủ input
+để chạy pilot và 7 session thật, không thể đánh `VALID`.
+
+### (5) Student Fix
+
+Sinh viên cần tuyển và nhập 7 người thật ngoài lớp, mask bốn chữ số giữa của
+contact, ghi consent, đồng thời tạo Google Form từ `post-test-survey.md` và dán
+URL. Sau đó review wording/scenario và yêu cầu audit follow-up trước pilot;
+không sửa verdict lịch sử của Entry #10.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 9 | 100% |
-| VALID | 5 | 55.56% |
+| Total audited | 10 | 100% |
+| VALID | 5 | 50% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 4 | 44.44% |
+| INCOMPLETE | 5 | 50% |
 
 ## 5. Kết luận
 

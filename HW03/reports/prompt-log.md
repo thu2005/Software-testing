@@ -333,3 +333,28 @@ Các artifact M4, audit và prompt-log đã được commit cục bộ với ti�
 
 ---
 
+## [12] Codex — 6:52 PM 14/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+tiếp theo, làm M5, có audit AI
+```
+
+**Output:**
+```text
+M5 đã hoàn thành phần AI được phép chuẩn bị; AI Audit có verdict `INCOMPLETE`.
+
+- Đã tạo `usability/plan.md`: objectives, research questions, scenario mua `iPhone 15 Pro Max` với `SAVE10`, success criteria, metrics, SUS justification, probes, privacy và pilot gate.
+- Đã tạo `post-test-survey.md`: đủ 10/10 câu SUS chuẩn, đúng thứ tự/polarity, kèm bản dịch tiếng Việt và công thức scoring.
+- Đã tạo `session-script.md`, `session-template.md` và `participants.md`; participant table có đúng 7 dòng `P01`–`P07` nhưng chỉ chứa `TODO`.
+- README và PLAN đã được cập nhật theo scenario/instrument; M5 chưa được đóng.
+
+Verdict chưa thể là `VALID` vì còn hai human-only input: danh sách 7 participant thật ngoài lớp với contact đã mask/consent và Google Form URL được tạo từ survey source. AI không được phép giả lập hai phần này. AI Audit Entry #10 là `INCOMPLETE`; tổng hiện có 10 entry: 5 `VALID`, 5 `INCOMPLETE`.
+
+Các artifact và log đã được commit cục bộ với tiền tố `[HW03]`. Mình không push repo. Khi bạn điền participant thật và Form URL, mình sẽ kiểm tra privacy/coverage rồi audit follow-up `VALID` trước khi sang pilot M6.
+```
+
+---
+

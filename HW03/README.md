@@ -61,8 +61,10 @@ Luồng end-to-end đã chọn:
 
 `Search (FR-05) → Product Detail (FR-06) → Shopping Cart (FR-07) → Coupon (FR-09) → Checkout (FR-08)`
 
-- Task scenario cụ thể: TODO — thiết kế tại Phase T2.1.
-- Instrument: TODO — chọn SUS, UEQ-S hoặc custom scale có justification.
+- Task scenario: mua 1 `iPhone 15 Pro Max` bằng coupon `SAVE10` và dừng khi có
+  xác nhận đơn hàng; scenario nêu mục tiêu, không chỉ dẫn từng click.
+- Instrument: SUS 10 câu, thang Likert 1–5; giữ nguyên thứ tự/polarity và dùng
+  observation cùng probe về clarity, error recovery, speed, trust để diễn giải.
 - Danh sách 7 người tham gia: TODO — chỉ nhập dữ liệu người thật do sinh viên cung cấp.
 
 ### Task 3 — Cross-browser / Cross-platform
