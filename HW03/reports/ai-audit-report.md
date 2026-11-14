@@ -489,14 +489,67 @@ Entry #7 `INCOMPLETE` làm lịch sử trước khi fix.
 
 ---
 
+## Entry #9
+
+### (1) Prompt + Tool
+
+| Field             | Content         |
+| ----------------- | --------------- |
+| **Tool**          | Codex |
+| **Model**         | GPT-5 |
+| **Timestamp**     | 6:30 PM 14/11/2026 |
+| **Artifact type** | M4 — Export Excel và tổng hợp báo cáo Task 1 |
+
+**Full prompt:**
+
+```text
+ok, tiếp theo thực hiện M4, và audit ai
+```
+
+### (2) AI Output
+
+```text
+M4 đã hoàn tất và AI Audit có verdict `VALID`.
+
+- `checklist/gui-checklist.xlsx`: 65 item, hai sheet `Checklist` và `Summary`, có filter/freeze pane, định dạng Passed/Failed, 34 hyperlink screenshot và 34 hyperlink GitHub Issue.
+- `reports/main-report.md`: đã tạo phần tổng hợp Task 1 theo tổng thể, IA và screen/scope; có đủ 20 bug links `#44`–`#63` và nhận định rủi ro chính.
+- `git-log.txt` đã được refresh; PLAN đánh dấu M4 hoàn tất.
+- Đã reload workbook để kiểm tra cấu trúc. Cả bảng IA và screen đều khớp `65 designed = 65 executed = 31 Passed + 34 Failed`; báo cáo có đúng 20 issue URL.
+- AI Audit Entry #9 là `VALID`; tổng hiện có 9 entry: 5 `VALID`, 4 `INCOMPLETE`.
+
+Các artifact M4, audit và prompt-log đã được commit cục bộ với tiền tố `[HW03]`. Mình không push repo.
+```
+
+### (3) Verdict
+
+**`VALID`**
+
+### (4) Reasoning
+
+Kết quả được đối chiếu trực tiếp với 65 dòng checklist đã execute. Workbook
+được mở lại bằng `openpyxl` để xác nhận package hợp lệ, đúng hai sheet, 65 dòng
+dữ liệu và 9 cột. Tổng theo IA và screen/scope đều độc lập khớp 65 designed,
+65 executed, 31 Passed và 34 Failed; 34 dòng Failed có đủ hyperlink screenshot
+và Issue. Main report có đúng 20 URL issue, không suy đoán thông tin cá nhân và
+không nhân đôi cross-screen item trong tổng. Vì các yêu cầu M4 đều có artifact
+kiểm chứng được và số liệu nhất quán, output đạt quality gate.
+
+### (5) Student Fix
+
+Excel COM trên máy báo `Interface not registered`, nên sinh viên chấp nhận
+phương án export bằng `openpyxl`. Workbook sau đó đã được reload và kiểm tra
+toàn bộ totals/hyperlinks; không cần chỉnh sửa nội dung thêm.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 8 | 100% |
-| VALID | 4 | 50% |
+| Total audited | 9 | 100% |
+| VALID | 5 | 55.56% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 4 | 50% |
+| INCOMPLETE | 4 | 44.44% |
 
 ## 5. Kết luận
 

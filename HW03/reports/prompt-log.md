@@ -309,3 +309,27 @@ Mình không thực hiện push. Phần follow-up audit, prompt-log và PLAN đ�
 
 ---
 
+## [11] Codex — 6:30 PM 14/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+ok, tiếp theo thực hiện M4, và audit ai
+```
+
+**Output:**
+```text
+M4 đã hoàn tất và AI Audit có verdict `VALID`.
+
+- `checklist/gui-checklist.xlsx`: 65 item, hai sheet `Checklist` và `Summary`, có filter/freeze pane, định dạng Passed/Failed, 34 hyperlink screenshot và 34 hyperlink GitHub Issue.
+- `reports/main-report.md`: đã tạo phần tổng hợp Task 1 theo tổng thể, IA và screen/scope; có đủ 20 bug links `#44`–`#63` và nhận định rủi ro chính.
+- `git-log.txt` đã được refresh; PLAN đánh dấu M4 hoàn tất.
+- Đã reload workbook để kiểm tra cấu trúc. Cả bảng IA và screen đều khớp `65 designed = 65 executed = 31 Passed + 34 Failed`; báo cáo có đúng 20 issue URL.
+- AI Audit Entry #9 là `VALID`; tổng hiện có 9 entry: 5 `VALID`, 4 `INCOMPLETE`.
+
+Các artifact M4, audit và prompt-log đã được commit cục bộ với tiền tố `[HW03]`. Mình không push repo.
+```
+
+---
+

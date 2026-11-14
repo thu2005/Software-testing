@@ -113,6 +113,10 @@ Cart → Checkout.
 
 ### M4 — Export và tổng hợp Task 1
 
+**Trạng thái: Hoàn tất. Đã export `checklist/gui-checklist.xlsx` gồm 65 item và
+hai sheet Checklist/Summary; tổng hợp Task 1 cùng 20 bug links trong
+`reports/main-report.md`; refresh `git-log.txt`.**
+
 - Export checklist sang Excel.
 - Kiểm tra tổng designed/executed/passed/failed theo screen và IA.
 - Cập nhật phần Task 1 trong `reports/main-report.md` cùng bug links.
