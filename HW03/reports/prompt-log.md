@@ -263,3 +263,25 @@ Bạn hãy chạy `gh auth login` trong PowerShell, chọn GitHub.com → HTTPS 
 
 ---
 
+## [9] Codex — 5:26 PM 14/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+mình push rồi, tạo issue và ai audit nhé, verdict complete (nếu bạn làm xong được các bước còn sót lại)
+```
+
+**Output:**
+```text
+Đã tạo đủ 20 GitHub Issues `#44–#63` trong `thu2005/CSC13003_eshop` và xác minh cả 20 issue đều tồn tại, có label `bug`; raw screenshot evidence trên GitHub mở được.
+
+Mình đã thêm URL issue vào 20 Markdown bug report và 34 dòng failed trong checklist, đồng thời cập nhật README/PLAN. Phần cross-link nằm trong commit cục bộ `[HW03] docs: cross-link M3 GitHub issues` (`078e807`).
+
+Chưa thể chốt verdict `VALID`: môi trường Codex vẫn không push được commit cross-link do SSH báo `Permission denied (publickey)`; GitHub CLI cũng không có trong PATH. Vì bước public cuối chưa hoàn tất, AI Audit Entry #7 được ghi `INCOMPLETE`, không đổi thành complete khi bằng chứng chưa đủ.
+
+Bạn hãy push các commit mới trong `Software-testing`, rồi nhắn mình. Mình sẽ xác minh cross-link trên GitHub và thêm audit follow-up `VALID` để đóng M3.
+```
+
+---
+

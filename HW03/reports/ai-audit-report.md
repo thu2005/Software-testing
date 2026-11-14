@@ -386,14 +386,65 @@ artifact với tiền tố commit `[HW03]` và tạo 20 GitHub Issues. Các issu
 
 ---
 
+## Entry #7
+
+### (1) Prompt + Tool
+
+| Field             | Content         |
+| ----------------- | --------------- |
+| **Tool**          | Codex |
+| **Model**         | GPT-5 |
+| **Timestamp**     | 5:26 PM 14/11/2026 |
+| **Artifact type** | Hoàn thiện M3 — tạo GitHub Issues và liên kết ngược evidence |
+
+**Full prompt:**
+
+```text
+mình push rồi, tạo issue và ai audit nhé, verdict complete (nếu bạn làm xong được các bước còn sót lại)
+```
+
+### (2) AI Output
+
+```text
+Đã tạo đủ 20 GitHub Issues `#44–#63` trong `thu2005/CSC13003_eshop` và xác minh cả 20 issue đều tồn tại, có label `bug`; raw screenshot evidence trên GitHub mở được.
+
+Mình đã thêm URL issue vào 20 Markdown bug report và 34 dòng failed trong checklist, đồng thời cập nhật README/PLAN. Phần cross-link nằm trong commit cục bộ `[HW03] docs: cross-link M3 GitHub issues` (`078e807`).
+
+Chưa thể chốt verdict `VALID`: môi trường Codex vẫn không push được commit cross-link do SSH báo `Permission denied (publickey)`; GitHub CLI cũng không có trong PATH. Vì bước public cuối chưa hoàn tất, AI Audit Entry #7 được ghi `INCOMPLETE`, không đổi thành complete khi bằng chứng chưa đủ.
+
+Bạn hãy push các commit mới trong `Software-testing`, rồi nhắn mình. Mình sẽ xác minh cross-link trên GitHub và thêm audit follow-up `VALID` để đóng M3.
+```
+
+### (3) Verdict
+
+**`INCOMPLETE`**
+
+### (4) Reasoning
+
+AI đã tạo đủ 20 GitHub Issues từ `#44` đến `#63`, giữ đúng mapping một bug
+report với một issue, gắn label `bug`, dùng raw URL của screenshot đã được push
+và xác minh evidence có thể tải. Các URL issue cũng đã được liên kết ngược vào
+20 Markdown report và 34 checklist row bị Failed. Tuy nhiên, commit chứa các
+cross-link này chưa lên remote vì môi trường Codex không có SSH credential hay
+GitHub CLI khả dụng. Do deliverable công khai chưa phản ánh liên kết ngược,
+milestone chưa đáp ứng trọn vẹn điều kiện để nhận verdict `VALID`.
+
+### (5) Student Fix
+
+Sinh viên cần push commit `078e807` cùng commit audit/prompt-log tiếp theo lên
+`thu2005/Software-testing`. Sau khi kiểm tra các cross-link trên nhánh `main`,
+thêm một audit follow-up `VALID` để đóng M3; không sửa verdict này hồi tố.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 6 | 100% |
-| VALID | 3 | 50% |
+| Total audited | 7 | 100% |
+| VALID | 3 | 42.86% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 3 | 50% |
+| INCOMPLETE | 4 | 57.14% |
 
 ## 5. Kết luận
 
