@@ -437,14 +437,66 @@ thêm một audit follow-up `VALID` để đóng M3; không sửa verdict này h
 
 ---
 
+## Entry #8
+
+### (1) Prompt + Tool
+
+| Field             | Content         |
+| ----------------- | --------------- |
+| **Tool**          | Codex |
+| **Model**         | GPT-5 |
+| **Timestamp**     | 5:31 PM 14/11/2026 |
+| **Artifact type** | Xác minh public cross-link và đóng M3 |
+
+**Full prompt:**
+
+```text
+mình không grant quyền cho bạn push github repo đó. Mình mới push nha
+```
+
+### (2) AI Output
+
+```text
+Đã xác minh M3 hoàn tất trên GitHub:
+
+- Hai commit `078e807` và `c3319d3` đã có trên nhánh `main` của `thu2005/Software-testing`.
+- Cross-link GitHub Issue xuất hiện trong cả Markdown bug report và checklist công khai.
+- 20 issue `#44–#63` cùng raw screenshot evidence đã được xác minh ở lượt trước.
+- AI Audit Entry #8 có verdict `VALID`; tổng audit hiện là 8 entry: 4 `VALID`, 4 `INCOMPLETE`.
+- PLAN đã đóng M3 ở trạng thái hoàn tất.
+
+Mình không thực hiện push. Phần follow-up audit, prompt-log và PLAN đã được commit cục bộ với tiền tố `[HW03]`; bạn chủ động push commit này khi muốn.
+```
+
+### (3) Verdict
+
+**`VALID`**
+
+### (4) Reasoning
+
+Hai commit chứa cross-link (`078e807`) và audit trước đó (`c3319d3`) đã xuất
+hiện trên nhánh `main`. Kiểm tra trực tiếp file công khai xác nhận URL Issue #50
+có trong cả Markdown bug report lẫn checklist; đây là mẫu đại diện cho mapping
+đã được tạo đồng loạt và 20 issue `#44`–`#63` đã được kiểm đếm độc lập. Evidence
+raw cũng tải được. Vì execution, screenshot, report, GitHub Issue và traceability
+đều đã hiện diện công khai, M3 đáp ứng đầy đủ quality gate.
+
+### (5) Student Fix
+
+Sinh viên tự push hai commit còn thiếu do không cấp quyền push repo cho AI.
+Không cần chỉnh sửa artifact M3 thêm; chỉ cập nhật PLAN sang hoàn tất và giữ
+Entry #7 `INCOMPLETE` làm lịch sử trước khi fix.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 7 | 100% |
-| VALID | 3 | 42.86% |
+| Total audited | 8 | 100% |
+| VALID | 4 | 50% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 4 | 57.14% |
+| INCOMPLETE | 4 | 50% |
 
 ## 5. Kết luận
 
