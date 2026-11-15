@@ -176,7 +176,7 @@ ra lỗi tổng tiền, 6 người nói sẽ không dùng sản phẩm ở trạ
 | Add to Cart thiếu feedback/badge | 5/7; hai người tạo sản phẩm trùng | Major | [#54](https://github.com/thu2005/CSC13003_eshop/issues/54), [#62](https://github.com/thu2005/CSC13003_eshop/issues/62) |
 | Tổng Checkout cho phép chỉnh sửa | P03 sửa total và vẫn thanh toán thành công | Major | [Issue #49](https://github.com/thu2005/CSC13003_eshop/issues/49) |
 | Quantity âm được thêm vào Cart | P06 | Major | [Issue #50](https://github.com/thu2005/CSC13003_eshop/issues/50) |
-| Ảnh sản phẩm chỉ là placeholder chữ | 5/7 nhắc đến; FR-05/FR-06 yêu cầu ảnh; dedicated retest xác nhận ở listing và Product Detail | Major defect + UX issue | [BUG-IA-01-PRODUCT-001](../bug-reports/BUG-IA-01-PRODUCT-001.md) |
+| Ảnh sản phẩm chỉ là placeholder chữ | 5/7 nhắc đến; FR-05/FR-06 yêu cầu ảnh; dedicated retest xác nhận ở listing và Product Detail | Major defect + UX issue | [Issue #64](https://github.com/thu2005/CSC13003_eshop/issues/64), [bug report](../bug-reports/BUG-IA-01-PRODUCT-001.md) |
 
 Mặc dù task success là `7/7`, sai tổng tiền và editable total vẫn là lỗi tính
 toàn vẹn giao dịch nghiêm trọng. Hai finding được xếp `Major` thay vì `Blocker`
@@ -195,8 +195,8 @@ mua hàng thông thường và không xác định bước đặc biệt gây ch
 tắt nguyên ý do moderator xác nhận, không phải verbatim response riêng của từng
 participant. Custom scale được thu vào ngày hôm sau và chưa được pilot-test;
 sai lệch này vẫn được công bố.
-U-05 đã có dedicated retest screenshot và bug report. GitHub Issue còn chờ
-evidence được commit/push để nhúng ảnh từ repository public.
+U-05 đã có dedicated retest screenshot, bug report và GitHub Issue #64; hai ảnh
+được nhúng từ repository public.
 
 ## 4. Task 3 — Cross-browser / Cross-platform
 

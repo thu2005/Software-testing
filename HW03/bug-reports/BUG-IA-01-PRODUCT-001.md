@@ -43,5 +43,4 @@ evaluation và làm giảm mức độ tin tưởng vào EShop.
 
 ## GitHub Issue
 
-Chờ screenshot được commit/push lên repository public để có thể nhúng evidence
-vào GitHub Issue mà không tạo liên kết ảnh lỗi.
+https://github.com/thu2005/CSC13003_eshop/issues/64

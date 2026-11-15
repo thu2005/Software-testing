@@ -93,7 +93,7 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 | Checklist items executed | 65 / 65 |
 | Passed | 31 |
 | Failed | 34 |
-| Bugs | 20 bug reports; 20 GitHub Issues (#44–#63) |
+| Bugs | 21 bug reports; 21 GitHub Issues (#44–#64), gồm 20 bug Task 1 và 1 bug được xác nhận thêm từ Task 2 |
 | Usability flows | 1 |
 | Real participants | 7 / 7, tất cả ngoài lớp HW03 |
 | Cross-platform targets completed | TODO / ≥3 |

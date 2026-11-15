@@ -69,7 +69,7 @@ Nguồn phản hồi gốc: [Google Form](https://forms.gle/uCQqeNNAwXurnxqJ6) v
 | U-02 | Add to Cart thiếu feedback/badge rõ ràng | P02, P03, P04, P06, P07; P02/P04 thêm lặp tạo nhiều sản phẩm | Defect + UX pattern | Major | [#54](https://github.com/thu2005/CSC13003_eshop/issues/54), [#62](https://github.com/thu2005/CSC13003_eshop/issues/62) |
 | U-03 | Tổng tiền Checkout có thể sửa trực tiếp | P03 sửa thành `60000` và hệ thống vẫn xác nhận thanh toán | Defect | Major | [Issue #49](https://github.com/thu2005/CSC13003_eshop/issues/49) |
 | U-04 | Quantity âm được thêm vào Cart và tạo thành tiền âm | P06 nhập `-1`, sau đó phải tự xóa để tiếp tục | Defect | Major | [Issue #50](https://github.com/thu2005/CSC13003_eshop/issues/50) |
-| U-05 | Ảnh sản phẩm chỉ là placeholder chữ | P01, P03, P05, P06, P07 nhắc đến thiếu hình; FR-05/FR-06 yêu cầu ảnh; dedicated retest xác nhận lỗi ở listing và Product Detail | Requirement-backed defect + UX issue | Major | [BUG-IA-01-PRODUCT-001](../bug-reports/BUG-IA-01-PRODUCT-001.md) |
+| U-05 | Ảnh sản phẩm chỉ là placeholder chữ | P01, P03, P05, P06, P07 nhắc đến thiếu hình; FR-05/FR-06 yêu cầu ảnh; dedicated retest xác nhận lỗi ở listing và Product Detail | Requirement-backed defect + UX issue | Major | [Issue #64](https://github.com/thu2005/CSC13003_eshop/issues/64), [bug report](../bug-reports/BUG-IA-01-PRODUCT-001.md) |
 | U-06 | Điều hướng và ngữ cảnh mua sắm chưa rõ | P01 tìm coupon ở Cart; P02 thiếu đường quay lại và mất search context; P03 không biết đi đâu để thanh toán | Systemic UX issue | Minor | Liên quan [#51](https://github.com/thu2005/CSC13003_eshop/issues/51), [#53](https://github.com/thu2005/CSC13003_eshop/issues/53) |
 
 ## 4. Defect và systemic UX issue
@@ -80,8 +80,8 @@ tạo dòng trùng, thiếu badge) với pattern UX rộng hơn là không có f
 `U-05` được nâng từ nhận xét UX thành defect có requirement backing: FR-05/FR-06
 yêu cầu ảnh sản phẩm, trong khi dedicated retest xác nhận cả listing và Product
 Detail chỉ hiển thị placeholder; 5/7 participant cho rằng thiếu hình ảnh hữu
-ích. Bug report và hai screenshot đã có; GitHub Issue sẽ được tạo sau khi evidence
-được push để ảnh có URL công khai. Phần mất ngữ
+ích. Bug report, hai screenshot và [Issue #64](https://github.com/thu2005/CSC13003_eshop/issues/64)
+đã được cross-link. Phần mất ngữ
 cảnh trong `U-06` vẫn là systemic UX issue.
 
 `U-01` và `U-03` được xếp `Major`, không phải `Blocker`, vì cả 7 participant vẫn
@@ -118,5 +118,5 @@ mua hàng thông thường; không ai xác định bước cụ thể nào đặ
   không có verbatim response riêng cho từng participant.
 - Custom scale được thu vào ngày hôm sau và chưa được pilot-test; kết quả chỉ
   được diễn giải như follow-up rating, không phải post-session standard scale.
-- U-05 đã có dedicated retest screenshot và bug report; còn thiếu GitHub Issue
-  có ảnh công khai do evidence mới chưa được commit/push.
+- U-05 đã có dedicated retest screenshot, bug report và GitHub Issue #64 với
+  hai ảnh được nhúng từ repository public.
