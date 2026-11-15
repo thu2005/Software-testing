@@ -30,8 +30,8 @@
 - **Clarity:** Add to Cart từ Product Detail không có phản hồi và sản phẩm không xuất hiện trong Cart; tổng tiền cũng gây khó hiểu.
 - **Giá/voucher/tổng tiền:** Không đúng vì voucher làm giá tăng lên 60 triệu.
 - **Ý định sử dụng:** Không dùng vì thiếu phản hồi, voucher sai, giao diện không đáng tin và không có hình sản phẩm.
-- **Error recovery:** Participant đọc/nêu lỗi cho moderator, quay về Home để thêm lại sản phẩm và tiếp tục hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Tiếp tục kiểm thử để hoàn thành luồng test.”
+- **Speed:** “Không mất thời gian.”
 
 ## Evidence
 

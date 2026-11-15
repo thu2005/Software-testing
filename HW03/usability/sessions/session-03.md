@@ -30,8 +30,8 @@
 - **Clarity:** Sau khi thêm vào giỏ không thấy thông báo hoặc số lượng món hàng để biết cách tiếp tục thanh toán.
 - **Giá/voucher/tổng tiền:** Trả lời rằng thông tin không được xử lý đúng.
 - **Ý định sử dụng:** Không sử dụng vì chưa rõ liên kết ngân hàng, mô tả sản phẩm thiếu thông tin nổi bật và không có hình.
-- **Error recovery:** Participant đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Mình hỏi người phỏng vấn và tiếp tục mua hàng.”
+- **Speed:** “Không.”
 
 ## Evidence
 

@@ -28,8 +28,8 @@
 - **Clarity:** Không có thời điểm đặc biệt khó hiểu; luồng giống các website mua hàng thông thường.
 - **Giá/voucher/tổng tiền:** Không đúng vì một AirPods giá 6 triệu nhưng sau áp mã tổng thành 60 triệu.
 - **Ý định sử dụng:** Không sử dụng vì lỗi giá thanh toán, giao diện chưa đẹp và kết quả tìm kiếm chỉ có tên, không có hình minh họa.
-- **Error recovery:** Participant đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Đọc to lỗi cho bạn phỏng vấn biết.”
+- **Speed:** “Bình thường, giống các web khác.”
 
 ## Evidence
 

@@ -159,8 +159,8 @@ và task success `7/7`. Moderator không đưa leading hint hoặc chỉ dẫn U
 
 **Trạng thái: Hoàn tất với giới hạn phương pháp được công bố. Đã phân tích và
 cập nhật main report; custom scale mean `2.64/5`, trust thấp nhất `1.43/5`, task
-success `7/7`. Dữ liệu định tính về error recovery và speed được tổng hợp từ
-think-aloud, observation và xác nhận của moderator ngày 15/11/2026.**
+success `7/7`. Hai câu mở về error recovery và speed có response riêng của
+P01–P07 cùng timestamp trong Response Sheet ngày 15/11/2026.**
 
 Một prompt lớn dùng đúng dữ liệu 7 session để:
 

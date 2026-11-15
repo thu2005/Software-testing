@@ -30,8 +30,8 @@
 - **Clarity:** Không biết Add to Cart đã hoạt động nên bấm liên tục, tạo nhiều sản phẩm trùng.
 - **Giá/voucher/tổng tiền:** Không đúng vì áp voucher lại tăng giá lên 60 triệu, vượt ngân sách.
 - **Ý định sử dụng:** Không chắc sẽ dùng vì lỗi Add to Cart và lỗi giá khiến participant lo ngại.
-- **Error recovery:** Participant đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Mình thấy hơi thắc mắc về giá tiền và không biết có nên thanh toán hay không vì sai với ngân sách.”
+- **Speed:** “Luồng nhanh nhưng nhiều lỗi sai.”
 
 ## Evidence
 

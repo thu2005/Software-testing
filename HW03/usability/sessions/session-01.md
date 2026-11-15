@@ -29,8 +29,8 @@
 - **Clarity:** Phân vân vì kỳ vọng mã giảm giá nằm ở Cart; không hiểu vì sao giá sản phẩm 6 triệu nhưng thành tiền 60 triệu.
 - **Giá/voucher/tổng tiền:** Không đúng mong muốn vì tổng tiền vượt ngân sách do lỗi giá.
 - **Ý định sử dụng:** Chưa sử dụng vì thiếu hình sản phẩm, vị trí coupon chưa phù hợp và lỗi tiền nghiêm trọng làm website trông không uy tín.
-- **Error recovery:** Participant đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Mình nói cho bạn biết chỗ đó bị lỗi.”
+- **Speed:** “Nhanh gọn. Mình không gặp khó khăn gì.”
 
 ## Evidence
 

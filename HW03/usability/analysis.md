@@ -11,9 +11,8 @@
 - Custom 4-item scale được thu bổ sung ngày 15/11/2026, không phải ngay sau từng
   session như protocol yêu cầu.
 - Phản hồi đầu của P06 bị loại theo xác nhận của sinh viên; chỉ dùng lần hai.
-- Dữ liệu định tính về error recovery và speed được tổng hợp từ think-aloud,
-  observation và xác nhận bổ sung của moderator ngày 15/11/2026; không dựng
-  thành trích dẫn nguyên văn của từng participant.
+- Hai câu mở về error recovery và speed có response riêng của P01–P07 cùng
+  timestamp trong Google Response Sheet ngày 15/11/2026.
 - Sinh viên xác nhận cả 7 participant đều hoàn thành luồng: task success `7/7`
   (`100%`). Success chỉ phản ánh completion; không phủ nhận các defect nghiêm
   trọng mà participant gặp trong quá trình thực hiện.
@@ -27,9 +26,9 @@
 2. `18:53 14/11/2026`: commit M5 `b991a75` lưu AI draft dùng iPhone 15 Pro Max
    và SUS. Draft này không phải moderator script được dùng trong study.
 3. Bảy session chính dùng scenario AirPods Pro 2 và ba câu phỏng vấn thực tế.
-4. `15/11/2026`: custom scale được tạo và gửi follow-up; scale chưa được
-   pilot-test và không được hoàn thành ngay sau từng session. Moderator đồng
-   thời xác nhận phần tổng hợp định tính về error recovery và speed.
+4. `15/11/2026`: custom scale và hai câu mở follow-up về error recovery/speed
+   được thu theo từng participant trong Google Form; instrument chưa được
+   pilot-test và không được hoàn thành ngay sau từng session.
 
 Các sai lệch được công bố thay vì sửa lịch sử; phần xác nhận bổ sung được ghi
 đúng ngày 15/11/2026 và không dựng thành trích dẫn nguyên văn.
@@ -88,10 +87,10 @@ cảnh trong `U-06` vẫn là systemic UX issue.
 hoàn thành task. Tuy nhiên completion không đồng nghĩa giao dịch hợp lệ: sai tổng
 tiền và khả năng sửa total làm mất tính toàn vẹn của kết quả thanh toán.
 
-## 5. Recovery quan sát được
+## 5. Error recovery và speed
 
-- Cả 7 participant đều đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục
-  để hoàn thành luồng.
+- Response Sheet lưu câu trả lời riêng của cả 7 participant cho hai câu mở,
+  kèm timestamp truy vết.
 - P04 nhận ra sản phẩm trùng và tự xóa bớt.
 - P06 xóa sản phẩm quantity âm để tiếp tục.
 - P07 quay về Home và dùng Add to Cart ở listing khi Product Detail không cho
@@ -99,8 +98,9 @@ tiền và khả năng sửa total làm mất tính toàn vẹn của kết qu�
 - P03 sửa trực tiếp tổng tiền để hoàn thành, nhưng đây là khai thác một defect,
   không phải recovery flow hợp lệ mà sản phẩm thiết kế cho người dùng.
 
-Về speed, cả 7 participant đánh giá luồng khá dễ hiểu và tương tự các website
-mua hàng thông thường; không ai xác định bước cụ thể nào đặc biệt gây chậm.
+Về speed, phản hồi nhìn chung cho rằng luồng nhanh, đơn giản hoặc giống các
+website mua hàng khác; P04 lưu ý luồng nhanh nhưng có nhiều lỗi sai. Không
+participant nào nêu một bước cụ thể là nguyên nhân gây chậm.
 
 ## 6. Ưu tiên cải thiện
 
@@ -114,8 +114,8 @@ mua hàng thông thường; không ai xác định bước cụ thể nào đặ
 
 ## 7. Giới hạn dữ liệu còn lại
 
-- Tổng hợp error recovery và speed là bản tóm tắt nguyên ý do moderator xác nhận,
-  không có verbatim response riêng cho từng participant.
+- Hai câu mở được thu follow-up ngày 15/11/2026 thay vì ngay sau session; response
+  riêng và timestamp của P01–P07 được giữ trong Response Sheet.
 - Custom scale được thu vào ngày hôm sau và chưa được pilot-test; kết quả chỉ
   được diễn giải như follow-up rating, không phải post-session standard scale.
 - U-05 đã có dedicated retest screenshot, bug report và GitHub Issue #64 với

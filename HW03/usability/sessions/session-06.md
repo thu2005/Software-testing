@@ -33,8 +33,8 @@ Phản hồi lần đầu bị loại theo xác nhận của sinh viên; dùng p
 - **Clarity:** Nếu không tính các lỗi đã gặp, participant đánh giá luồng khá dễ hiểu.
 - **Giá/voucher/tổng tiền:** Không được xử lý đúng.
 - **Ý định sử dụng:** Không dùng vì thiếu hình ảnh trực quan và đánh giá từ khách hàng, làm giảm niềm tin.
-- **Error recovery:** Participant đọc/nêu lỗi quantity âm cho moderator, tự xóa sản phẩm lỗi và tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Mình nói lỗi đó cho bạn phỏng vấn, tiếp tục test cho xong luồng.”
+- **Speed:** “Mình thấy đơn giản và giống các web khác, không gặp khó khăn gì.”
 
 ## Evidence
 

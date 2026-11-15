@@ -77,7 +77,7 @@ câu và trung bình của toàn bộ 28 response. Nguồn survey và raw respon
 | Hành vi | Bước trong flow, error, hesitation, backtrack, recovery, hint |
 | Think-aloud | Chỉ ghi câu nói thật, đặt trong dấu ngoặc kép |
 | Custom scale | Raw response 1–5 cho đủ 4 câu; không quy đổi sang SUS |
-| Probe | Ba câu trong session về clarity, giá/voucher/tổng tiền và ý định sử dụng; dữ liệu error recovery và speed được tổng hợp từ think-aloud, hành vi quan sát và xác nhận của moderator |
+| Probe | Ba câu trong session về clarity, giá/voucher/tổng tiền và ý định sử dụng; hai câu mở follow-up theo từng participant về error recovery và speed trong Response Sheet |
 | Evidence | Screen recording; audio chỉ khi có consent rõ ràng |
 
 ## 8. Tiêu chí task success
@@ -101,11 +101,9 @@ Ba câu đã được moderator hỏi trong session:
    đúng với những gì bạn dự định không?
 3. Nếu luồng này được đưa vào thực tế, bạn có sử dụng EShop không? Vì sao?
 
-Câu 1 thu thập clarity; câu 2 và 3 làm rõ trust cùng ý định sử dụng. Dữ liệu
-định tính về error recovery và speed được tổng hợp từ think-aloud, hành vi quan
-sát trong recording và xác nhận bổ sung của moderator ngày 15/11/2026. Cả bảy
-participant đều nêu lỗi gặp phải rồi tự tiếp tục; họ đánh giá luồng khá dễ hiểu,
-tương tự website mua hàng thông thường và không xác định bước đặc biệt gây chậm.
+Câu 1 thu thập clarity; câu 2 và 3 làm rõ trust cùng ý định sử dụng. Hai câu mở
+follow-up về error recovery và speed được thu theo từng participant ngày
+15/11/2026, có timestamp và response riêng trong Google Response Sheet.
 
 ## 10. Quy trình và vai trò moderator
 

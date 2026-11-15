@@ -126,8 +126,8 @@ pilot-test. Pilot không được tính vào dữ liệu của 7 participant ch�
 Instrument dùng thang 1–5 cho clarity, error recovery, speed và trust. Scale
 được thiết kế ngắn do thời lượng session hạn chế; không phải SUS/UEQ-S và không
 quy đổi sang thang 0–100. Ba câu phỏng vấn session thu thập clarity, nhận xét về
-giá/voucher/tổng tiền và ý định sử dụng. Dữ liệu định tính về error recovery và
-speed được tổng hợp từ think-aloud, observation và xác nhận của moderator ngày
+giá/voucher/tổng tiền và ý định sử dụng. Hai câu mở follow-up về error recovery
+và speed có response riêng của P01–P07 cùng timestamp trong Response Sheet ngày
 15/11/2026.
 
 ### 3.2. Protocol deviations / chronology
@@ -137,9 +137,9 @@ speed được tổng hợp từ think-aloud, observation và xác nhận của 
 - `18:53 14/11/2026`: commit M5 `b991a75` lưu AI preparation draft dùng iPhone
   15 Pro Max và SUS. Draft này không được dùng làm moderator script cho study.
 - Bảy session chính dùng scenario AirPods Pro 2 và ba câu phỏng vấn thực tế.
-- `15/11/2026`: custom scale được tạo và gửi follow-up, thay vì hoàn thành ngay
-  sau từng session; scale chưa được pilot-test. Moderator cũng xác nhận phần
-  tổng hợp định tính về error recovery và speed.
+- `15/11/2026`: custom scale và hai câu mở follow-up về error recovery/speed
+  được thu theo từng participant trong Google Form, thay vì hoàn thành ngay sau
+  session; instrument chưa được pilot-test.
 
 Đây là protocol deviation không thể sửa lịch sử. Báo cáo giữ disclosure rõ,
 ghi phần xác nhận đúng ngày 15/11/2026 và không dựng trích dẫn nguyên văn.
@@ -189,12 +189,12 @@ Moderator không đưa leading hint hoặc chỉ dẫn UI. Browser được ghi 
 thiết theo session, không yêu cầu exact version. Sinh viên xác nhận bảy YouTube
 evidence URL đã được mở quyền truy cập.
 
-Với error recovery, cả 7 participant đều đọc/nêu lỗi gặp phải và vẫn tự tiếp
-tục để hoàn thành. Với speed, họ đánh giá luồng khá dễ hiểu, tương tự website
-mua hàng thông thường và không xác định bước đặc biệt gây chậm. Đây là bản tóm
-tắt nguyên ý do moderator xác nhận, không phải verbatim response riêng của từng
-participant. Custom scale được thu vào ngày hôm sau và chưa được pilot-test;
-sai lệch này vẫn được công bố.
+Hai câu mở về error recovery và speed có response riêng cùng timestamp của cả
+7 participant trong Response Sheet. Phản hồi cho thấy participant nêu lỗi hoặc
+tiếp tục hoàn thành luồng; về speed, họ nhìn chung đánh giá luồng nhanh, đơn giản
+hoặc tương tự website mua hàng khác và không nêu bước cụ thể gây chậm. Form được
+thu vào ngày hôm sau và instrument chưa được pilot-test; chronology này vẫn
+được công bố.
 U-05 đã có dedicated retest screenshot, bug report và GitHub Issue #64; hai ảnh
 được nhúng từ repository public.
 

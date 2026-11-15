@@ -51,17 +51,22 @@ Ba câu trên thu được dữ liệu định tính về clarity, trust và ý 
 Error recovery và speed còn được phản ánh qua custom scale, think-aloud và hành
 vi quan sát trong session.
 
-## Tổng hợp định tính về error recovery và speed
+## Open-ended responses về error recovery và speed
 
-Theo xác nhận bổ sung của moderator ngày 15/11/2026 cho cả bảy participant:
+Hai câu mở được thu theo từng participant trong cùng Response Sheet; timestamp
+dùng để truy vết về đúng response của custom scale.
 
-- **Error recovery:** participant đọc/nêu lỗi gặp phải cho moderator, sau đó vẫn
-  tự tìm cách tiếp tục và hoàn thành luồng.
-- **Speed:** participant nhận xét luồng khá dễ hiểu, tương tự các website mua
-  hàng thông thường; không ai xác định một bước đặc biệt làm mất thời gian.
+| Participant | Timestamp | Error recovery | Speed |
+|---|---|---|---|
+| P01 — Nguyễn Phú Thọ | 15/11/2026 20:08:26 | Mình nói cho bạn biết chỗ đó bị lỗi | Nhanh gọn. Mình không gặp khó khăn gì. |
+| P02 — Hồ Khổng Tuyết Như | 15/11/2026 20:08:34 | Mình thắc mắc về lỗi đó | Mình không gặp khó khăn gì khi mua hàng |
+| P03 — Bùi Nguyễn Quang Tuấn | 15/11/2026 20:08:30 | Mình hỏi người phỏng vấn và tiếp tục mua hàng | Không |
+| P04 — Nguyễn Văn Kiên | 15/11/2026 20:11:46 | Mình thấy hơi thắc mắc về giá tiền và không biết có nên thanh toán hay không vì sai với ngân sách | Luồng nhanh nhưng nhiều lỗi sai |
+| P05 — Vũ Hồng Phú | 15/11/2026 20:12:29 | Đọc to lỗi cho bạn phỏng vấn biết | Bình thường, giống các web khác |
+| P06 — Trần Thị Thuỷ Tiên | 15/11/2026 20:16:15 | Mình nói lỗi đó cho bạn phỏng vấn, tiếp tục test cho xong luồng | Mình thấy đơn giản và giống các web khác, không gặp khó khăn gì |
+| P07 — Huỳnh Yến Nhi | 15/11/2026 20:08:56 | Tiếp tục kiểm thử để hoàn thành luồng test | Không mất thời gian |
 
-Đây là phần tóm tắt nguyên ý do moderator cung cấp, không phải trích dẫn nguyên
-văn của từng participant.
+Nguồn kiểm chứng: [Response Sheet](https://docs.google.com/spreadsheets/d/1xmAl07vqtPXbZKT35tTrBGa2BUUKQUL_t1Swt0GW-FI/edit?usp=sharing).
 
 ## Scoring
 

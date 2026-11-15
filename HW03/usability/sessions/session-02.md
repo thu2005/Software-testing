@@ -31,8 +31,8 @@
 - **Clarity:** Không biết trạng thái Cart vì badge không cập nhật, dẫn đến thêm sản phẩm liên tục.
 - **Giá/voucher/tổng tiền:** Không đúng; giá sau giảm lớn hơn giá gốc và cần được xử lý vì đây là thông tin quan trọng.
 - **Ý định sử dụng:** Không dùng ở hiện tại vì lỗi giá nguy hiểm; sẽ cân nhắc lại nếu được sửa.
-- **Error recovery:** Participant đọc/nêu lỗi gặp phải cho moderator và vẫn tự tiếp tục thao tác để hoàn thành luồng.
-- **Speed:** Participant đánh giá luồng khá dễ hiểu, tương tự các website mua hàng thông thường; không xác định bước nào đặc biệt làm mất thời gian.
+- **Error recovery:** “Mình thắc mắc về lỗi đó.”
+- **Speed:** “Mình không gặp khó khăn gì khi mua hàng.”
 
 ## Evidence
 
