@@ -2,14 +2,14 @@
 
 ## 1. Thông tin bài làm
 
-- Sinh viên: TODO
-- MSSV: TODO
+- Sinh viên: Nguyễn Đoàn Xuân Thu
+- MSSV: 23120170
 - Lớp / Khoá: TODO
 - Course repository: `thu2005/Software-testing`
 - SUT repository và GitHub Issues: `thu2005/CSC13003_eshop`
 - Build SUT được kiểm thử: `85af3ba` (`main`)
 
-Thông tin cá nhân còn thiếu được giữ `TODO`, không tự suy đoán.
+Lớp / Khoá chưa được sinh viên cung cấp nên được giữ `TODO`.
 
 ## 2. Task 1 — GUI Checklist
 
@@ -84,7 +84,7 @@ feedback/state bắt buộc.
 | BUG-IA-01-CROSS-002: Màu action sai chuẩn và contrast chữ trắng không đạt | GUI-056, GUI-058 | Minor / P2 | [#47](https://github.com/thu2005/CSC13003_eshop/issues/47) |
 | BUG-IA-02-CART-001: Cart thiếu điều khiển tăng giảm số lượng | GUI-026, GUI-027, GUI-028, GUI-059 | Major / P1 | [#48](https://github.com/thu2005/CSC13003_eshop/issues/48) |
 | BUG-IA-02-CHECKOUT-001: Tổng tiền Checkout cho phép người dùng chỉnh sửa | GUI-042 | Major / P1 | [#49](https://github.com/thu2005/CSC13003_eshop/issues/49) |
-| BUG-IA-02-PRODUCT-001: Ô số lượng chấp nhận 0, số thập phân và giá trị rỗng | GUI-007, GUI-008 | Major / P1 | [#50](https://github.com/thu2005/CSC13003_eshop/issues/50) |
+| BUG-IA-02-PRODUCT-001: Ô số lượng chấp nhận số âm, 0, số thập phân và giá trị rỗng | GUI-007, GUI-008; P06 | Major / P1 | [#50](https://github.com/thu2005/CSC13003_eshop/issues/50) |
 | BUG-IA-03-CART-001: Link Tiếp tục mua sắm dùng sai nhãn | GUI-032 | Minor / P2 | [#51](https://github.com/thu2005/CSC13003_eshop/issues/51) |
 | BUG-IA-03-CROSS-001: Điều khiển Product Detail và Cart không có focus indicator nhìn thấy | GUI-010, GUI-029 | Minor / P2 | [#52](https://github.com/thu2005/CSC13003_eshop/issues/52) |
 | BUG-IA-03-CROSS-002: Ba trang con không có breadcrumb bắt buộc | GUI-011, GUI-030, GUI-046 | Minor / P2 | [#53](https://github.com/thu2005/CSC13003_eshop/issues/53) |
@@ -108,7 +108,95 @@ coupon, route protection và việc xóa Cart sau checkout.
 
 ## 3. Task 2 — Usability Evaluation
 
-TODO — thực hiện ở M5–M7.
+### 3.1. Phạm vi và phương pháp
+
+Bảy participant thực hiện luồng Search (`FR-05`) → Product Detail (`FR-06`) →
+Cart (`FR-07`) → Coupon (`FR-09`) → Checkout (`FR-08`) với scenario mua
+AirPods Pro 2 trong ngân sách 7.000.000 ₫ và dùng `SAVE10`. Các session ngày
+14/11/2026 có screen recording + audio; custom 4-item scale được thu bổ sung
+ngày 15/11/2026.
+
+Lúc 12:30 ngày 14/11/2026, trước các session chính, P00 Trần Gia Hiển — một
+người riêng ngoài lớp HW03 — đã chạy pilot online. Pilot xác nhận scenario có
+thể thực hiện và lỗi SUT xuất hiện đúng phạm vi cần quan sát; không phát hiện
+vấn đề wording, setup hoặc timing nên scenario, ba câu phỏng vấn và procedure
+không thay đổi. Custom scale chưa tồn tại tại thời điểm pilot nên không được
+pilot-test. Pilot không được tính vào dữ liệu của 7 participant chính.
+
+Instrument dùng thang 1–5 cho clarity, error recovery, speed và trust. Scale
+được thiết kế ngắn do thời lượng session hạn chế; không phải SUS/UEQ-S và không
+quy đổi sang thang 0–100. Ba câu phỏng vấn session thu thập clarity, nhận xét về
+giá/voucher/tổng tiền và ý định sử dụng. Dữ liệu định tính về error recovery và
+speed được tổng hợp từ think-aloud, observation và xác nhận của moderator ngày
+15/11/2026.
+
+### 3.2. Protocol deviations / chronology
+
+- `12:30 14/11/2026`: P00 pilot scenario AirPods Pro 2, ba câu phỏng vấn và
+  procedure thực tế; không dùng SUS/custom scale.
+- `18:53 14/11/2026`: commit M5 `b991a75` lưu AI preparation draft dùng iPhone
+  15 Pro Max và SUS. Draft này không được dùng làm moderator script cho study.
+- Bảy session chính dùng scenario AirPods Pro 2 và ba câu phỏng vấn thực tế.
+- `15/11/2026`: custom scale được tạo và gửi follow-up, thay vì hoàn thành ngay
+  sau từng session; scale chưa được pilot-test. Moderator cũng xác nhận phần
+  tổng hợp định tính về error recovery và speed.
+
+Đây là protocol deviation không thể sửa lịch sử. Báo cáo giữ disclosure rõ,
+ghi phần xác nhận đúng ngày 15/11/2026 và không dựng trích dẫn nguyên văn.
+
+Artifact:
+
+- [Kế hoạch usability](../usability/plan.md)
+- [Danh sách participant](../usability/participants.md)
+- [Bảy session record](../usability/sessions/)
+- [Raw scale response](../usability/post-test-survey.md)
+- [Phân tích đầy đủ](../usability/analysis.md)
+- [Google Form](https://forms.gle/uCQqeNNAwXurnxqJ6)
+- [Response Sheet](https://docs.google.com/spreadsheets/d/1xmAl07vqtPXbZKT35tTrBGa2BUUKQUL_t1Swt0GW-FI/edit?usp=sharing)
+
+### 3.3. Kết quả custom scale
+
+| Clarity | Error recovery | Speed | Trust | Mean chung |
+|---:|---:|---:|---:|---:|
+| 3.14 | 3.14 | 2.86 | 1.43 | 2.64 / 5 |
+
+Task success là `7/7` (`100%`) theo xác nhận của moderator. Completion cao cho
+thấy luồng cơ bản dễ hoàn tất, nhưng không đồng nghĩa trải nghiệm đúng hoặc an
+toàn: trust chỉ đạt `1.43/5` và mọi participant đều gặp lỗi tổng tiền.
+
+Trust thấp nhất và nhất quán với dữ liệu định tính: cả 7 participant đều nhận
+ra lỗi tổng tiền, 6 người nói sẽ không dùng sản phẩm ở trạng thái hiện tại và
+1 người không chắc sẽ dùng.
+
+### 3.4. Finding ưu tiên
+
+| Finding | Tần suất/evidence | Severity | Traceability |
+|---|---|---|---|
+| Coupon biến tổng 6 triệu thành 60 triệu | 7/7 | Major | [Issue #60](https://github.com/thu2005/CSC13003_eshop/issues/60) |
+| Add to Cart thiếu feedback/badge | 5/7; hai người tạo sản phẩm trùng | Major | [#54](https://github.com/thu2005/CSC13003_eshop/issues/54), [#62](https://github.com/thu2005/CSC13003_eshop/issues/62) |
+| Tổng Checkout cho phép chỉnh sửa | P03 sửa total và vẫn thanh toán thành công | Major | [Issue #49](https://github.com/thu2005/CSC13003_eshop/issues/49) |
+| Quantity âm được thêm vào Cart | P06 | Major | [Issue #50](https://github.com/thu2005/CSC13003_eshop/issues/50) |
+| Ảnh sản phẩm chỉ là placeholder chữ | 5/7 nhắc đến; FR-05/FR-06 yêu cầu ảnh; dedicated retest xác nhận ở listing và Product Detail | Major defect + UX issue | [BUG-IA-01-PRODUCT-001](../bug-reports/BUG-IA-01-PRODUCT-001.md) |
+
+Mặc dù task success là `7/7`, sai tổng tiền và editable total vẫn là lỗi tính
+toàn vẹn giao dịch nghiêm trọng. Hai finding được xếp `Major` thay vì `Blocker`
+vì chúng không ngăn participant hoàn tất luồng.
+
+### 3.5. Giới hạn
+
+Cả 7 participant đã được xác nhận ở ngoài lớp HW03 và đều hoàn thành task.
+Moderator không đưa leading hint hoặc chỉ dẫn UI. Browser được ghi ở mức cần
+thiết theo session, không yêu cầu exact version. Sinh viên xác nhận bảy YouTube
+evidence URL đã được mở quyền truy cập.
+
+Với error recovery, cả 7 participant đều đọc/nêu lỗi gặp phải và vẫn tự tiếp
+tục để hoàn thành. Với speed, họ đánh giá luồng khá dễ hiểu, tương tự website
+mua hàng thông thường và không xác định bước đặc biệt gây chậm. Đây là bản tóm
+tắt nguyên ý do moderator xác nhận, không phải verbatim response riêng của từng
+participant. Custom scale được thu vào ngày hôm sau và chưa được pilot-test;
+sai lệch này vẫn được công bố.
+U-05 đã có dedicated retest screenshot và bug report. GitHub Issue còn chờ
+evidence được commit/push để nhúng ảnh từ repository public.
 
 ## 4. Task 3 — Cross-browser / Cross-platform
 

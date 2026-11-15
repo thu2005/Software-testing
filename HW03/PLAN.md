@@ -125,9 +125,10 @@ hai sheet Checklist/Summary; tổng hợp Task 1 cùng 20 bug links trong
 
 ### M5 — Chuẩn bị usability study
 
-**Trạng thái: Đã tạo preparation pack; chưa đóng M5. Còn chờ sinh viên nhập 7
-participant thật ngoài lớp, contact đã mask và consent, đồng thời tạo Google
-Form từ survey source. AI không được phép tự điền các dữ liệu này.**
+**Trạng thái: Hoàn tất và đã reconciled chronology. Đã có scenario thật,
+custom 4-item follow-up scale có justification, moderator script, Google
+Form/Response Sheet và 7 participant thật ngoài lớp với contact đã mask cùng
+consent. Scale được tạo ngày 15/11, không phải instrument đã dùng trong pilot.**
 
 Một prompt lớn tạo bộ tài liệu chuẩn bị cho flow đã chọn:
 
@@ -142,6 +143,10 @@ Một prompt lớn tạo bộ tài liệu chuẩn bị cho flow đã chọn:
 
 ### M6 — Pilot và 7 moderated sessions
 
+**Trạng thái: Hoàn tất. Pilot P00 chạy lúc 12:30 ngày 14/11/2026; đã có 7
+recording, observation, quote, ba câu phỏng vấn, scale response, browser thật
+và task success `7/7`. Moderator không đưa leading hint hoặc chỉ dẫn UI.**
+
 - Pilot với một người không nằm trong 7 participant chính.
 - Ghi vấn đề về wording, timing hoặc procedure và cập nhật tài liệu nếu cần.
 - Chạy 7 session thật; thu think-aloud observation, timestamps, task success,
@@ -151,6 +156,11 @@ Một prompt lớn tạo bộ tài liệu chuẩn bị cho flow đã chọn:
 **Output:** pilot notes và 7 session records cùng evidence.
 
 ### M7 — Phân tích và tổng hợp Task 2
+
+**Trạng thái: Hoàn tất với giới hạn phương pháp được công bố. Đã phân tích và
+cập nhật main report; custom scale mean `2.64/5`, trust thấp nhất `1.43/5`, task
+success `7/7`. Dữ liệu định tính về error recovery và speed được tổng hợp từ
+think-aloud, observation và xác nhận của moderator ngày 15/11/2026.**
 
 Một prompt lớn dùng đúng dữ liệu 7 session để:
 

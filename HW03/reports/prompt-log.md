@@ -1,4 +1,4 @@
-﻿# Prompt Log
+# Prompt Log
 
 *Complete, unfiltered record of every AI interaction during HW03. See
 `reports/ai-audit-report.md` for substantive artifact-generating tasks with
@@ -358,3 +358,46 @@ Các artifact và log đã được commit cục bộ với tiền tố `[HW03]`
 
 ---
 
+## [13] Codex — 8:58 PM 15/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+đã thực hiện xong task 2, bạn kiểm tra coi còn thiếu gì không
+```
+
+**Output:**
+```text
+Task 2 đã có đủ dữ liệu chính, nhưng **chưa submission-ready**.
+
+Phần đã ổn:
+
+- Có đúng 7 participant thật ngoài lớp; contact đều đã mask, consent/profile đầy đủ trong [participants.md](/D:/testing/CSC13003/Software-testing/HW03/usability/participants.md:14).
+- Có 7 session record, không còn TODO; mỗi session có consent, observation, custom-scale response và evidence URL.
+- Phép tính scale đúng: tổng 74/28, mean 2.642857 ≈ 2.64; các mean theo participant/tiêu chí khớp giữa session, analysis và main report.
+- Tần suất finding chính khớp session data; [Google Form](https://forms.gle/uCQqeNNAwXurnxqJ6) và [Response Sheet](https://docs.google.com/spreadsheets/d/1xmAl07vqtPXbZKT35tTrBGa2BUUKQUL_t1Swt0GW-FI/edit?usp=sharing) đều trả HTTP 200 khi kiểm tra không dùng phiên đăng nhập.
+
+Các mục cần sửa trước khi nộp:
+
+1. **Blocker — 7 video evidence đều đang để Private.** YouTube trả `LOGIN_REQUIRED — Video riêng tư` cho P01–P07. Hãy đổi thành **Unlisted** hoặc cấp quyền rõ ràng cho TA, rồi kiểm tra lại bằng cửa sổ ẩn danh: [P01](https://www.youtube.com/watch?v=Pno9kdQ4ZsY), [P02](https://www.youtube.com/watch?v=8Neo4QhxPjU), [P03](https://www.youtube.com/watch?v=AI_qtxcTea8), [P04](https://www.youtube.com/watch?v=7S9Lmx-x7wk), [P05](https://www.youtube.com/watch?v=qHmXUDHbGYo), [P06](https://www.youtube.com/watch?v=b1zkPGr5dKc), [P07](https://www.youtube.com/watch?v=5N7qLocEnNw).
+
+2. **Thiếu hai probe bắt buộc.** Đề yêu cầu open-ended probes tối thiểu cho clarity, error recovery, speed và trust. Session hiện chỉ hỏi clarity/trust/ý định sử dụng; [main report cũng thừa nhận thiếu error recovery và speed](/D:/testing/CSC13003/Software-testing/HW03/reports/main-report.md:128). Custom-scale item không thay thế open-ended probe. Cách sửa hợp lệ là follow-up thật với 7 participant, ghi ngày/giờ và câu trả lời thật; không điền hồi tố.
+
+3. **Scale không được hoàn thành ngay sau từng session.** [Scale được gửi bổ sung ngày 15/11](/D:/testing/CSC13003/Software-testing/HW03/usability/analysis.md:10), trong khi session diễn ra ngày 14/11. Đây là protocol deviation so với yêu cầu “completed after each session”. Không thể sửa lịch sử; cần giữ disclosure rõ trong plan, analysis và main report.
+
+4. **Git history chưa đạt yêu cầu.** Toàn bộ Task 2 hiện vẫn uncommitted; 7 session còn untracked và lịch sử chỉ dừng ở commit M5 `b991a75`. Đề/skill yêu cầu một commit sau mỗi session. Hãy commit riêng participant/pilot, từng `session-01`…`session-07`, rồi analysis + roll-up; dùng ngày hiện tại, không backdate và không squash.
+
+5. **Timeline/instrument chưa nhất quán.** Commit M5 lúc 18:53 ngày 14/11 chứa scenario iPhone + SUS, nhưng [plan hiện ghi pilot AirPods + custom scale lúc 12:30 và “không thay đổi instrument”](/D:/testing/CSC13003/Software-testing/HW03/usability/plan.md:143); custom scale thực tế lại được gửi ngày 15/11. Cần thêm mục “Protocol deviations / chronology” nói rõ AI draft nào không được dùng, scenario thực tế nào đã chạy, và custom scale là follow-up chưa được pilot-test. Không nên tuyên bố pilot đã xác nhận instrument hiện tại.
+
+6. **Finding cần rà lại:**
+   - `U-05` “thiếu hình ảnh” có thể là defect vì FR-05/FR-06 bắt buộc có ảnh. Hãy retest; nếu tái hiện, tạo/cập nhật GitHub Issue kèm screenshot thay vì chỉ xếp systemic UX issue.
+   - `U-01` và `U-03` được xếp Blocker trong khi task success là 7/7. Cần giải thích “completion nhưng kết quả giao dịch không hợp lệ”, hoặc hạ severity để khớp định nghĩa Blocker.
+   - Issue #50 nên bổ sung trường hợp quantity âm và evidence P06, vì report hiện chủ yếu mô tả 0/thập phân/rỗng.
+
+7. **Nên hoàn thiện nếu evidence cho phép:** exact OS/device/browser version cho P04/P05/P07 và ghi rõ session nào thực sự nhận lời nhắc của moderator. Hiện cùng một câu “chỉ nhắc tiếp tục thanh toán” xuất hiện ở cả 7 file nên chưa phân biệt `không có hint` với `đã dùng hint`.
+
+Mình chưa sửa các artifact và chưa tạo AI Audit cho lượt review này; chỉ ghi prompt-log theo quy ước. Sau khi bạn xử lý mục 1–5, Task 2 mới nên được đánh dấu hoàn tất.
+```
+
+---

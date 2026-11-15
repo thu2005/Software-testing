@@ -4,11 +4,11 @@
 
 | Trường | Giá trị |
 |---|---|
-| Họ và tên | TODO |
-| MSSV | TODO |
+| Họ và tên | Nguyễn Đoàn Xuân Thu |
+| MSSV | 23120170 |
 | Lớp / Khoá | TODO |
-| Email sinh viên | TODO (`<StudentID>@student.hcmus.edu.vn`) |
-| Ngày thực hiện | TODO |
+| Email sinh viên | `23120170@student.hcmus.edu.vn` |
+| Ngày thực hiện | 14–15/11/2026 (usability sessions và survey bổ sung) |
 
 Không tự động điền hoặc suy đoán thông tin cá nhân còn thiếu.
 
@@ -61,11 +61,17 @@ Luồng end-to-end đã chọn:
 
 `Search (FR-05) → Product Detail (FR-06) → Shopping Cart (FR-07) → Coupon (FR-09) → Checkout (FR-08)`
 
-- Task scenario: mua 1 `iPhone 15 Pro Max` bằng coupon `SAVE10` và dừng khi có
-  xác nhận đơn hàng; scenario nêu mục tiêu, không chỉ dẫn từng click.
-- Instrument: SUS 10 câu, thang Likert 1–5; giữ nguyên thứ tự/polarity và dùng
-  observation cùng probe về clarity, error recovery, speed, trust để diễn giải.
-- Danh sách 7 người tham gia: TODO — chỉ nhập dữ liệu người thật do sinh viên cung cấp.
+- Task scenario: mua `AirPods Pro 2` với ngân sách 7.000.000 ₫, áp dụng coupon
+  `SAVE10`; scenario nêu mục tiêu, không chỉ dẫn từng click.
+- Instrument: custom 4-item scale 1–5 đo clarity, error recovery, speed và trust;
+  ba câu phỏng vấn mở được hỏi trong session.
+- Đã có pilot P00 riêng và 7 người tham gia thật ngoài lớp HW03, recording,
+  Google Form, raw scale response cùng task success `7/7`. Pilot diễn ra lúc
+  12:30 ngày 14/11/2026; moderator không đưa leading hint hoặc chỉ dẫn UI.
+- Custom scale được thu follow-up ngày 15/11/2026, không phải ngay sau từng
+  session; chronology và protocol deviation được công bố trong analysis/report.
+- Artifact: [study plan](usability/plan.md), [participants](usability/participants.md),
+  [sessions](usability/sessions/), [analysis](usability/analysis.md).
 
 ### Task 3 — Cross-browser / Cross-platform
 
@@ -89,7 +95,7 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 | Failed | 34 |
 | Bugs | 20 bug reports; 20 GitHub Issues (#44–#63) |
 | Usability flows | 1 |
-| Real participants | TODO / 7 |
+| Real participants | 7 / 7, tất cả ngoài lớp HW03 |
 | Cross-platform targets completed | TODO / ≥3 |
 
 ## Demo videos

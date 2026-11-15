@@ -1,70 +1,71 @@
-# Post-test Survey — SUS và câu hỏi mở
+# Post-test Survey — Custom Usability Scale
 
-## Hướng dẫn tạo Google Form
+## Instrument đã sử dụng
 
-- Tiêu đề: `HW03 EShop Usability — Post-test Survey`.
-- Không thu email tự động nếu participant chưa đồng ý.
-- Dùng mã `P01`–`P07`, không dùng tên thật trong response export.
-- Đặt 10 câu SUS trong cùng một section, đúng thứ tự dưới đây và bắt buộc trả
-  lời tất cả.
-- Mỗi câu dùng linear scale 1–5:
-  - `1 — Strongly disagree / Hoàn toàn không đồng ý`
-  - `2 — Disagree / Không đồng ý`
-  - `3 — Neutral / Trung lập`
-  - `4 — Agree / Đồng ý`
-  - `5 — Strongly agree / Hoàn toàn đồng ý`
-- Không hiển thị công thức hoặc diễn giải điểm SUS cho participant trước khi họ
-  trả lời.
-- Google Form URL: TODO — sinh viên tạo form và dán link.
+Custom scale gồm bốn câu, mỗi câu dùng linear scale 1–5:
 
-## Thông tin session
+- `1 — Hoàn toàn không đồng ý`
+- `2 — Không đồng ý`
+- `3 — Trung lập`
+- `4 — Đồng ý`
+- `5 — Hoàn toàn đồng ý`
 
-1. Participant ID — Short answer, required (`P01`–`P07`).
-2. Session date — Date, required.
-3. Task result do moderator ghi — `Success / Partial / Failed`.
+Scale ngắn được chọn vì session có thời lượng hạn chế và bốn item ánh xạ trực
+tiếp đến bốn tiêu chí cần khảo sát: clarity, error recovery, speed và trust.
+Đây không phải SUS/UEQ-S và điểm không được quy đổi sang các thang đo đó.
 
-## System Usability Scale (SUS)
+1. Tôi luôn biết mình cần làm gì tiếp theo trong luồng mua hàng.
+2. Khi gặp vấn đề, tôi có thể nhận biết và tìm cách tiếp tục.
+3. Tôi có thể hoàn thành luồng mua hàng nhanh chóng, không có bước thừa.
+4. Tôi tin tưởng thông tin sản phẩm, voucher và số tiền thanh toán của EShop.
 
-Giữ nguyên câu tiếng Anh chuẩn; dòng tiếng Việt chỉ hỗ trợ hiểu nghĩa và không
-thay đổi polarity.
+- Google Form: https://forms.gle/uCQqeNNAwXurnxqJ6
+- Response Sheet: https://docs.google.com/spreadsheets/d/1xmAl07vqtPXbZKT35tTrBGa2BUUKQUL_t1Swt0GW-FI/edit?usp=sharing
 
-1. **I think that I would like to use this system frequently.**  
-   Tôi nghĩ rằng tôi muốn sử dụng hệ thống này thường xuyên.
-2. **I found the system unnecessarily complex.**  
-   Tôi thấy hệ thống phức tạp một cách không cần thiết.
-3. **I thought the system was easy to use.**  
-   Tôi thấy hệ thống dễ sử dụng.
-4. **I think that I would need the support of a technical person to be able to use this system.**  
-   Tôi nghĩ mình cần sự hỗ trợ của người có kỹ thuật để sử dụng hệ thống này.
-5. **I found the various functions in this system were well integrated.**  
-   Tôi thấy các chức năng khác nhau trong hệ thống được tích hợp tốt.
-6. **I thought there was too much inconsistency in this system.**  
-   Tôi thấy hệ thống có quá nhiều điểm không nhất quán.
-7. **I would imagine that most people would learn to use this system very quickly.**  
-   Tôi cho rằng phần lớn mọi người sẽ học cách dùng hệ thống rất nhanh.
-8. **I found the system very cumbersome to use.**  
-   Tôi thấy hệ thống rất rườm rà khi sử dụng.
-9. **I felt very confident using the system.**  
-   Tôi cảm thấy rất tự tin khi sử dụng hệ thống.
-10. **I needed to learn a lot of things before I could get going with this system.**  
-    Tôi cần học nhiều thứ trước khi có thể bắt đầu sử dụng hệ thống.
+Bảng dưới ghi lại raw response do sinh viên xuất và cung cấp ngày 15/11/2026.
 
-## Câu hỏi mở sau SUS
+## Raw responses đã làm sạch
 
-Các câu dưới đây do moderator hỏi và ghi vào session notes để có thể nhắc đúng
-observation; không bắt participant lặp lại trong Form nếu đã trả lời bằng lời.
+Phản hồi đầu của P06 lúc `20:09:51` là lần nhập nhầm. Theo xác nhận của sinh
+viên, chỉ phản hồi thứ hai lúc `20:16:15` được dùng để phân tích.
+
+| Participant | Timestamp | Clarity | Error recovery | Speed | Trust | Mean |
+|---|---|---:|---:|---:|---:|---:|
+| P01 — Nguyễn Phú Thọ | 15/11/2026 20:08:26 | 4 | 5 | 3 | 1 | 3.25 |
+| P02 — Hồ Khổng Tuyết Như | 15/11/2026 20:08:34 | 3 | 3 | 3 | 1 | 2.50 |
+| P03 — Bùi Nguyễn Quang Tuấn | 15/11/2026 20:08:30 | 4 | 3 | 3 | 3 | 3.25 |
+| P04 — Nguyễn Văn Kiên | 15/11/2026 20:11:46 | 1 | 3 | 3 | 1 | 2.00 |
+| P05 — Vũ Hồng Phú | 15/11/2026 20:12:29 | 2 | 3 | 2 | 2 | 2.25 |
+| P06 — Trần Thị Thuỷ Tiên | 15/11/2026 20:16:15 | 3 | 1 | 4 | 1 | 2.25 |
+| P07 — Huỳnh Yến Nhi | 15/11/2026 20:08:56 | 5 | 4 | 2 | 1 | 3.00 |
+| **Mean** |  | **3.14** | **3.14** | **2.86** | **1.43** | **2.64** |
+
+## Câu hỏi phỏng vấn đã hỏi trong session
 
 1. Có thời điểm nào bạn không chắc phải làm gì tiếp theo không?
-2. Khi gặp lỗi hoặc phải thao tác lại, bạn đã nghĩ gì và điều gì giúp/cản bạn
-   tiếp tục?
-3. Luồng này nhanh hay chậm hơn mong đợi? Bước nào lâu nhất?
-4. Bạn có tin rằng giá, coupon, tổng tiền và đơn hàng được xử lý đúng không?
-5. Có điều gì khiến bạn không muốn dùng EShop trong thực tế không?
+2. Ở lúc thanh toán, các thông tin như giá, voucher và tổng tiền có được xử lý
+   đúng với những gì bạn dự định không?
+3. Nếu với luồng này EShop được đưa vào thực tế, bạn có sử dụng không? Vì sao?
 
-## Scoring — chỉ dành cho người phân tích
+Ba câu trên thu được dữ liệu định tính về clarity, trust và ý định sử dụng.
+Error recovery và speed còn được phản ánh qua custom scale, think-aloud và hành
+vi quan sát trong session.
 
-- Câu lẻ: `response - 1`.
-- Câu chẵn: `5 - response`.
-- Cộng 10 contribution rồi nhân `2.5`.
-- Lưu đủ 10 raw response trong từng session; không chỉ lưu điểm tổng.
+## Tổng hợp định tính về error recovery và speed
 
+Theo xác nhận bổ sung của moderator ngày 15/11/2026 cho cả bảy participant:
+
+- **Error recovery:** participant đọc/nêu lỗi gặp phải cho moderator, sau đó vẫn
+  tự tìm cách tiếp tục và hoàn thành luồng.
+- **Speed:** participant nhận xét luồng khá dễ hiểu, tương tự các website mua
+  hàng thông thường; không ai xác định một bước đặc biệt làm mất thời gian.
+
+Đây là phần tóm tắt nguyên ý do moderator cung cấp, không phải trích dẫn nguyên
+văn của từng participant.
+
+## Scoring
+
+- Điểm participant: trung bình cộng bốn raw response.
+- Điểm từng tiêu chí: trung bình cộng bảy participant.
+- Điểm chung: `74 / 28 = 2.642857`, báo cáo là `2.64 / 5`.
+- Giữ raw response để truy vết; không diễn giải `2.64` như SUS score.
