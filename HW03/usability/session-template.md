@@ -10,7 +10,7 @@
 - **Profile**: TODO — lấy từ participant thật, không ghi contact
 - **Consent to participate**: TODO — Yes/No
 - **Consent to record**: TODO — Screen / Screen + audio / No
-- **SUT build/browser/device**: `85af3ba` / TODO
+- **SUT build/browser/device**: `85af3ba` / TODO — chỉ ghi dữ liệu đã xác nhận
 - **Giờ bắt đầu task**: TODO
 - **Giờ kết thúc task**: TODO
 - **Thời lượng**: TODO
@@ -23,31 +23,23 @@
 |---|---|---|
 | TODO | TODO | TODO |
 
-## Kết quả SUS
+## Kết quả custom scale (1–5)
 
-| Item | Raw response (1–5) | Contribution |
-|---:|---:|---:|
-| 1 | TODO | TODO (`r1 - 1`) |
-| 2 | TODO | TODO (`5 - r2`) |
-| 3 | TODO | TODO (`r3 - 1`) |
-| 4 | TODO | TODO (`5 - r4`) |
-| 5 | TODO | TODO (`r5 - 1`) |
-| 6 | TODO | TODO (`5 - r6`) |
-| 7 | TODO | TODO (`r7 - 1`) |
-| 8 | TODO | TODO (`5 - r8`) |
-| 9 | TODO | TODO (`r9 - 1`) |
-| 10 | TODO | TODO (`5 - r10`) |
-| **Tổng contribution** |  | TODO / 40 |
-| **SUS score** |  | TODO / 100 (`tổng × 2.5`) |
+| Item | Khía cạnh | Raw response |
+|---:|---|---:|
+| 1 | Clarity | TODO |
+| 2 | Error recovery | TODO |
+| 3 | Speed | TODO |
+| 4 | Trust | TODO |
+| **Mean** |  | TODO / 5 |
 
 ## Trả lời probe
 
-- **Clarity:** TODO — câu trả lời thật.
-- **Error recovery:** TODO — câu trả lời thật hoặc ghi không hỏi vì không có
-  error.
-- **Speed:** TODO — câu trả lời thật.
-- **Trust:** TODO — câu trả lời thật.
-- **Flow-specific:** TODO — câu trả lời thật.
+- **Câu 1 — Clarity:** TODO — câu trả lời thật.
+- **Câu 2 — Giá/voucher/tổng tiền:** TODO — câu trả lời thật.
+- **Câu 3 — Ý định sử dụng:** TODO — câu trả lời thật.
+- **Error recovery:** TODO — ghi observation hoặc phần xác nhận thật; không dựng quote.
+- **Speed:** TODO — ghi observation hoặc phần xác nhận thật; không dựng quote.
 
 ## Evidence
 

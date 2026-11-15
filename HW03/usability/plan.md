@@ -4,7 +4,8 @@
 
 - **Luồng:** Search (`FR-05`) → Product Detail (`FR-06`) → Shopping Cart
   (`FR-07`) → Coupon (`FR-09`) → Checkout (`FR-08`).
-- **Nền tảng chính:** Google Chrome / Windows.
+- **Browser thực tế:** P01–P02 dùng Microsoft Edge trên máy moderator; P03 và
+  P06 dùng Safari trên iPhone; P04, P05, P07 dùng Google Chrome.
 - **SUT build:** `85af3ba` (`main`).
 - **Số session chính:** 7 người thật ngoài lớp.
 - **Pilot:** 1 người, không thuộc 7 participant chính.
@@ -18,8 +19,8 @@
 3. Đánh giá thời gian/công sức cảm nhận khi hoàn tất luồng mua hàng.
 4. Tìm hiểu mức độ tin tưởng của người dùng vào giá, giảm giá, tổng tiền và xác
    nhận đơn hàng.
-5. Đo usability tổng thể bằng SUS và giải thích điểm số bằng observation cùng
-   câu trả lời probe.
+5. Đo bốn khía cạnh cốt lõi bằng custom usability scale ngắn và giải thích
+   điểm số bằng observation cùng câu trả lời phỏng vấn.
 
 ## 3. Câu hỏi nghiên cứu
 
@@ -31,44 +32,41 @@
 
 ## 4. Task scenario
 
-> Bạn muốn mua **iPhone 15 Pro Max** trên EShop. Bạn có mã giảm giá
-> **SAVE10**. Hãy hoàn tất việc mua **1 sản phẩm** bằng mã này và dừng lại khi
-> bạn thấy hệ thống xác nhận đơn hàng thành công.
+> Bạn muốn mua **AirPods Pro 2** với ngân sách **7.000.000 ₫**. Hãy sử dụng
+> EShop để tìm và mua sản phẩm, áp dụng mã **SAVE10** trước khi hoàn tất đơn
+> hàng.
 
 Scenario chỉ nêu mục tiêu và dữ liệu cần thiết; không nói người tham gia phải
 bấm nút nào hoặc đi theo từng màn hình ra sao.
 
 ## 5. Trạng thái bắt đầu và dữ liệu test
 
-- Mở trang chủ EShop trên Chrome ở trạng thái chưa có sản phẩm trong Cart.
+- Mở trang chủ EShop trên browser của session ở trạng thái chưa có sản phẩm
+  trong Cart.
 - Moderator chuẩn bị một test account hoạt động nhưng không ghi password vào
   repository; chỉ cung cấp khi participant cần đăng nhập.
-- Xác minh trước session: sản phẩm `iPhone 15 Pro Max` có thể tìm thấy, coupon
+- Xác minh trước session: sản phẩm `AirPods Pro 2` có thể tìm thấy, coupon
   `SAVE10` tồn tại và backend hoạt động.
 - Reset Cart/session về cùng trạng thái trước mỗi lượt.
 - Không cho participant xem checklist GUI hoặc danh sách bug đã biết.
 
 ## 6. Instrument và lý do chọn
 
-Chọn **System Usability Scale (SUS)** gồm 10 câu, Likert 1–5. SUS phù hợp vì:
+Instrument cuối cùng dùng để báo cáo là **custom 4-item usability scale**,
+Likert 1–5, đo clarity, error recovery, speed và trust. Scale được tạo và gửi
+như follow-up ngày 15/11/2026, sau các session chính; vì vậy không gọi hoặc quy
+đổi kết quả thành SUS/UEQ-S và không mô tả scale như đã được pilot-test hay hoàn
+thành ngay sau từng session.
 
-- ngắn, có thể hoàn thành ngay sau một task end-to-end;
-- tạo một composite score 0–100 để so sánh giữa 7 participant;
-- có polarity xen kẽ giúp hạn chế trả lời một chiều;
-- được dùng cùng observation và probe, không bị diễn giải như công cụ chẩn
-  đoán nguyên nhân.
+1. Tôi luôn biết mình cần làm gì tiếp theo trong luồng mua hàng.
+2. Khi gặp vấn đề, tôi có thể nhận biết và tìm cách tiếp tục.
+3. Tôi có thể hoàn thành luồng mua hàng nhanh chóng, không có bước thừa.
+4. Tôi tin tưởng thông tin sản phẩm, voucher và số tiền thanh toán của EShop.
 
-Survey giữ nguyên wording tiếng Anh chuẩn và đúng thứ tự; bản dịch tiếng Việt
-được đặt ngay dưới mỗi câu để hỗ trợ participant. Không đảo câu hoặc đổi
-polarity. Nguồn survey: [post-test-survey.md](post-test-survey.md).
-
-### Công thức SUS
-
-- Câu lẻ 1, 3, 5, 7, 9: `contribution = response - 1`.
-- Câu chẵn 2, 4, 6, 8, 10: `contribution = 5 - response`.
-- `SUS = tổng 10 contribution × 2.5` (0–100).
-
-Chỉ tính điểm sau khi có câu trả lời thật; không điền score trước session.
+Mỗi câu dùng `1 — Hoàn toàn không đồng ý` đến `5 — Hoàn toàn đồng ý`. Điểm
+mỗi participant là trung bình bốn câu; kết quả nhóm là trung bình theo từng
+câu và trung bình của toàn bộ 28 response. Nguồn survey và raw response:
+[post-test-survey.md](post-test-survey.md).
 
 ## 7. Dữ liệu thu thập
 
@@ -78,8 +76,8 @@ Chỉ tính điểm sau khi có câu trả lời thật; không điền score tr
 | Thời gian | Timestamp bắt đầu, kết thúc và thời lượng task |
 | Hành vi | Bước trong flow, error, hesitation, backtrack, recovery, hint |
 | Think-aloud | Chỉ ghi câu nói thật, đặt trong dấu ngoặc kép |
-| SUS | Raw response 1–5 cho đủ 10 câu và score tính sau session |
-| Probe | Clarity, error recovery, speed, trust và ý định sử dụng thật |
+| Custom scale | Raw response 1–5 cho đủ 4 câu; không quy đổi sang SUS |
+| Probe | Ba câu trong session về clarity, giá/voucher/tổng tiền và ý định sử dụng; dữ liệu error recovery và speed được tổng hợp từ think-aloud, hành vi quan sát và xác nhận của moderator |
 | Evidence | Screen recording; audio chỉ khi có consent rõ ràng |
 
 ## 8. Tiêu chí task success
@@ -96,17 +94,18 @@ năng recovery.
 
 ## 9. Probe questions
 
-Hỏi sau SUS, điều chỉnh phần trong ngoặc vuông theo observation thật:
+Ba câu đã được moderator hỏi trong session:
 
-1. **Clarity:** Có thời điểm nào bạn không chắc phải làm gì tiếp theo không?
-   [Nhắc đúng khoảnh khắc do dự nếu có.]
-2. **Error recovery:** Lúc bạn [gặp lỗi/thao tác lại], bạn đã nghĩ gì và điều gì
-   giúp hoặc cản bạn tiếp tục? Nếu không có lỗi, ghi rõ câu này được bỏ qua.
-3. **Speed:** Luồng này nhanh hay chậm hơn bạn mong đợi? Bước nào lâu nhất?
-4. **Trust:** Ở Checkout, bạn có tin rằng giá, coupon, tổng tiền và đơn hàng
-   được xử lý đúng không? Vì sao?
-5. **Flow-specific:** Có điều gì trong luồng mua hàng này khiến bạn không muốn
-   dùng EShop trong thực tế không?
+1. Có thời điểm nào bạn không chắc phải làm gì tiếp theo không?
+2. Ở lúc thanh toán, các thông tin như giá, voucher và tổng tiền có được xử lý
+   đúng với những gì bạn dự định không?
+3. Nếu luồng này được đưa vào thực tế, bạn có sử dụng EShop không? Vì sao?
+
+Câu 1 thu thập clarity; câu 2 và 3 làm rõ trust cùng ý định sử dụng. Dữ liệu
+định tính về error recovery và speed được tổng hợp từ think-aloud, hành vi quan
+sát trong recording và xác nhận bổ sung của moderator ngày 15/11/2026. Cả bảy
+participant đều nêu lỗi gặp phải rồi tự tiếp tục; họ đánh giá luồng khá dễ hiểu,
+tương tự website mua hàng thông thường và không xác định bước đặc biệt gây chậm.
 
 ## 10. Quy trình và vai trò moderator
 
@@ -116,7 +115,8 @@ Hỏi sau SUS, điều chỉnh phần trong ngoặc vuông theo observation th�
 3. Đọc scenario đúng như script; yêu cầu think aloud.
 4. Quan sát trung lập, không gợi ý vị trí/nút. Chỉ can thiệp khi participant
    hoàn toàn bế tắc và phải ghi rõ hint.
-5. Kết thúc task, cho participant điền SUS trước khi hỏi probe.
+5. Kết thúc task và hỏi ba câu phỏng vấn; custom scale được gửi bổ sung sau
+   session vào ngày 15/11/2026.
 6. Cảm ơn, xác nhận lại phạm vi sử dụng recording và reset SUT.
 
 Script chuẩn: [session-script.md](session-script.md). Cấu trúc ghi chép:
@@ -135,21 +135,45 @@ Script chuẩn: [session-script.md](session-script.md). Cấu trúc ghi chép:
 Pilot phải dùng một người ngoài 7 participant chính. Sau pilot, ghi:
 
 - scenario có bị hiểu như hướng dẫn từng bước không;
-- wording SUS/probe có gây nhầm không;
+- wording scenario và ba câu phỏng vấn có gây nhầm không;
 - setup, test account, coupon và recording có hoạt động không;
 - task có quá dài/ngắn không;
 - thay đổi nào được áp dụng trước 7 session.
 
 ### Pilot record
 
-- Pilot participant: TODO — sinh viên cung cấp người thật, không thuộc 7 người.
-- Ngày/giờ: TODO.
-- Consent: TODO.
-- Vấn đề phát hiện: TODO — chỉ điền từ pilot thật.
-- Thay đổi sau pilot: TODO — chỉ điền từ pilot thật.
-- Quyết định sẵn sàng chạy M6: TODO.
+- Pilot participant: `P00` — Trần Gia Hiển, sinh viên IT không theo hướng
+  tester, ngoài lớp HW03; contact mask `2312****@student.hcmus.edu.vn`.
+- Thời điểm: 12:30 ngày 14/11/2026, trước 7 session chính.
+- Hình thức và consent: Online; đã đồng ý tham gia và ghi màn hình + audio.
+- Kết quả: Participant thực hiện được scenario; lỗi của SUT xuất hiện trong
+  luồng và có thể quan sát đúng mục tiêu kiểm thử. Không phát hiện wording khó
+  hiểu, setup hỏng hoặc vấn đề timing cần chặn study.
+- Thay đổi sau pilot: Không thay đổi scenario, ba câu phỏng vấn hoặc procedure
+  vì pilot không phát hiện vấn đề thuộc thiết kế buổi test. Defect của SUT được
+  giữ nguyên để quan sát trong các session chính, không sửa hoặc giải thích
+  trước cho participant. Custom scale chưa tồn tại tại thời điểm pilot nên
+  không thuộc phạm vi được pilot xác nhận.
+- Quyết định sẵn sàng chạy M6: Sẵn sàng; tiếp tục 7 session chính với cùng
+  scenario và quy trình.
 
-## 13. Rủi ro và kiểm soát bias
+Trong các session chính, moderator không đưa leading hint hoặc chỉ dẫn UI.
+
+## 13. Protocol deviations / chronology
+
+- `12:30 14/11/2026`: pilot P00 chạy scenario AirPods Pro 2, ba câu phỏng vấn
+  và procedure thực tế; không dùng SUS hoặc custom scale.
+- `18:53 14/11/2026`: commit M5 `b991a75` lưu AI preparation draft dùng iPhone
+  15 Pro Max và SUS. Đây là draft tài liệu không được dùng làm moderator script
+  cho pilot hoặc bảy session chính.
+- Sau pilot ngày 14/11/2026: bảy session chính dùng scenario AirPods Pro 2 và
+  ba câu phỏng vấn đã ghi trong session records.
+- `15/11/2026`: custom 4-item scale được tạo và gửi follow-up. Việc này lệch với
+  protocol “scale completed after each session”; scale cũng chưa được pilot-test.
+- Không sửa lịch sử hoặc bổ sung câu trả lời hồi tố. Sai lệch trên được công bố
+  khi diễn giải kết quả và là giới hạn của study.
+
+## 14. Rủi ro và kiểm soát bias
 
 - Không tuyển bạn cùng lớp HW03.
 - Không giải thích UI hoặc nhắc participant về bug đã biết.

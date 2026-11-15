@@ -3,7 +3,7 @@
 ## 1. Trước khi participant vào session
 
 - Xác minh SUT/API hoạt động, Cart trống và test account đăng nhập được.
-- Xác minh sản phẩm `iPhone 15 Pro Max` và coupon `SAVE10`.
+- Xác minh sản phẩm `AirPods Pro 2` và coupon `SAVE10`.
 - Mở trang chủ, tắt notification không liên quan và chuẩn bị screen recording.
 - Mở file session tương ứng nhưng chưa điền observation giả định.
 
@@ -13,7 +13,7 @@
 > kiểm tra khả năng của bạn. Không có thao tác đúng hay sai từ phía bạn; mọi
 > khó khăn đều giúp mình hiểu giao diện cần cải thiện ở đâu.
 
-> Session dự kiến mất khoảng TODO phút. Bạn có thể dừng hoặc bỏ qua câu hỏi bất
+> Session dự kiến mất khoảng 10 phút. Bạn có thể dừng hoặc bỏ qua câu hỏi bất
 > kỳ lúc nào. Mình muốn ghi màn hình [và audio] để xem lại thao tác. Dữ liệu chỉ
 > dùng cho bài tập, contact sẽ được che khi lưu vào repository. Bạn có đồng ý
 > tiếp tục và đồng ý với phạm vi ghi hình này không?
@@ -34,9 +34,9 @@ tả cách chọn một cuốn sách trên bàn; không demo giao diện đang t
 
 Đọc nguyên văn một lần:
 
-> Bạn muốn mua **iPhone 15 Pro Max** trên EShop. Bạn có mã giảm giá
-> **SAVE10**. Hãy hoàn tất việc mua **1 sản phẩm** bằng mã này và dừng lại khi
-> bạn thấy hệ thống xác nhận đơn hàng thành công.
+> Bạn muốn mua **AirPods Pro 2** với ngân sách **7.000.000 ₫**. Hãy sử dụng
+> EShop để tìm và mua sản phẩm, áp dụng mã **SAVE10** trước khi hoàn tất đơn
+> hàng.
 
 > Bạn có thể bắt đầu khi sẵn sàng.
 
@@ -58,29 +58,26 @@ Bắt đầu timer khi participant thực hiện hành động đầu tiên.
 Dừng timer khi có xác nhận thành công, participant từ bỏ hoặc moderator quyết
 định task bị blocker.
 
-## 6. Post-test SUS
+## 6. Post-test interview
 
-> Bây giờ bạn vui lòng trả lời 10 câu SUS theo cảm nhận đầu tiên về hệ thống.
-> Mỗi câu dùng thang 1 đến 5. Các câu có thể nghe hơi giống nhau nhưng xin trả
-> lời đầy đủ và theo đúng thứ tự.
+Ba câu đã hỏi trong session:
 
-Không giải thích câu theo hướng tích cực/tiêu cực. Nếu participant hỏi nghĩa,
-đọc lại bản dịch đã chuẩn bị, không diễn giải thêm theo trải nghiệm vừa xảy ra.
+1. Có thời điểm nào bạn không chắc phải làm gì tiếp theo không?
+2. Ở lúc thanh toán, các thông tin như giá, voucher và tổng tiền có được xử lý
+   đúng với những gì bạn dự định không?
+3. Nếu với luồng này EShop được đưa vào thực tế, bạn có sử dụng không? Vì sao?
 
-## 7. Probe questions
+Không tranh luận, bảo vệ thiết kế hoặc xác nhận participant “đã hiểu đúng”.
 
-Hỏi sau khi SUS đã submit:
+## 7. Custom scale bổ sung
 
-1. Có thời điểm nào bạn không chắc phải làm gì tiếp theo không? [Nhắc đúng
-   moment quan sát được nếu có.]
-2. Lúc bạn [gặp lỗi/thao tác lại], bạn đã nghĩ gì? Điều gì giúp hoặc cản bạn
-   tiếp tục? Nếu không có lỗi, bỏ qua và ghi lý do.
-3. Luồng này nhanh hay chậm hơn bạn mong đợi? Bước nào lâu nhất?
-4. Ở Checkout, bạn có tin rằng giá, coupon, tổng tiền và đơn hàng được xử lý
-   đúng không? Vì sao?
-5. Có điều gì trong luồng này khiến bạn không muốn dùng EShop trong thực tế?
+Sau bảy session, participant nhận form bổ sung gồm bốn item Likert 1–5 về
+clarity, error recovery, speed và trust. Nội dung và raw response nằm trong
+[post-test-survey.md](post-test-survey.md). Không mô tả đây là SUS và không
+quy đổi điểm sang thang 0–100.
 
-Không tranh luận, bảo vệ thiết kế hoặc xác nhận rằng participant “đã hiểu đúng”.
+Việc thu bổ sung này phải được ghi rõ trong report để không tạo ấn tượng scale
+đã được hỏi ngay trong session.
 
 ## 8. Kết thúc
 
