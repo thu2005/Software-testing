@@ -1,3 +1,22 @@
+﻿7093557 2026-11-16 [HW03] test: add reproducible cross-platform runner
+903f104 2026-11-16 [HW03] docs: complete cross-platform testing
+c32abbf 2026-11-16 [HW03] test: run checklist on Chrome Android
+f8fa1af 2026-11-16 [HW03] test: run checklist on Firefox Windows
+89512cf 2026-11-16 [HW03] test: run checklist on Chrome Windows
+38f01e8 2026-11-15 [HW03] test: record qualitative follow-up responses
+c74301f 2026-11-15 [HW03] docs: link usability image defect issue
+5a39ff1 2026-11-15 [HW03] docs: analyze and summarize usability study
+6728f30 2026-11-15 [HW03] test: add usability defect evidence
+66063ab 2026-11-15 [HW03] test: record usability session P07
+f2901c4 2026-11-15 [HW03] test: record usability session P06
+be26044 2026-11-15 [HW03] test: record usability session P05
+0a7d51c 2026-11-15 [HW03] test: record usability session P04
+699b274 2026-11-15 [HW03] test: record usability session P03
+d3d3d66 2026-11-15 [HW03] test: record usability session P02
+e493bc6 2026-11-15 [HW03] test: record usability session P01
+6bce87f 2026-11-15 [HW03] docs: finalize usability study setup
+b991a75 2026-11-14 [HW03] docs: prepare usability study
+b26a008 2026-11-14 [HW03] docs: export and summarize Task 1
 4fb1554 2026-11-14 [HW03] docs: close M3 after issue verification
 c3319d3 2026-11-14 [HW03] docs: audit M3 issue publication
 078e807 2026-11-14 [HW03] docs: cross-link M3 GitHub issues
