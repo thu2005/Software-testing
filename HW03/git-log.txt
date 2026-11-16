@@ -1,4 +1,6 @@
-﻿7093557 2026-11-16 [HW03] test: add reproducible cross-platform runner
+﻿998ff6a 2026-11-16 [HW03] docs: record Task 2 review and M8 execution
+f66797e 2026-11-16 [HW03] docs: refresh git log after Task 3
+7093557 2026-11-16 [HW03] test: add reproducible cross-platform runner
 903f104 2026-11-16 [HW03] docs: complete cross-platform testing
 c32abbf 2026-11-16 [HW03] test: run checklist on Chrome Android
 f8fa1af 2026-11-16 [HW03] test: run checklist on Firefox Windows
