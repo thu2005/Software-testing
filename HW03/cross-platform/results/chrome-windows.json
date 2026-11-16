@@ -1,0 +1,9 @@
+{
+  "platform": "Chrome 157.0.8103.50 / Windows",
+  "slug": "chrome-windows",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "executed": 65,
+  "passed": 31,
+  "failed": 34,
+  "overview": "chrome-windows-overview.png"
+}
