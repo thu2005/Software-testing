@@ -75,9 +75,10 @@ Luồng end-to-end đã chọn:
 
 ### Task 3 — Cross-browser / Cross-platform
 
-Chạy lại toàn bộ checklist Task 1 trên ít nhất ba platform. Matrix chính thức sẽ
-được khóa tại Phase T3.1; phương án phù hợp Windows đang dự kiến là Chrome /
-Windows, Firefox / Windows và Android Chrome.
+Đã chạy lại toàn bộ 65 item Task 1 trên Chrome / Windows, Firefox / Windows và
+Chrome / Android 13 (Pixel_4a emulator). Tổng cộng 195 lượt kiểm tra: 94 Passed,
+101 Failed. Chi tiết platform matrix, evidence và khác biệt browser nằm trong
+[cross-platform report](cross-platform/report.md).
 
 ## Kế hoạch
 
@@ -96,7 +97,7 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 | Bugs | 21 bug reports; 21 GitHub Issues (#44–#64), gồm 20 bug Task 1 và 1 bug được xác nhận thêm từ Task 2 |
 | Usability flows | 1 |
 | Real participants | 7 / 7, tất cả ngoài lớp HW03 |
-| Cross-platform targets completed | TODO / ≥3 |
+| Cross-platform targets completed | 3 / ≥3 (195 lượt: 94 Passed, 101 Failed) |
 
 ## Demo videos
 

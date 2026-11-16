@@ -175,6 +175,12 @@ Không suy diễn participant data, observation hoặc quote không có trong ev
 
 ### M8 — Chạy full checklist trên 3 platform
 
+**Trạng thái: Hoàn tất — đã chạy đủ 65 item trên Chrome 157 / Windows
+(31 Passed, 34 Failed), Firefox 160 / Windows (32 Passed, 33 Failed) và Chrome
+109 / Android 13 / Pixel_4a emulator (31 Passed, 34 Failed). Có 33 failure chung;
+khác biệt platform duy nhất là `GUI-029` (Firefox có focus outline mặc định).
+Kết quả, screenshot và báo cáo tổng hợp đã được human-review.**
+
 Matrix dự kiến:
 
 1. Chrome / Windows.

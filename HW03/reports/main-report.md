@@ -200,7 +200,37 @@ U-05 đã có dedicated retest screenshot, bug report và GitHub Issue #64; hai 
 
 ## 4. Task 3 — Cross-browser / Cross-platform
 
-TODO — thực hiện ở M8–M9.
+### 4.1. Platform matrix và kết quả
+
+Toàn bộ 65 item Task 1 được chạy lại trên từng target; không dùng subset. Mỗi
+failure có screenshot stamp `23120170@student.hcmus.edu.vn`, họ tên, browser/
+OS/device và URL. Kết quả chi tiết nằm trong
+[cross-platform report](../cross-platform/report.md).
+
+| Platform | Executed | Passed | Failed |
+|---|---:|---:|---:|
+| Chrome `157.0.8103.50` / Windows | 65 | 31 | 34 |
+| Firefox `160.0` / Windows | 65 | 32 | 33 |
+| Chrome `109.0.5414.123` / Android 13 / Pixel_4a emulator | 65 | 31 | 34 |
+| **Tổng lượt kiểm tra** | **195** | **94** | **101** |
+
+### 4.2. Khác biệt giữa platform
+
+Có 33 item Failed trên cả ba target và dùng lại bug report/Issue hiện có. Chỉ
+một item tạo ra khác biệt:
+
+- `GUI-029`: Firefox Passed vì browser hiển thị focus outline `3px`; Chrome
+  Windows và Android Failed. Kết quả liên kết với
+  [Issue #52](https://github.com/thu2005/CSC13003_eshop/issues/52).
+- `GUI-002` Failed trên cả ba target với `naturalWidth=0`; đây là defect ảnh sản
+  phẩm đã được liên kết với
+  [Issue #64](https://github.com/thu2005/CSC13003_eshop/issues/64), không phải
+  một defect tương thích Android mới.
+
+Không phát hiện defect cross-platform mới đủ cơ sở tạo GitHub Issue. Kết quả
+cho thấy phần lớn failure tái hiện nhất quán, không phụ thuộc một browser duy
+nhất. Android Chrome 109 là phiên bản trong AVD và không đại diện cho mọi thiết
+bị/phiên bản Android.
 
 ## 5. AI usage và human review
 

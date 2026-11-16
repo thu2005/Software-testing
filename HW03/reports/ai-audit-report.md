@@ -4,11 +4,11 @@
 
 | Field | Value |
 |---|---|
-| Họ tên | [TODO — sinh viên điền] |
-| MSSV | [TODO — sinh viên điền] |
+| Họ tên | Nguyễn Đoàn Xuân Thu |
+| MSSV | 23120170 |
 | Lớp / Khoá | [TODO — sinh viên điền] |
 | Assignment ID | HW03-AI |
-| Ngày làm bài | 12/11/2026 |
+| Ngày làm bài | 12–16/11/2026 |
 | Công cụ AI đã dùng | Codex |
 
 ## 2. Hướng dẫn
@@ -598,14 +598,115 @@ không sửa verdict lịch sử của Entry #10.
 
 ---
 
+## Entry #11
+
+### (1) Prompt + Tool
+
+| Field             | Content         |
+| ----------------- | --------------- |
+| **Tool**          | Codex |
+| **Model**         | GPT-5 |
+| **Timestamp**     | 10:09 AM 16/11/2026 |
+| **Artifact type** | M8 — Full checklist trên ba platform và tổng hợp Task 3 |
+
+**Full prompt:**
+
+```text
+mình đã tắt các BE, FE trước đó. giờ bạn tự khởi động lại và thực hiện M8 nhé. Thông tin sinh viên đã đúng. Lượt này có audit AI
+```
+
+### (2) AI Output
+
+```text
+M8 đã hoàn tất phần thực thi; AI Audit Entry #11 hiện `INCOMPLETE` cho tới khi bạn review evidence, không phải vì thiếu execution.
+
+- Đã chạy đủ `195/195` lượt: Chrome/Windows `32 Passed, 33 Failed`; Firefox/Windows `33 Passed, 32 Failed`; Chrome/Android `31 Passed, 34 Failed`.
+- 32 failure tái hiện trên cả ba target. `GUI-029` chỉ Passed trên Firefox nhờ focus outline mặc định. `GUI-002` chỉ Failed trên Android; emulator không có Internet nên đây là giới hạn môi trường, chưa được xem là defect Android mới.
+- Mỗi result file có đúng 65 item; mỗi failure có screenshot; mỗi platform có overview. Toàn bộ evidence link và watermark đã được kiểm tra.
+- Đã cập nhật cross-platform report, main report, README và PLAN. Không tạo GitHub Issue mới vì không có defect mới đủ bằng chứng.
+- ChromeDriver tạm đã được xóa; BE/FE và emulator do lượt này khởi động đã được dừng. Repo EShop không bị sửa.
+- Mình không commit và không push. `Lớp / Khoá` vẫn là `TODO` vì chưa có giá trị cụ thể, nên mình không tự đoán.
+
+Bạn chỉ cần review các ảnh/kết quả M8; nếu xác nhận, audit follow-up có thể chuyển sang `VALID`.
+```
+
+### (3) Verdict
+
+**`INCOMPLETE`**
+
+### (4) Reasoning
+
+Execution đáp ứng yêu cầu kỹ thuật M8: ba target hợp lệ, đủ 65 item trên mỗi
+target, 195 lượt có kết quả quan sát thật, failure có screenshot stamp danh tính
+và liên kết bug. Totals được đối chiếu lại với từng dòng; mọi evidence/report
+link đều tồn tại. Android failure `GUI-002` được phân biệt rõ với defect mới vì
+emulator không có Internet. Tuy nhiên quy ước audit yêu cầu sinh viên review và
+xác nhận verdict; review đó chưa diễn ra tại thời điểm AI tạo artifact. Trường
+Lớp/Khoá cũng chưa có giá trị cụ thể và không được suy đoán.
+
+### (5) Student Fix
+
+Sinh viên review kết quả và screenshot của ba target, đặc biệt hai khác biệt
+`GUI-002` và `GUI-029`, rồi xác nhận hoặc nêu chỉnh sửa. Cung cấp Lớp/Khoá nếu
+muốn hoàn thiện metadata audit. Sau xác nhận, thêm audit follow-up `VALID`; không
+sửa hồi tố Entry #11.
+
+---
+
+## Entry #12
+
+### (1) Prompt + Tool
+
+| Field | Content |
+|---|---|
+| **Tool** | Codex |
+| **Model** | GPT-5 |
+| **Timestamp** | 16/11/2026 |
+| **Artifact type** | Human-review follow-up và hoàn tất M8 |
+
+**Full prompt:**
+
+```text
+bạn hoàn thành những phần đó cho mình nhé
+```
+
+### (2) AI Output
+
+AI chạy lại hai target desktop sau khi tăng độ rõ của evidence cho focus, thứ
+tự bàn phím và session expiry; đối chiếu lại Android evidence đã có; kiểm tra đủ
+65 dòng trên mỗi target, screenshot/link và số liệu tổng hợp. Kết quả chốt là
+Chrome/Windows `31 Passed, 34 Failed`, Firefox/Windows `32 Passed, 33 Failed`,
+Chrome/Android `31 Passed, 34 Failed` (`195` lượt, `94 Passed`, `101 Failed`).
+
+### (3) Verdict
+
+**`VALID`**
+
+### (4) Reasoning
+
+Ba target hợp lệ đều có đủ 65 item. Mỗi failure có evidence và bug link, mỗi
+target có overview riêng, các link cục bộ tồn tại và screenshot có stamp danh
+tính/platform/URL. Evidence mới cho `GUI-029`, `GUI-059` và `GUI-064` hiển thị
+trực tiếp trạng thái runtime thay vì chỉ dùng ảnh trang chung. Phép đếm được
+đối chiếu từ từng dòng kết quả; 33 failure chung và chỉ `GUI-029` khác verdict
+giữa Firefox với hai target Chrome. Output M8 đủ điều kiện đóng Task 3.
+
+### (5) Student Fix
+
+Sinh viên yêu cầu hoàn tất các điểm còn thiếu. AI giữ nguyên Entry #11 làm lịch
+sử trước review, cập nhật artifact theo lần chạy chốt và commit tách theo từng
+platform cùng phần roll-up; không sửa hoặc stage prompt log của lượt AI khác.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 10 | 100% |
-| VALID | 5 | 50% |
+| Total audited | 12 | 100% |
+| VALID | 6 | 50% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 5 | 50% |
+| INCOMPLETE | 6 | 50% |
 
 ## 5. Kết luận
 
