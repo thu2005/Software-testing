@@ -401,3 +401,147 @@ Mình chưa sửa các artifact và chưa tạo AI Audit cho lượt review này
 ```
 
 ---
+
+## [14] Codex — 9:34 PM 15/11/2026
+
+**Model:** Not exposed by tool
+
+**Prompt:**
+```
+bạn kiểm tra lại nhé, mình mới sửa lại xem được chưa
+```
+
+**Output:**
+```
+Chưa hoàn toàn xong, nhưng đã tốt hơn nhiều. Task 2 hiện ở mức **gần submission-ready**.
+
+Đã sửa ổn:
+
+- Cả 7 video YouTube hiện truy cập được khi không đăng nhập; YouTube trả `OK` cho P01–P07.
+- Git history đã tách setup, từng session P01–P07, defect evidence và analysis/report thành các commit riêng.
+- Timeline đã minh bạch: pilot thực tế, AI draft cũ và custom scale thu follow-up ngày hôm sau được phân biệt rõ.
+- Issue [#50](https://github.com/thu2005/CSC13003_eshop/issues/50) đã bổ sung quantity âm và evidence P06.
+- U-05 đã được retest, có bug report và hai screenshot; U-01/U-03 đã đổi thành `Major` và có giải thích hợp lý với task success `7/7`.
+
+Còn 3 việc cần xử lý:
+
+1. **Hai probe error recovery và speed vẫn chưa thực sự được hỏi participant.** Nội dung hiện tại chỉ là “xác nhận/tóm tắt của moderator”, không phải open-ended response của từng người. Custom-scale item cũng không thay thế probe định tính. Nếu còn liên hệ được, hãy follow-up thật với 7 participant, ghi timestamp và câu trả lời riêng; nếu không, giữ đây là limitation và không đánh dấu tiêu chí probe là đạt.
+
+2. **U-05 chưa có GitHub Issue và cross-link.** [Bug report](/D:/testing/CSC13003/Software-testing/HW03/bug-reports/BUG-IA-01-PRODUCT-001.md:44), [analysis](/D:/testing/CSC13003/Software-testing/HW03/usability/analysis.md:121) và [main report](/D:/testing/CSC13003/Software-testing/HW03/reports/main-report.md:198) đều còn ghi đang chờ. Evidence thực tế đã commit local, nên câu “chưa được commit/push” cũng không còn chính xác. Sau khi push, cần tạo issue, thêm link ngược và cập nhật tổng bug toàn HW03 từ 20 lên 21 ở nơi dùng tổng chung.
+
+3. **10 commit Task 2 vẫn chưa lên remote** (`main` đang ahead `origin/main` 10 commit). Bạn cần tự push như quy ước trước đó; mình không push.
+
+Các mục từng bị chặn về video, chronology, commit granularity, severity và Issue #50 đã đạt. Exact browser/OS version vẫn chỉ ghi ở mức chung, nhưng đây là cải thiện tùy chọn, không phải blocker chính. Mình chỉ thêm lượt này vào prompt-log, không tạo AI Audit và không sửa artifact.
+```
+
+---
+
+## [15] Codex — 10:00 PM 15/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```
+mình đã bổ sung, xem coi hoàn thành được task 2 chưa
+```
+
+**Output:**
+```
+Được — **Task 2 hiện có thể đánh dấu hoàn thành**.
+
+Mình đã xác minh lại các điều kiện quan trọng:
+
+- Response Sheet thực tế có đủ hai câu hỏi mở về error recovery và speed, đủ 7 câu trả lời riêng với timestamp khớp từng participant. Session files, survey, analysis và main report đã đồng bộ các response này.
+- Custom scale vẫn tính đúng: mean chung `2.64/5`, trust `1.43/5`; không bị mô tả sai thành SUS.
+- Pilot, 7 participant thật, consent, 7 recording, task success `7/7`, observation và finding severity đều có traceability.
+- Protocol deviation—scale và hai probe được thu follow-up ngày hôm sau, chưa pilot-test—được công bố nhất quán, nên đây là limitation đã quản lý chứ không còn là nội dung bị che giấu.
+- [Issue #64](https://github.com/thu2005/CSC13003_eshop/issues/64) tồn tại công khai, chứa hai ảnh evidence và link ngược về bug report. README đã cập nhật đúng `21 bug reports / 21 GitHub Issues`.
+- Local `main` và `origin/main` đang khớp (`0 ahead / 0 behind`); toàn bộ commit Task 2 đã được push.
+- Các video P01–P07 đã được xác minh truy cập công khai ở lượt kiểm tra trước và URL không thay đổi.
+
+Chỉ còn hai việc thuộc giai đoạn finalization, **không làm Task 2 bị incomplete**:
+
+- `git-log.txt` chưa chứa các commit Task 2; PLAN đã xếp việc xuất lại Git log vào M9.
+- README vẫn để TODO cho self-assessment/Task 3/demo và thông tin cá nhân; xử lý khi hoàn thiện toàn bài.
+
+Kết luận: M5, M6 và M7 đều đạt; có thể chuyển sang Task 3. Mình chỉ ghi lượt review này vào prompt-log, không tạo AI Audit.
+```
+
+---
+
+## [16] Codex — 10:05 PM 15/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```
+bạn chạy emulator mobile có bị nặng quá không, chúng ta sẽ bắt đầu làm M8
+```
+
+**Output:**
+```
+Không bị nặng quá; máy đủ sức chạy M8 với **một emulator**.
+
+Kết quả thực tế:
+
+- Máy có `31.7 GB` RAM, trước khi mở emulator còn khoảng `15.4 GB`.
+- `Pixel_4a` được cấu hình `2 GB RAM / 4 CPU core`; WHPX hardware acceleration hoạt động.
+- Emulator hiện đã boot hoàn chỉnh và tiến trình Android dùng khoảng `1.9 GB` RAM.
+- Target mobile sẵn sàng: `Pixel_4a` emulator, Android `13`, Chrome `109.0.5414.123`.
+- Hai target desktop sẵn có: Chrome `157.0.8103.50` / Windows và Firefox `160.0` / Windows.
+
+Vậy matrix M8 hợp lệ sẽ là:
+
+1. Chrome 157 / Windows.
+2. Firefox 160 / Windows.
+3. Chrome 109 / Android 13 / Pixel_4a emulator.
+
+Hiện backend/frontend chưa chạy (`3000`, `5173`, `5174` đều chưa listen). Bước kế tiếp là khởi động SUT, cấu hình `adb reverse` cho `3000` và `5173` để Android Chrome mở được `http://localhost:5173`, rồi chạy đủ 65 checklist item trên từng platform.
+
+Thông tin watermark đã có sẵn và không cần đoán: `Nguyễn Đoàn Xuân Thu` và `23120170@student.hcmus.edu.vn`. Emulator cứ để chạy; không cần mở thêm AVD khác. Lượt chuẩn bị này chỉ được ghi vào prompt-log, chưa tạo AI Audit hay kết quả test M8.
+```
+
+---
+
+## [17] Codex — 10:06 AM 16/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+mình đã tắt các BE, FE trước đó. giờ bạn tự khởi động lại và thực hiện M8 nhé. Thông tin sinh viên đã đúng. Lượt này có audit AI
+```
+
+**Output:**
+```text
+Lượt thực thi bị gián đoạn trước khi có final response. M8 đã khởi động BE/FE,
+Android emulator và bắt đầu chạy checklist; công việc được tiếp tục ở prompt
+[18] mà không chạy lại các phần đã hoàn tất.
+```
+
+---
+
+## [18] Codex — 10:09 AM 16/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+continue
+```
+
+**Output:**
+```text
+M8 đã hoàn tất phần thực thi; AI Audit Entry #11 hiện `INCOMPLETE` cho tới khi bạn review evidence, không phải vì thiếu execution.
+
+- Đã chạy đủ `195/195` lượt: Chrome/Windows `32 Passed, 33 Failed`; Firefox/Windows `33 Passed, 32 Failed`; Chrome/Android `31 Passed, 34 Failed`.
+- 32 failure tái hiện trên cả ba target. `GUI-029` chỉ Passed trên Firefox nhờ focus outline mặc định. `GUI-002` chỉ Failed trên Android; emulator không có Internet nên đây là giới hạn môi trường, chưa được xem là defect Android mới.
+- Mỗi result file có đúng 65 item; mỗi failure có screenshot; mỗi platform có overview. Toàn bộ evidence link và watermark đã được kiểm tra.
+- Đã cập nhật cross-platform report, main report, README và PLAN. Không tạo GitHub Issue mới vì không có defect mới đủ bằng chứng.
+- ChromeDriver tạm đã được xóa; BE/FE và emulator do lượt này khởi động đã được dừng. Repo EShop không bị sửa.
+- Mình không commit và không push. `Lớp / Khoá` vẫn là `TODO` vì chưa có giá trị cụ thể, nên mình không tự đoán.
+
+Bạn chỉ cần review các ảnh/kết quả M8; nếu xác nhận, audit follow-up có thể chuyển sang `VALID`.
+```
+
+---
