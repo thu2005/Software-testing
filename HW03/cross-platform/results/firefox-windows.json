@@ -1,0 +1,9 @@
+{
+  "platform": "Firefox 160.0 / Windows",
+  "slug": "firefox-windows",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:160.0) Gecko/20100101 Firefox/160.0",
+  "executed": 65,
+  "passed": 32,
+  "failed": 33,
+  "overview": "firefox-windows-overview.png"
+}
