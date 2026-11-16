@@ -104,7 +104,7 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 
 | Nội dung | Link |
 |---|---|
-| Agent Skill demo — complete screen/flow | Chờ sinh viên cung cấp link YouTube |
+| Agent Skill demo — complete screen/flow | [YouTube — HW03](https://youtu.be/6ZbBHDCOnxg) |
 
 ## Self-assessment
 
@@ -113,10 +113,11 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 | 1 | Task 1 — GUI Checklist | 30 | 29 |
 | 2 | Task 2 — Usability Evaluation | 40 | 35 |
 | 3 | Task 3 — Cross-Browser / Cross-Platform | 20 | 20 |
-| 4 | Agent Skills | 10 | 8 |
-| | **Tổng** | **100** | **92** |
+| 4 | Agent Skills | 10 | 10 |
+| | **Tổng** | **100** | **94** |
 
-Self-assessment `92/100` phản ánh checklist/bug traceability đầy đủ và ba target
-đã chạy đủ, đồng thời tự trừ điểm cho protocol deviation của Task 2 và việc demo
-Agent Skill chưa được gắn link. Điểm Agent Skills sẽ chỉ được xem lại sau khi có
-video evidence; không tự nâng điểm trước evidence.
+Self-assessment `94/100` phản ánh checklist/bug traceability đầy đủ, ba target đã
+chạy đủ và bộ Agent Skills có video demo end-to-end truy cập được. Điểm Task 2
+được tự trừ cho protocol deviation về thời điểm thu custom scale/probe và việc
+instrument chưa được pilot-test; Task 1 tự trừ một điểm cho các chỉnh sửa đáng
+kể cần thực hiện sau initial AI checklist.

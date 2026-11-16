@@ -67,9 +67,9 @@
 - [x] Có commit riêng cho checklist design, execution, bug logging, từng usability
       session, analysis và từng platform run; không sửa lịch sử để giả lập tiến độ.
 - [x] `git-log.txt` được tạo từ lịch sử thật và nằm trong HW03.
-- [ ] Có video demo Agent Skills end-to-end trên một screen/flow và link YouTube
+- [x] Có video demo Agent Skills end-to-end trên một screen/flow và link YouTube
       trong `README.md`.
-- [ ] `README.md` có self-assessment table và test summary: số screen/flow, số item
+- [x] `README.md` có self-assessment table và test summary: số screen/flow, số item
       designed/executed/passed/failed, số bug, số participant và demo links.
 
 ## 7. Đóng gói cuối

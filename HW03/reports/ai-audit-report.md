@@ -752,14 +752,65 @@ audit follow-up, cập nhật PDF/Git log và tạo ZIP; không sửa hồi tố
 
 ---
 
+## Entry #14
+
+### (1) Prompt + Tool
+
+| Field | Content |
+|---|---|
+| **Tool** | Codex |
+| **Model** | GPT-5 |
+| **Timestamp** | 12:19 PM 16/11/2026 |
+| **Artifact type** | M9 — Gắn video Agent Skill và tạo submission ZIP release candidate |
+
+**Full prompt:**
+
+```text
+continue, nãy hết token, link video nè: [https://youtu.be/6ZbBHDCOnxg](https://youtu.be/6ZbBHDCOnxg)
+```
+
+### (2) AI Output
+
+```text
+M9 đã hoàn tất về artifact và ZIP release candidate đã được tạo; AI Audit Entry #14 vẫn `INCOMPLETE` chờ bạn review cuối.
+
+- Video demo Agent Skill trả HTTP `200`, tiêu đề `HW03`, đã được gắn vào README.
+- Self-assessment được chốt tạm ở `94/100`: Task 1 `29`, Task 2 `35`, Task 3 `20`, Agent Skills `10`.
+- Ba PDF đã được tái xuất; `git-log.txt` đã được sửa về lịch sử toàn repo thay vì chỉ lọc path HW03.
+- ZIP release candidate nằm tại `HW03/23120170_HW03_AI_GUIUsability_094.zip`; nội dung và tên file đã được kiểm tra.
+- Mình đã commit cục bộ với tiền tố `[HW03]` và không push.
+
+Còn hai human check: bạn mở Google Form một lần trong browser vì môi trường của mình gặp lỗi CA/DNS với short-link, và review bản M9/ZIP này. Khi bạn xác nhận, mình sẽ thêm audit follow-up `VALID`, tái xuất Audit PDF và tạo lại ZIP cuối.
+```
+
+### (3) Verdict
+
+**`INCOMPLETE`**
+
+### (4) Reasoning
+
+Video demo truy cập được qua YouTube oEmbed và đã bổ sung deliverable còn thiếu.
+README, self-assessment, PDF, Git log và cấu trúc ZIP có thể hoàn thiện kỹ thuật.
+Tuy nhiên, short-link Google Form chưa thể tái xác minh trong môi trường hiện tại
+do lỗi CA/DNS, và sinh viên chưa human-review bản M9/ZIP sau các thay đổi mới.
+Vì vậy chưa thể tự đánh `VALID`.
+
+### (5) Student Fix
+
+Sinh viên mở Google Form trong browser, review README/report/audit/ZIP và xác
+nhận kết quả hoặc nêu chỉnh sửa. Sau đó thêm follow-up `VALID`, tái xuất Audit
+PDF và tạo lại ZIP cuối; giữ nguyên Entry #14 làm lịch sử trước review.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 13 | 100% |
-| VALID | 6 | 46.15% |
+| Total audited | 14 | 100% |
+| VALID | 6 | 42.86% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 7 | 53.85% |
+| INCOMPLETE | 8 | 57.14% |
 
 ## 5. Kết luận
 

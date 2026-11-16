@@ -590,3 +590,27 @@ Khi bạn gửi video, mình sẽ gắn link, chốt self-assessment/audit, refr
 ```
 
 ---
+
+## [21] Codex — 12:19 PM 16/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+continue, nãy hết token, link video nè: [https://youtu.be/6ZbBHDCOnxg](https://youtu.be/6ZbBHDCOnxg)
+```
+
+**Output:**
+```text
+M9 đã hoàn tất về artifact và ZIP release candidate đã được tạo; AI Audit Entry #14 vẫn `INCOMPLETE` chờ bạn review cuối.
+
+- Video demo Agent Skill trả HTTP `200`, tiêu đề `HW03`, đã được gắn vào README.
+- Self-assessment được chốt tạm ở `94/100`: Task 1 `29`, Task 2 `35`, Task 3 `20`, Agent Skills `10`.
+- Ba PDF đã được tái xuất; `git-log.txt` đã được sửa về lịch sử toàn repo thay vì chỉ lọc path HW03.
+- ZIP release candidate nằm tại `HW03/23120170_HW03_AI_GUIUsability_094.zip`; nội dung và tên file đã được kiểm tra.
+- Mình đã commit cục bộ với tiền tố `[HW03]` và không push.
+
+Còn hai human check: bạn mở Google Form một lần trong browser vì môi trường của mình gặp lỗi CA/DNS với short-link, và review bản M9/ZIP này. Khi bạn xác nhận, mình sẽ thêm audit follow-up `VALID`, tái xuất Audit PDF và tạo lại ZIP cuối.
+```
+
+---
