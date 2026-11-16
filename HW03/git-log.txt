@@ -1,4 +1,6 @@
-﻿998ff6a 2026-11-16 [HW03] docs: record Task 2 review and M8 execution
+﻿6d54d2d 2026-11-16 [HW03] docs: finalize M9 reports and PDF exports
+3954a9f 2026-11-16 [HW03] docs: refresh git log after M8
+998ff6a 2026-11-16 [HW03] docs: record Task 2 review and M8 execution
 f66797e 2026-11-16 [HW03] docs: refresh git log after Task 3
 7093557 2026-11-16 [HW03] test: add reproducible cross-platform runner
 903f104 2026-11-16 [HW03] docs: complete cross-platform testing
@@ -27,70 +29,3 @@ c3319d3 2026-11-14 [HW03] docs: audit M3 issue publication
 4fbc06b 2026-11-14 [HW03] human review gui checklist
 7f72b9e 2026-11-14 [HW03] gui checklist
 92d4fb3 2026-11-12 [HW03] add skills
-8b050fd 2026-10-18 [HW02] convert pdf for ai gap analysis
-805143e 2026-10-18 [HW02] update readme
-97b9231 2026-10-17 [HW02] add git log
-3890f48 2026-10-17 [HW02] update report pdf
-bcdd437 2026-10-17 [HW02] update report
-499456e 2026-10-17 [HW02] log FR-06 AI gap review
-d1d80b4 2026-10-17 [HW02] github issue and bug reports updated
-ea26515 2026-10-17 [HW02] append FR-06 Mobile execution prompt log
-27a353a 2026-10-17 [HW02] record FR-06 Mobile execution and bugs
-e3b6a1e 2026-10-17 [HW02] append FR-06 Mobile design prompt log
-e9b439a 2026-10-17 [HW02] review FR-06 Mobile test cases
-4bfa0c6 2026-10-17 [HW02] add FR-06 Mobile boundary value analysis
-b8b96d1 2026-10-17 [HW02] add FR-06 Mobile domain testing
-4a56409 2026-10-17 [HW02]: ai-gap-analysis and update related bug
-8714c69 2026-10-17 [HW02] append FR-14 gap review prompt log
-71cbc16 2026-10-17 [HW02] record FR-14 AI gap
-29624b7 2026-10-17 [HW02] bug report and github issue
-673a59b 2026-10-17 [HW02]
-a33f350 2026-10-17 [HW02]
-f5f84b3 2026-10-17 [HW02] log FR-14 test design and review
-faef8e9 2026-10-17 [HW02][FR-14] review and refine test cases
-68af3b6 2026-10-17 [HW02][FR-14] add boundary value analysis
-7f8a92d 2026-10-17 [HW02][FR-14] add domain testing design
-048ee78 2026-10-17 [HW02] limit scope of ai gap analysis
-79c960a 2026-10-17 [HW02] log FR-07 AI gap analysis
-5e51c61 2026-10-17 [HW02][FR-07] document confirmed AI gaps
-0364610 2026-10-17 [HW02] log FR-07 completion verification
-8c4d30b 2026-10-17 [HW02][FR-07] link GitHub issues and finalize artifacts
-e0fd868 2026-10-17 [HW02] log FR-07 execution and bug reporting
-79cb3ff 2026-10-17 [HW02][FR-07] record execution and bug drafts
-28d5c54 2026-10-16 [HW02] log FR-07 test design and review
-79b0910 2026-10-16 [HW02][FR-07] review and refine test cases
-411802d 2026-10-16 [HW02][FR-07] design domain and boundary test cases
-f7c0ab6 2026-10-16 [HW02] log FR-01 gap assessment
-639d273 2026-10-16 [HW02][FR-01] remove tester-owned execution note
-711b713 2026-10-16 [HW02] remove redundant files and update prompt log template
-b410444 2026-10-16 [HW02] log FR-01 execution ownership correction
-650a418 2026-10-16 [HW02][FR-01] keep execution notes student-authored
-f0a01e7 2026-10-16 [HW02] log FR-01 completion review
-fa0dee2 2026-10-16 [HW02][FR-01] verify environment and issue evidence
-f1d50dc 2026-10-16 [HW02] log FR-01 evidence and bug reporting
-40ea4bf 2026-10-16 [HW02][FR-01] add execution evidence and bug reports
-295da63 2026-10-16 [HW02] log FR-01 test execution
-ee6feae 2026-10-16 [HW02][FR-01] record test execution results
-8952c1a 2026-10-16 [HW02] log FR-01 approval clarification
-22333a0 2026-10-16 [HW02][FR-01] record student test case approval
-ba28c68 2026-10-16 [HW02] log FR-01 test case review
-9655409 2026-10-16 [HW02][FR-01] review and refine test cases
-46ef59f 2026-10-16 [HW02] log FR-01 suite reduction
-72a6d9f 2026-10-16 [HW02][FR-01] reduce DT and BVA suite to 14 cases
-103443b 2026-10-16 [HW02] log FR-01 DT and BVA design session
-ed9956a 2026-10-16 [HW02][FR-01] design boundary value cases
-cf93f88 2026-10-16 [HW02][FR-01] design domain testing cases
-12dc9ce 2026-10-16 [HW02][FR-01] capture requirements and isolate test runtime
-48bdd73 2026-10-16 [HW02]: edit prompt log template
-c8109e7 2026-10-15 [HW02]: create skills, file templates, update prompt log
-fda9b3b 2026-09-28 [HW01]: report
-5130ffb 2026-09-28 [HW01]: AI audit and report
-8b4b0ff 2026-09-28 [HW01]: mindmap
-ce2f3fe 2026-09-28 [HW01] requirement 3
-cdd3614 2026-09-28 [HW01]: restructure folder
-8a59da3 2026-09-27 [HW01]: requirement 2 + report
-4fd3c68 2026-09-27 update gitignore
-bc28b4b 2026-09-27 update gitignore
-c3970e8 2026-09-27 [HW01]: requirement 01 screenshot
-e63e692 2026-09-25 [HW01]: initial structure
-d6dff78 2026-09-25 Initial commit
