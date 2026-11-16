@@ -77,8 +77,8 @@
 - [x] Đã mở/đọc lại Markdown, PDF, XLSX, link, screenshot và video cần nộp.
 - [x] Không có placeholder sống như `[TODO]`, `<...>`, dữ liệu giả hoặc credential/token
       trong deliverable; placeholder lịch sử trong prompt/audit log được giữ nguyên văn.
-- [ ] ZIP cuối chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
+- [x] ZIP cuối chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
       Excel checklist + summary, usability evidence, participant table,
       cross-platform screenshots, README và supporting materials.
-- [ ] Tên file đúng: `23120170_HW03_AI_GUIUsability_100.zip`, trong đó grade là
+- [x] Tên file đúng: `23120170_HW03_AI_GUIUsability_100.zip`, trong đó grade là
       ba chữ số thuộc khoảng `000`–`100`.
