@@ -1,0 +1,9 @@
+{
+  "platform": "Chrome 109.0.5414.123 / Android 13 / Pixel_4a emulator",
+  "slug": "chrome-android",
+  "ua": "Mozilla/5.0 (Linux; Android 13; sdk_gphone64_x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36",
+  "executed": 65,
+  "passed": 31,
+  "failed": 34,
+  "overview": "chrome-android-overview.png"
+}
