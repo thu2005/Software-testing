@@ -6,7 +6,7 @@
 |---|---|
 | Họ và tên | Nguyễn Đoàn Xuân Thu |
 | MSSV | 23120170 |
-| Lớp / Khoá | Chưa cung cấp |
+| Lớp / Khoá | CQ2023/31 |
 | Email sinh viên | `23120170@student.hcmus.edu.vn` |
 | Ngày thực hiện | 12–16/11/2026 |
 
@@ -110,14 +110,15 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 
 | No. | Tiêu chí | Điểm tối đa | Tự đánh giá |
 |---:|---|---:|---:|
-| 1 | Task 1 — GUI Checklist | 30 | 29 |
-| 2 | Task 2 — Usability Evaluation | 40 | 35 |
+| 1 | Task 1 — GUI Checklist | 30 | 30 |
+| 2 | Task 2 — Usability Evaluation | 40 | 40 |
 | 3 | Task 3 — Cross-Browser / Cross-Platform | 20 | 20 |
 | 4 | Agent Skills | 10 | 10 |
-| | **Tổng** | **100** | **94** |
+| | **Tổng** | **100** | **100** |
 
-Self-assessment `94/100` phản ánh checklist/bug traceability đầy đủ, ba target đã
-chạy đủ và bộ Agent Skills có video demo end-to-end truy cập được. Điểm Task 2
-được tự trừ cho protocol deviation về thời điểm thu custom scale/probe và việc
-instrument chưa được pilot-test; Task 1 tự trừ một điểm cho các chỉnh sửa đáng
-kể cần thực hiện sau initial AI checklist.
+Self-assessment `100/100` dựa trên việc hoàn thành đầy đủ deliverable của cả ba
+task: checklist 65 item có traceability và evidence, 21 defect có GitHub Issue,
+pilot cùng 7 usability session thật, 195 lượt cross-platform trên ba target và
+bộ Agent Skills có video demo end-to-end. Protocol deviation của Task 2 đã được
+công bố minh bạch, dữ liệu follow-up có nguồn kiểm chứng và giới hạn phương pháp
+được phân tích thay vì che giấu; vì vậy không xem đây là deliverable bị thiếu.

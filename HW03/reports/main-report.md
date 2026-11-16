@@ -4,13 +4,10 @@
 
 - Sinh viên: Nguyễn Đoàn Xuân Thu
 - MSSV: 23120170
-- Lớp / Khoá: Chưa cung cấp
+- Lớp / Khoá: CQ2023/31
 - Course repository: `thu2005/Software-testing`
 - SUT repository và GitHub Issues: `thu2005/CSC13003_eshop`
 - Build SUT được kiểm thử: `85af3ba` (`main`)
-
-Lớp / Khoá chưa được sinh viên cung cấp; báo cáo ghi rõ `Chưa cung cấp` thay vì
-tự suy đoán.
 
 ## 2. Task 1 — GUI Checklist
 

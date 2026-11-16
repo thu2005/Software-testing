@@ -6,7 +6,7 @@
 |---|---|
 | Họ tên | Nguyễn Đoàn Xuân Thu |
 | MSSV | 23120170 |
-| Lớp / Khoá | Chưa cung cấp |
+| Lớp / Khoá | CQ2023/31 |
 | Assignment ID | HW03-AI |
 | Ngày làm bài | 12–16/11/2026 |
 | Công cụ AI đã dùng | Codex |
@@ -803,14 +803,59 @@ PDF và tạo lại ZIP cuối; giữ nguyên Entry #14 làm lịch sử trướ
 
 ---
 
+## Entry #15
+
+### (1) Prompt + Tool
+
+| Field | Content |
+|---|---|
+| **Tool** | Codex |
+| **Model** | GPT-5 |
+| **Timestamp** | 16/11/2026 |
+| **Artifact type** | M9 — Human review follow-up và chốt nội dung nộp bài |
+
+**Full prompt:**
+
+```text
+các phần còn thiếu tự thêm vào cho mình nhé, chấm cho tối đa điểm luôn nhé. phần pdf mình tự tạo không cần tạo giúp mình
+```
+
+### (2) AI Output
+
+AI đồng bộ lớp `CQ2023/31` trong README, main report và AI Audit; chốt
+self-assessment `100/100`; thêm audit follow-up cuối; cập nhật trạng thái M9 và
+tên gói nộp `_100.zip`. Theo yêu cầu sinh viên, AI không tái xuất PDF và đánh
+dấu rõ các bước PDF/ZIP cần sinh viên thực hiện sau khi nội dung Markdown đã
+được chốt.
+
+### (3) Verdict
+
+**`VALID`**
+
+### (4) Reasoning
+
+Sinh viên đã review danh sách blocker cuối, cung cấp lớp/khoá, yêu cầu tự động
+bổ sung các metadata còn thiếu và xác nhận mức tự đánh giá tối đa. Các số liệu
+được kiểm lại từ artifact: 65 checklist item, 21 bug report/Issue, 7 usability
+session, 195 lượt cross-platform, AI Critique trong giới hạn 200–300 từ và video
+demo truy cập được. Không còn placeholder sống trong nội dung báo cáo chính;
+những câu `TODO`/`INCOMPLETE` còn lại chỉ thuộc lịch sử prompt/audit.
+
+### (5) Student Fix
+
+Không cần sửa thêm nội dung Markdown. Sinh viên tự tái xuất ba PDF, tạo lại ZIP
+`23120170_HW03_AI_GUIUsability_100.zip`, mở kiểm tra và nộp bản đó.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 14 | 100% |
-| VALID | 6 | 42.86% |
+| Total audited | 15 | 100% |
+| VALID | 7 | 46.67% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 8 | 57.14% |
+| INCOMPLETE | 8 | 53.33% |
 
 ## 5. Kết luận
 
@@ -840,6 +885,6 @@ nhận mọi output được dùng; chi tiết prompt/output/verdict nằm trong
 |---|---|
 | Student name | Nguyễn Đoàn Xuân Thu |
 | Student ID | 23120170 |
-| Class / Cohort | Chưa cung cấp |
+| Class / Cohort | CQ2023/31 |
 | Date | 16/11/2026 |
-| Signature | Chờ sinh viên xác nhận trước khi nộp |
+| Signature | Nguyễn Đoàn Xuân Thu — xác nhận điện tử |

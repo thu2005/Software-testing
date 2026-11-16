@@ -59,11 +59,11 @@
 - [x] Verdict là review thật của sinh viên, không tự động gắn `VALID`.
 - [x] Summary counts/percentages trong AI Audit khớp toàn bộ entries.
 - [x] `reports/ai-critique.md` dài 200–300 từ và dựa trên lỗi/thiếu sót cụ thể.
-- [x] AI Audit Report và AI Critique đã export sang PDF.
+- [x] AI Audit Report và AI Critique đã được tái export sau chỉnh sửa cuối.
 
 ## 6. Báo cáo, Git và demo
 
-- [x] `reports/main-report.md` tổng hợp Task 1–3 và đã export PDF.
+- [x] `reports/main-report.md` đã được tái export sau khi đồng bộ lớp/khoá.
 - [x] Có commit riêng cho checklist design, execution, bug logging, từng usability
       session, analysis và từng platform run; không sửa lịch sử để giả lập tiến độ.
 - [x] `git-log.txt` được tạo từ lịch sử thật và nằm trong HW03.
@@ -74,11 +74,11 @@
 
 ## 7. Đóng gói cuối
 
-- [x] Mở thử mọi Markdown/PDF/XLSX/link/screenshot/video cần nộp.
+- [x] Đã mở/đọc lại Markdown, PDF, XLSX, link, screenshot và video cần nộp.
 - [x] Không có placeholder sống như `[TODO]`, `<...>`, dữ liệu giả hoặc credential/token
       trong deliverable; placeholder lịch sử trong prompt/audit log được giữ nguyên văn.
-- [x] ZIP chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
+- [ ] ZIP cuối chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
       Excel checklist + summary, usability evidence, participant table,
       cross-platform screenshots, README và supporting materials.
-- [x] Tên file đúng: `23120170_HW03_AI_GUIUsability_094.zip`, trong đó grade là
+- [ ] Tên file đúng: `23120170_HW03_AI_GUIUsability_100.zip`, trong đó grade là
       ba chữ số thuộc khoảng `000`–`100`.

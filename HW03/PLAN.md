@@ -202,9 +202,10 @@ pass/fail, khác biệt giữa platform và bug links.
 
 ### M9 — Hoàn thiện và preflight
 
-**Trạng thái: Hoàn tất kỹ thuật ngày 16/11/2026 — report, AI Audit/Critique,
-PDF, Git log, preflight và video demo Agent Skill đã có. ZIP release candidate
-được tạo sau preflight; chỉ còn human review cuối để chốt audit/ZIP nộp bài.**
+**Trạng thái: Nội dung hoàn tất ngày 16/11/2026 — report, AI Audit/Critique,
+Git log, preflight và video demo Agent Skill đã có; human review cuối đã chốt
+self-assessment `100/100`. Sinh viên tự tái xuất PDF và tạo ZIP `_100.zip` từ
+nội dung cuối theo yêu cầu.**
 
 - Hoàn thiện main report và export PDF.
 - Hoàn thiện AI Audit cho các interaction chính thức đã dùng và AI Critique
