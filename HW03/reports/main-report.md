@@ -4,12 +4,13 @@
 
 - Sinh viên: Nguyễn Đoàn Xuân Thu
 - MSSV: 23120170
-- Lớp / Khoá: TODO
+- Lớp / Khoá: Chưa cung cấp
 - Course repository: `thu2005/Software-testing`
 - SUT repository và GitHub Issues: `thu2005/CSC13003_eshop`
 - Build SUT được kiểm thử: `85af3ba` (`main`)
 
-Lớp / Khoá chưa được sinh viên cung cấp nên được giữ `TODO`.
+Lớp / Khoá chưa được sinh viên cung cấp; báo cáo ghi rõ `Chưa cung cấp` thay vì
+tự suy đoán.
 
 ## 2. Task 1 — GUI Checklist
 
@@ -239,4 +240,17 @@ Xem [AI Audit Report](ai-audit-report.md), [Prompt Log](prompt-log.md) và
 
 ## 6. Kết luận
 
-TODO — hoàn thiện sau Task 2 và Task 3.
+HW03 đã hoàn thành cả ba task. Task 1 thiết kế và thực thi 65 checklist item trên
+ba màn hình, đạt 31 Passed và 34 Failed; 21 defect có Markdown report, screenshot
+và GitHub Issue. Task 2 thực hiện một pilot và bảy session thật; cả bảy người
+hoàn thành luồng, nhưng custom scale chỉ đạt `2.64/5` và trust thấp nhất
+`1.43/5`, nhất quán với lỗi nghiêm trọng về tổng tiền, coupon và feedback giỏ
+hàng. Protocol deviation về thời điểm thu scale/probe được công bố thay vì sửa
+lịch sử.
+
+Task 3 chạy lại đủ 65 item trên ba target, tổng cộng 195 lượt với 94 Passed và
+101 Failed. Có 33 failure chung; khác biệt duy nhất là focus outline của
+`GUI-029` trên Firefox. Kết quả cho thấy các defect chính tái hiện nhất quán,
+không chỉ là hiện tượng của một browser. AI được dùng để tạo draft, tự động hoá
+execution và tổng hợp, nhưng mọi artifact quan trọng đều được human-review,
+đối chiếu lại requirement/evidence và ghi trong AI Audit Report.

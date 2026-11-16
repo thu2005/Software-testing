@@ -545,3 +545,48 @@ Bạn chỉ cần review các ảnh/kết quả M8; nếu xác nhận, audit fol
 ```
 
 ---
+
+## [19] Codex — 11:46 AM 16/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+bạn hoàn thành những phần đó cho mình nhé
+```
+
+**Output:**
+```text
+AI chạy lại hai target desktop sau khi tăng độ rõ của evidence cho focus, thứ
+tự bàn phím và session expiry; đối chiếu lại Android evidence đã có; kiểm tra đủ
+65 dòng trên mỗi target, screenshot/link và số liệu tổng hợp. Kết quả chốt là
+Chrome/Windows `31 Passed, 34 Failed`, Firefox/Windows `32 Passed, 33 Failed`,
+Chrome/Android `31 Passed, 34 Failed` (`195` lượt, `94 Passed`, `101 Failed`).
+```
+
+---
+
+## [20] Codex — 12:09 PM 16/11/2026
+
+**Model:** GPT-5
+
+**Prompt:**
+```text
+đã review và sửa vài chỗ, đã commit, bạn check và hoàn thiện những phần còn lại của M9 nhé, link video agent skill mình sẽ đưa bạn sau
+```
+
+**Output:**
+```text
+M9 đã hoàn thiện các phần không phụ thuộc video; chưa đóng ZIP vì còn chờ link demo Agent Skill.
+
+- Hoàn thiện kết luận main report, AI Audit conclusion/disclosure, AI Critique 293 từ có dẫn Entry cụ thể, README và PLAN.
+- Self-assessment hiện là `92/100`: Task 1 `29/30`, Task 2 `35/40`, Task 3 `20/20`, Agent Skills `8/10`; điểm Agent Skills chỉ xem lại sau khi có video evidence.
+- Đã export và kiểm tra ba PDF: main report, AI Audit Report và AI Critique; Excel mở được với 65 item và 68 hyperlink.
+- Preflight khớp 65 checklist item, 21 bug report/Issue `#44–#64`, 7 session, 195 lượt cross-platform; 329 local link đều tồn tại và không phát hiện credential pattern phổ biến.
+- Bảy video participant và Response Sheet truy cập được. Riêng Google Form cần bạn mở lại trước khi nộp vì môi trường hiện tại gặp lỗi CA/DNS khi kiểm tra short-link.
+- AI Audit Entry #13 là `INCOMPLETE` cho tới khi bạn review output M9 và cung cấp video. Các thay đổi được commit cục bộ với tiền tố `[HW03]`; mình không push.
+
+Khi bạn gửi video, mình sẽ gắn link, chốt self-assessment/audit, refresh PDF + Git log và tạo ZIP đúng tên `23120170_HW03_AI_GUIUsability_092.zip` (hoặc điểm mới nếu bạn điều chỉnh).
+```
+
+---

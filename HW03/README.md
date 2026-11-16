@@ -6,9 +6,9 @@
 |---|---|
 | Họ và tên | Nguyễn Đoàn Xuân Thu |
 | MSSV | 23120170 |
-| Lớp / Khoá | TODO |
+| Lớp / Khoá | Chưa cung cấp |
 | Email sinh viên | `23120170@student.hcmus.edu.vn` |
-| Ngày thực hiện | 14–15/11/2026 (usability sessions và survey bổ sung) |
+| Ngày thực hiện | 12–16/11/2026 |
 
 Không tự động điền hoặc suy đoán thông tin cá nhân còn thiếu.
 
@@ -53,7 +53,8 @@ Kiểm thử GUI trên ba màn hình:
 
 - Primary GUI screen dùng để tránh trùng scope trong nhóm: **Product Detail (`FR-06`)**.
 - Checklist phải có ít nhất 41 item có ý nghĩa và bao phủ `IA-01`–`IA-04`.
-- Chưa tạo hoặc thực thi checklist item tại bước khóa scope này.
+- Đã thiết kế và thực thi 65 item; kết quả chi tiết nằm trong
+  [GUI checklist](checklist/gui-checklist.md).
 
 ### Task 2 — Usability Evaluation
 
@@ -103,14 +104,19 @@ Thực hiện tuần tự theo [PLAN.md](PLAN.md) và kiểm tra trước khi n�
 
 | Nội dung | Link |
 |---|---|
-| Agent Skill demo — complete screen/flow | TODO |
+| Agent Skill demo — complete screen/flow | Chờ sinh viên cung cấp link YouTube |
 
 ## Self-assessment
 
 | No. | Tiêu chí | Điểm tối đa | Tự đánh giá |
 |---:|---|---:|---:|
-| 1 | Task 1 — GUI Checklist | 30 | TODO |
-| 2 | Task 2 — Usability Evaluation | 40 | TODO |
-| 3 | Task 3 — Cross-Browser / Cross-Platform | 20 | TODO |
-| 4 | Agent Skills | 10 | TODO |
-| | **Tổng** | **100** | **TODO** |
+| 1 | Task 1 — GUI Checklist | 30 | 29 |
+| 2 | Task 2 — Usability Evaluation | 40 | 35 |
+| 3 | Task 3 — Cross-Browser / Cross-Platform | 20 | 20 |
+| 4 | Agent Skills | 10 | 8 |
+| | **Tổng** | **100** | **92** |
+
+Self-assessment `92/100` phản ánh checklist/bug traceability đầy đủ và ba target
+đã chạy đủ, đồng thời tự trừ điểm cho protocol deviation của Task 2 và việc demo
+Agent Skill chưa được gắn link. Điểm Agent Skills sẽ chỉ được xem lại sau khi có
+video evidence; không tự nâng điểm trước evidence.

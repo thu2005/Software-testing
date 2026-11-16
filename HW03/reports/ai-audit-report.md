@@ -6,7 +6,7 @@
 |---|---|
 | Họ tên | Nguyễn Đoàn Xuân Thu |
 | MSSV | 23120170 |
-| Lớp / Khoá | [TODO — sinh viên điền] |
+| Lớp / Khoá | Chưa cung cấp |
 | Assignment ID | HW03-AI |
 | Ngày làm bài | 12–16/11/2026 |
 | Công cụ AI đã dùng | Codex |
@@ -699,29 +699,96 @@ platform cùng phần roll-up; không sửa hoặc stage prompt log của lượ
 
 ---
 
+## Entry #13
+
+### (1) Prompt + Tool
+
+| Field | Content |
+|---|---|
+| **Tool** | Codex |
+| **Model** | GPT-5 |
+| **Timestamp** | 12:09 PM 16/11/2026 |
+| **Artifact type** | M9 — Final report, AI evidence, PDF export và submission preflight |
+
+**Full prompt:**
+
+```text
+đã review và sửa vài chỗ, đã commit, bạn check và hoàn thiện những phần còn lại của M9 nhé, link video agent skill mình sẽ đưa bạn sau
+```
+
+### (2) AI Output
+
+```text
+M9 đã hoàn thiện các phần không phụ thuộc video; chưa đóng ZIP vì còn chờ link demo Agent Skill.
+
+- Hoàn thiện kết luận main report, AI Audit conclusion/disclosure, AI Critique 293 từ có dẫn Entry cụ thể, README và PLAN.
+- Self-assessment hiện là `92/100`: Task 1 `29/30`, Task 2 `35/40`, Task 3 `20/20`, Agent Skills `8/10`; điểm Agent Skills chỉ xem lại sau khi có video evidence.
+- Đã export và kiểm tra ba PDF: main report, AI Audit Report và AI Critique; Excel mở được với 65 item và 68 hyperlink.
+- Preflight khớp 65 checklist item, 21 bug report/Issue `#44–#64`, 7 session, 195 lượt cross-platform; 329 local link đều tồn tại và không phát hiện credential pattern phổ biến.
+- Bảy video participant và Response Sheet truy cập được. Riêng Google Form cần bạn mở lại trước khi nộp vì môi trường hiện tại gặp lỗi CA/DNS khi kiểm tra short-link.
+- AI Audit Entry #13 là `INCOMPLETE` cho tới khi bạn review output M9 và cung cấp video. Các thay đổi được commit cục bộ với tiền tố `[HW03]`; mình không push.
+
+Khi bạn gửi video, mình sẽ gắn link, chốt self-assessment/audit, refresh PDF + Git log và tạo ZIP đúng tên `23120170_HW03_AI_GUIUsability_092.zip` (hoặc điểm mới nếu bạn điều chỉnh).
+```
+
+### (3) Verdict
+
+**`INCOMPLETE`**
+
+### (4) Reasoning
+
+Các artifact có thể hoàn thiện tại thời điểm này đã được đối chiếu bằng số đếm,
+link cục bộ, GitHub Issues, video participant, workbook và text trích xuất từ
+PDF. Main report, audit disclosure, critique và self-assessment đã có nội dung
+thực tế. Tuy nhiên, video demo Agent Skill là deliverable bắt buộc nhưng sinh
+viên chưa cung cấp link; output M9 mới cũng chưa được sinh viên human-review.
+Do đó chưa thể đánh `VALID` hoặc đóng ZIP cuối.
+
+### (5) Student Fix
+
+Sinh viên review các thay đổi M9, mở lại Google Form trong trình duyệt của mình,
+cung cấp link YouTube demo Agent Skill và xác nhận self-assessment. Sau đó thêm
+audit follow-up, cập nhật PDF/Git log và tạo ZIP; không sửa hồi tố Entry #13.
+
+---
+
 ## 4. Tổng hợp độ chính xác của AI
 
 | Metric | Count | Percentage |
 |---|---:|---:|
-| Total audited | 12 | 100% |
-| VALID | 6 | 50% |
+| Total audited | 13 | 100% |
+| VALID | 6 | 46.15% |
 | INVALID | 0 | 0% |
-| INCOMPLETE | 6 | 50% |
+| INCOMPLETE | 7 | 53.85% |
 
 ## 5. Kết luận
 
-[TODO — hoàn thiện sau khi có đủ audit entries]
+AI tạo giá trị tốt nhất ở các công việc có cấu trúc và lặp lại: dựng checklist
+ban đầu, tạo traceability, tổng hợp usability data và chạy checklist trên nhiều
+platform. Tuy nhiên, các entry `INCOMPLETE` cho thấy output AI thường cần human
+review về tính nguyên tử của oracle, coverage accessibility/edge case, sự phù
+hợp với protocol thực tế và chất lượng evidence. Những artifact được giữ lại
+đều đã được đối chiếu requirement, SUT hoặc dữ liệu thật; các output chưa đạt
+được giữ nguyên verdict lịch sử và được sửa bằng entry follow-up thay vì sửa
+hồi tố. Phản biện chi tiết nằm trong [AI Critique](ai-critique.md).
 
 ## 6. Mandatory Disclosure
 
-[TODO — hoàn thiện trước khi nộp]
+**I use AI tools for the following tasks.**
+
+Sinh viên sử dụng Codex để hỗ trợ phân tích yêu cầu, tạo và review GUI checklist,
+tự động hoá execution, soạn bug report, tổng hợp usability evidence, chạy
+cross-platform, kiểm tra traceability và chuẩn bị báo cáo. AI không tạo danh
+sách participant, observation, quote, scale response, recording hoặc
+cross-platform screenshot giả. Sinh viên chịu trách nhiệm review, sửa và xác
+nhận mọi output được dùng; chi tiết prompt/output/verdict nằm trong từng entry.
 
 ## Signature
 
 | Field | Value |
 |---|---|
-| Student name | [TODO] |
-| Student ID | [TODO] |
-| Class / Cohort | [TODO] |
-| Date | [TODO] |
-| Signature | [TODO] |
+| Student name | Nguyễn Đoàn Xuân Thu |
+| Student ID | 23120170 |
+| Class / Cohort | Chưa cung cấp |
+| Date | 16/11/2026 |
+| Signature | Chờ sinh viên xác nhận trước khi nộp |
