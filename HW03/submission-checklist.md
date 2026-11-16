@@ -74,10 +74,11 @@
 
 ## 7. Đóng gói cuối
 
-- [ ] Mở thử mọi Markdown/PDF/XLSX/link/screenshot/video cần nộp.
-- [ ] Không có placeholder như `[TODO]`, `<...>`, dữ liệu giả hoặc credential/token.
-- [ ] ZIP chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
+- [x] Mở thử mọi Markdown/PDF/XLSX/link/screenshot/video cần nộp.
+- [x] Không có placeholder sống như `[TODO]`, `<...>`, dữ liệu giả hoặc credential/token
+      trong deliverable; placeholder lịch sử trong prompt/audit log được giữ nguyên văn.
+- [x] ZIP chứa main report MD+PDF, bug evidence, AI Audit/Critique MD+PDF, git log,
       Excel checklist + summary, usability evidence, participant table,
       cross-platform screenshots, README và supporting materials.
-- [ ] Tên file đúng: `<StudentID>_HW03_AI_GUIUsability_<SelfAssessedGrade>.zip`,
-      trong đó grade là ba chữ số `000`–`100`.
+- [x] Tên file đúng: `23120170_HW03_AI_GUIUsability_094.zip`, trong đó grade là
+      ba chữ số thuộc khoảng `000`–`100`.
