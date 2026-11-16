@@ -1,4 +1,6 @@
-﻿799d74d 2026-11-16 [HW03] docs: add Agent Skill demo and prepare submission
+﻿e799404 2026-11-16 [HW03] docs: confirm final submission links
+df057a0 2026-11-16 [HW03] docs: refresh full git log for submission
+799d74d 2026-11-16 [HW03] docs: add Agent Skill demo and prepare submission
 843789b 2026-11-16 [HW03] docs: refresh git log for M9
 6d54d2d 2026-11-16 [HW03] docs: finalize M9 reports and PDF exports
 3954a9f 2026-11-16 [HW03] docs: refresh git log after M8
